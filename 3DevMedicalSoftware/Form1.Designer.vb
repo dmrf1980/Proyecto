@@ -176,7 +176,7 @@ Partial Class Form1
         Me.BtnPlan.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.BtnPlan.Name = "BtnPlan"
         Me.BtnPlan.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.BtnPlan.Size = New System.Drawing.Size(284, 73)
+        Me.BtnPlan.Size = New System.Drawing.Size(270, 73)
         Me.BtnPlan.TabIndex = 0
         Me.BtnPlan.Text = "Plan"
         Me.BtnPlan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -216,7 +216,7 @@ Partial Class Form1
         Me.BtnEntrevistaInicial.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.BtnEntrevistaInicial.Name = "BtnEntrevistaInicial"
         Me.BtnEntrevistaInicial.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.BtnEntrevistaInicial.Size = New System.Drawing.Size(285, 73)
+        Me.BtnEntrevistaInicial.Size = New System.Drawing.Size(271, 73)
         Me.BtnEntrevistaInicial.TabIndex = 0
         Me.BtnEntrevistaInicial.Text = "Entrevista Inicial"
         Me.BtnEntrevistaInicial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -236,7 +236,7 @@ Partial Class Form1
         Me.BtnMantenimiento.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
         Me.BtnMantenimiento.Name = "BtnMantenimiento"
         Me.BtnMantenimiento.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.BtnMantenimiento.Size = New System.Drawing.Size(284, 73)
+        Me.BtnMantenimiento.Size = New System.Drawing.Size(273, 73)
         Me.BtnMantenimiento.TabIndex = 0
         Me.BtnMantenimiento.Text = "Mantenimiento"
         Me.BtnMantenimiento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
