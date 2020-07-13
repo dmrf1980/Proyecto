@@ -18,6 +18,7 @@
 
             MsgBox("Bienvenido " + TxtId.Text)
             Form1.PanelIzquierdo.Visible = True
+            Form1.PanelIzqIconos.Visible = True
             Form1.BtnMantenimiento.Visible = True
             Form1.BtnEntrevistaInicial.Visible = True
             Form1.BtnPreDiaDiagnostico.Visible = True
@@ -26,6 +27,7 @@
             Form1.PictureBoxIconoEntrevista.Visible = True
             Form1.PictureBoxIconoPreDiagnostico.Visible = True
             Form1.PictureBoxIconoPlan.Visible = True
+            Form1.BtnMenu.Visible = True
 
 
         End If
@@ -38,5 +40,7 @@
         Me.Close()
     End Sub
 
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
+    End Sub
 End Class
