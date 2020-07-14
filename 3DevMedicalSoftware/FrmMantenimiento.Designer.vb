@@ -29,7 +29,9 @@ Partial Class FrmMantenimiento
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.LbxIngresodeAnalisis = New System.Windows.Forms.ListBox()
         Me.LbxConsultasAnteriores = New System.Windows.Forms.ListBox()
+        Me.LblIngresodeAnalisis = New System.Windows.Forms.Label()
         Me.LblApellidoMaterno = New System.Windows.Forms.Label()
         Me.LblConsultasAnteriores = New System.Windows.Forms.Label()
         Me.LblFechadeNacimiento = New System.Windows.Forms.Label()
@@ -37,8 +39,9 @@ Partial Class FrmMantenimiento
         Me.LblSegundoNombre = New System.Windows.Forms.Label()
         Me.LblPrimerNombre = New System.Windows.Forms.Label()
         Me.LblCedula = New System.Windows.Forms.Label()
-        Me.LblIngresodeAnalisis = New System.Windows.Forms.Label()
-        Me.LbxIngresodeAnalisis = New System.Windows.Forms.ListBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnMantenimientoCancelar = New System.Windows.Forms.Button()
         Me.GbxIngresoPacientes.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,12 +64,15 @@ Partial Class FrmMantenimiento
         Me.GbxIngresoPacientes.Controls.Add(Me.LblSegundoNombre)
         Me.GbxIngresoPacientes.Controls.Add(Me.LblPrimerNombre)
         Me.GbxIngresoPacientes.Controls.Add(Me.LblCedula)
+        Me.GbxIngresoPacientes.Controls.Add(Me.Button3)
+        Me.GbxIngresoPacientes.Controls.Add(Me.Button2)
+        Me.GbxIngresoPacientes.Controls.Add(Me.BtnMantenimientoCancelar)
         Me.GbxIngresoPacientes.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbxIngresoPacientes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.GbxIngresoPacientes.Location = New System.Drawing.Point(0, 0)
         Me.GbxIngresoPacientes.MaximumSize = New System.Drawing.Size(1200, 900)
         Me.GbxIngresoPacientes.Name = "GbxIngresoPacientes"
-        Me.GbxIngresoPacientes.Size = New System.Drawing.Size(1009, 728)
+        Me.GbxIngresoPacientes.Size = New System.Drawing.Size(1065, 730)
         Me.GbxIngresoPacientes.TabIndex = 0
         Me.GbxIngresoPacientes.TabStop = False
         Me.GbxIngresoPacientes.Text = "Ingreso de Pacientes"
@@ -78,7 +84,7 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox5.Location = New System.Drawing.Point(215, 178)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(176, 26)
+        Me.TextBox5.Size = New System.Drawing.Size(232, 26)
         Me.TextBox5.TabIndex = 3
         '
         'TextBox6
@@ -88,7 +94,7 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox6.Location = New System.Drawing.Point(215, 122)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(176, 26)
+        Me.TextBox6.Size = New System.Drawing.Size(232, 26)
         Me.TextBox6.TabIndex = 4
         '
         'TextBox4
@@ -96,9 +102,9 @@ Partial Class FrmMantenimiento
         Me.TextBox4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox4.Location = New System.Drawing.Point(578, 66)
+        Me.TextBox4.Location = New System.Drawing.Point(622, 66)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(176, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(232, 26)
         Me.TextBox4.TabIndex = 2
         '
         'TextBox3
@@ -106,9 +112,9 @@ Partial Class FrmMantenimiento
         Me.TextBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox3.Location = New System.Drawing.Point(578, 178)
+        Me.TextBox3.Location = New System.Drawing.Point(622, 178)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(176, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(232, 26)
         Me.TextBox3.TabIndex = 2
         '
         'TextBox2
@@ -116,9 +122,9 @@ Partial Class FrmMantenimiento
         Me.TextBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.Location = New System.Drawing.Point(578, 122)
+        Me.TextBox2.Location = New System.Drawing.Point(622, 122)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(176, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(232, 26)
         Me.TextBox2.TabIndex = 2
         '
         'TextBox1
@@ -128,8 +134,20 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.Location = New System.Drawing.Point(215, 66)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(176, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(232, 26)
         Me.TextBox1.TabIndex = 2
+        '
+        'LbxIngresodeAnalisis
+        '
+        Me.LbxIngresodeAnalisis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LbxIngresodeAnalisis.FormattingEnabled = True
+        Me.LbxIngresodeAnalisis.ItemHeight = 20
+        Me.LbxIngresodeAnalisis.Location = New System.Drawing.Point(220, 387)
+        Me.LbxIngresodeAnalisis.Name = "LbxIngresodeAnalisis"
+        Me.LbxIngresodeAnalisis.Size = New System.Drawing.Size(634, 124)
+        Me.LbxIngresodeAnalisis.TabIndex = 1
         '
         'LbxConsultasAnteriores
         '
@@ -140,8 +158,20 @@ Partial Class FrmMantenimiento
         Me.LbxConsultasAnteriores.ItemHeight = 20
         Me.LbxConsultasAnteriores.Location = New System.Drawing.Point(220, 244)
         Me.LbxConsultasAnteriores.Name = "LbxConsultasAnteriores"
-        Me.LbxConsultasAnteriores.Size = New System.Drawing.Size(534, 104)
+        Me.LbxConsultasAnteriores.Size = New System.Drawing.Size(634, 124)
         Me.LbxConsultasAnteriores.TabIndex = 1
+        '
+        'LblIngresodeAnalisis
+        '
+        Me.LblIngresodeAnalisis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LblIngresodeAnalisis.AutoSize = True
+        Me.LblIngresodeAnalisis.Location = New System.Drawing.Point(76, 387)
+        Me.LblIngresodeAnalisis.Name = "LblIngresodeAnalisis"
+        Me.LblIngresodeAnalisis.Size = New System.Drawing.Size(137, 20)
+        Me.LblIngresodeAnalisis.TabIndex = 0
+        Me.LblIngresodeAnalisis.Text = "Ingreso de analisis"
         '
         'LblApellidoMaterno
         '
@@ -149,7 +179,7 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblApellidoMaterno.AutoSize = True
-        Me.LblApellidoMaterno.Location = New System.Drawing.Point(439, 181)
+        Me.LblApellidoMaterno.Location = New System.Drawing.Point(489, 181)
         Me.LblApellidoMaterno.Name = "LblApellidoMaterno"
         Me.LblApellidoMaterno.Size = New System.Drawing.Size(133, 20)
         Me.LblApellidoMaterno.TabIndex = 0
@@ -173,7 +203,7 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblFechadeNacimiento.AutoSize = True
-        Me.LblFechadeNacimiento.Location = New System.Drawing.Point(420, 69)
+        Me.LblFechadeNacimiento.Location = New System.Drawing.Point(466, 69)
         Me.LblFechadeNacimiento.Name = "LblFechadeNacimiento"
         Me.LblFechadeNacimiento.Size = New System.Drawing.Size(156, 20)
         Me.LblFechadeNacimiento.TabIndex = 0
@@ -197,7 +227,7 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblSegundoNombre.AutoSize = True
-        Me.LblSegundoNombre.Location = New System.Drawing.Point(437, 125)
+        Me.LblSegundoNombre.Location = New System.Drawing.Point(487, 125)
         Me.LblSegundoNombre.Name = "LblSegundoNombre"
         Me.LblSegundoNombre.Size = New System.Drawing.Size(135, 20)
         Me.LblSegundoNombre.TabIndex = 0
@@ -227,29 +257,44 @@ Partial Class FrmMantenimiento
         Me.LblCedula.TabIndex = 0
         Me.LblCedula.Text = "Cedula"
         '
-        'LblIngresodeAnalisis
+        'Button3
         '
-        Me.LblIngresodeAnalisis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LblIngresodeAnalisis.AutoSize = True
-        Me.LblIngresodeAnalisis.Location = New System.Drawing.Point(76, 387)
-        Me.LblIngresodeAnalisis.Name = "LblIngresodeAnalisis"
-        Me.LblIngresodeAnalisis.Size = New System.Drawing.Size(137, 20)
-        Me.LblIngresodeAnalisis.TabIndex = 0
-        Me.LblIngresodeAnalisis.Text = "Ingreso de analisis"
+        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(675, 535)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(174, 42)
+        Me.Button3.TabIndex = 5
+        Me.Button3.Text = "Guardar y continuar"
+        Me.Button3.UseVisualStyleBackColor = False
         '
-        'LbxIngresodeAnalisis
+        'Button2
         '
-        Me.LbxIngresodeAnalisis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LbxIngresodeAnalisis.FormattingEnabled = True
-        Me.LbxIngresodeAnalisis.ItemHeight = 20
-        Me.LbxIngresodeAnalisis.Location = New System.Drawing.Point(220, 387)
-        Me.LbxIngresodeAnalisis.Name = "LbxIngresodeAnalisis"
-        Me.LbxIngresodeAnalisis.Size = New System.Drawing.Size(534, 104)
-        Me.LbxIngresodeAnalisis.TabIndex = 1
+        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(535, 535)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(117, 42)
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "Guardar"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'BtnMantenimientoCancelar
+        '
+        Me.BtnMantenimientoCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnMantenimientoCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnMantenimientoCancelar.FlatAppearance.BorderSize = 0
+        Me.BtnMantenimientoCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMantenimientoCancelar.Location = New System.Drawing.Point(388, 535)
+        Me.BtnMantenimientoCancelar.Name = "BtnMantenimientoCancelar"
+        Me.BtnMantenimientoCancelar.Size = New System.Drawing.Size(117, 42)
+        Me.BtnMantenimientoCancelar.TabIndex = 5
+        Me.BtnMantenimientoCancelar.Text = "Cancelar"
+        Me.BtnMantenimientoCancelar.UseVisualStyleBackColor = False
         '
         'FrmMantenimiento
         '
@@ -257,7 +302,7 @@ Partial Class FrmMantenimiento
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1008, 729)
+        Me.ClientSize = New System.Drawing.Size(912, 729)
         Me.Controls.Add(Me.GbxIngresoPacientes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmMantenimiento"
@@ -285,4 +330,7 @@ Partial Class FrmMantenimiento
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents LbxIngresodeAnalisis As ListBox
     Friend WithEvents LblIngresodeAnalisis As Label
+    Friend WithEvents BtnMantenimientoCancelar As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
 End Class
