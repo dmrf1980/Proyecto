@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PanelPrincipal = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelIzquierdo = New System.Windows.Forms.Panel()
         Me.PanelIzqIconos = New System.Windows.Forms.Panel()
         Me.BtnMenu = New System.Windows.Forms.Button()
@@ -39,7 +40,8 @@ Partial Class Form1
         Me.PictureBoxIconoUsuario = New System.Windows.Forms.PictureBox()
         Me.BtnIngresoUsuarios = New System.Windows.Forms.Button()
         Me.PictureBoxPanelCentral = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureLoguito = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PanelPrincipal.SuspendLayout()
         Me.PanelIzquierdo.SuspendLayout()
         Me.PanelIzqIconos.SuspendLayout()
@@ -50,6 +52,7 @@ Partial Class Form1
         Me.BarraSuperiorVerde.SuspendLayout()
         CType(Me.PictureBoxIconoUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxPanelCentral, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureLoguito, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelPrincipal
@@ -65,6 +68,19 @@ Partial Class Form1
         Me.PanelPrincipal.Name = "PanelPrincipal"
         Me.PanelPrincipal.Size = New System.Drawing.Size(1008, 729)
         Me.PanelPrincipal.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(95, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(610, 515)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(252, 27)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Medical Software Division"
         '
         'PanelIzquierdo
         '
@@ -85,6 +101,7 @@ Partial Class Form1
         'PanelIzqIconos
         '
         Me.PanelIzqIconos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelIzqIconos.Controls.Add(Me.Panel1)
         Me.PanelIzqIconos.Controls.Add(Me.BtnMenu)
         Me.PanelIzqIconos.Controls.Add(Me.PictureBoxIconoPlan)
         Me.PanelIzqIconos.Controls.Add(Me.PictureIconoMantenimiento)
@@ -170,7 +187,7 @@ Partial Class Form1
         Me.BtnPlan.FlatAppearance.BorderSize = 0
         Me.BtnPlan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BtnPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnPlan.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnPlan.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPlan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.BtnPlan.Location = New System.Drawing.Point(86, 443)
         Me.BtnPlan.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
@@ -190,7 +207,7 @@ Partial Class Form1
         Me.BtnPreDiaDiagnostico.FlatAppearance.BorderSize = 0
         Me.BtnPreDiaDiagnostico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BtnPreDiaDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnPreDiaDiagnostico.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnPreDiaDiagnostico.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPreDiaDiagnostico.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.BtnPreDiaDiagnostico.Location = New System.Drawing.Point(86, 334)
         Me.BtnPreDiaDiagnostico.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
@@ -210,7 +227,7 @@ Partial Class Form1
         Me.BtnEntrevistaInicial.FlatAppearance.BorderSize = 0
         Me.BtnEntrevistaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BtnEntrevistaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEntrevistaInicial.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEntrevistaInicial.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnEntrevistaInicial.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.BtnEntrevistaInicial.Location = New System.Drawing.Point(85, 225)
         Me.BtnEntrevistaInicial.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
@@ -230,7 +247,7 @@ Partial Class Form1
         Me.BtnMantenimiento.FlatAppearance.BorderSize = 0
         Me.BtnMantenimiento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BtnMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnMantenimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMantenimiento.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnMantenimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.BtnMantenimiento.Location = New System.Drawing.Point(86, 116)
         Me.BtnMantenimiento.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
@@ -246,6 +263,7 @@ Partial Class Form1
         'BarraSuperiorVerde
         '
         Me.BarraSuperiorVerde.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(111, Byte), Integer))
+        Me.BarraSuperiorVerde.Controls.Add(Me.PictureLoguito)
         Me.BarraSuperiorVerde.Controls.Add(Me.PictureBoxIconoUsuario)
         Me.BarraSuperiorVerde.Controls.Add(Me.BtnIngresoUsuarios)
         Me.BarraSuperiorVerde.Dock = System.Windows.Forms.DockStyle.Top
@@ -271,7 +289,7 @@ Partial Class Form1
         Me.BtnIngresoUsuarios.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnIngresoUsuarios.FlatAppearance.BorderSize = 0
         Me.BtnIngresoUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnIngresoUsuarios.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnIngresoUsuarios.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnIngresoUsuarios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BtnIngresoUsuarios.Location = New System.Drawing.Point(800, 12)
         Me.BtnIngresoUsuarios.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -285,7 +303,7 @@ Partial Class Form1
         '
         Me.PictureBoxPanelCentral.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBoxPanelCentral.Image = CType(resources.GetObject("PictureBoxPanelCentral.Image"), System.Drawing.Image)
-        Me.PictureBoxPanelCentral.Location = New System.Drawing.Point(313, 34)
+        Me.PictureBoxPanelCentral.Location = New System.Drawing.Point(422, 168)
         Me.PictureBoxPanelCentral.Name = "PictureBoxPanelCentral"
         Me.PictureBoxPanelCentral.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.PictureBoxPanelCentral.Size = New System.Drawing.Size(582, 552)
@@ -293,17 +311,23 @@ Partial Class Form1
         Me.PictureBoxPanelCentral.TabIndex = 2
         Me.PictureBoxPanelCentral.TabStop = False
         '
-        'Label1
+        'PictureLoguito
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(95, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(501, 381)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(252, 27)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Medical Software Division"
+        Me.PictureLoguito.Image = CType(resources.GetObject("PictureLoguito.Image"), System.Drawing.Image)
+        Me.PictureLoguito.Location = New System.Drawing.Point(21, 4)
+        Me.PictureLoguito.Name = "PictureLoguito"
+        Me.PictureLoguito.Size = New System.Drawing.Size(40, 40)
+        Me.PictureLoguito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureLoguito.TabIndex = 3
+        Me.PictureLoguito.TabStop = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(111, Byte), Integer))
+        Me.Panel1.Location = New System.Drawing.Point(3, 89)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(83, 5)
+        Me.Panel1.TabIndex = 3
         '
         'Form1
         '
@@ -327,6 +351,7 @@ Partial Class Form1
         Me.BarraSuperiorVerde.ResumeLayout(False)
         CType(Me.PictureBoxIconoUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxPanelCentral, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureLoguito, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -348,4 +373,6 @@ Partial Class Form1
     Friend WithEvents PanelIzqIconos As Panel
     Friend WithEvents BtnMenu As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents PictureLoguito As PictureBox
+    Friend WithEvents Panel1 As Panel
 End Class
