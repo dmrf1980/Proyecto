@@ -26,14 +26,14 @@ Partial Class FrmIngresoUsuarios
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BtnSalir = New System.Windows.Forms.Button()
         Me.BtnIngresar = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TxtContraseña = New System.Windows.Forms.TextBox()
         Me.TxtId = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BarritaSuperiorFrmIngresoUsuarios = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.BunifuSeparator2 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.PanelCentralInicioUsuarios.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.BarritaSuperiorFrmIngresoUsuarios.SuspendLayout()
@@ -52,14 +52,14 @@ Partial Class FrmIngresoUsuarios
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.BtnSalir)
-        Me.GroupBox1.Controls.Add(Me.BtnIngresar)
-        Me.GroupBox1.Controls.Add(Me.Panel2)
-        Me.GroupBox1.Controls.Add(Me.Panel1)
         Me.GroupBox1.Controls.Add(Me.TxtContraseña)
         Me.GroupBox1.Controls.Add(Me.TxtId)
+        Me.GroupBox1.Controls.Add(Me.BtnSalir)
+        Me.GroupBox1.Controls.Add(Me.BtnIngresar)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.BunifuSeparator2)
+        Me.GroupBox1.Controls.Add(Me.BunifuSeparator1)
         Me.GroupBox1.Location = New System.Drawing.Point(4, 119)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(334, 352)
@@ -86,64 +86,48 @@ Partial Class FrmIngresoUsuarios
         Me.BtnIngresar.Text = "Ingresar"
         Me.BtnIngresar.UseVisualStyleBackColor = True
         '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Gray
-        Me.Panel2.Location = New System.Drawing.Point(43, 202)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(200, 2)
-        Me.Panel2.TabIndex = 3
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Gray
-        Me.Panel1.Location = New System.Drawing.Point(43, 121)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 2)
-        Me.Panel1.TabIndex = 3
-        '
         'TxtContraseña
         '
         Me.TxtContraseña.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TxtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtContraseña.Font = New System.Drawing.Font("Fira Code", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtContraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TxtContraseña.Location = New System.Drawing.Point(43, 180)
         Me.TxtContraseña.Name = "TxtContraseña"
         Me.TxtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TxtContraseña.Size = New System.Drawing.Size(200, 15)
+        Me.TxtContraseña.Size = New System.Drawing.Size(200, 25)
         Me.TxtContraseña.TabIndex = 2
         '
         'TxtId
         '
         Me.TxtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TxtId.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtId.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtId.Font = New System.Drawing.Font("Fira Code", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TxtId.Location = New System.Drawing.Point(43, 96)
         Me.TxtId.Name = "TxtId"
-        Me.TxtId.Size = New System.Drawing.Size(200, 15)
+        Me.TxtId.Size = New System.Drawing.Size(200, 25)
         Me.TxtId.TabIndex = 2
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(40, 152)
+        Me.Label3.Location = New System.Drawing.Point(40, 159)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(77, 16)
+        Me.Label3.Size = New System.Drawing.Size(92, 20)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Contraseña"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(40, 68)
+        Me.Label2.Location = New System.Drawing.Point(40, 75)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(19, 16)
+        Me.Label2.Size = New System.Drawing.Size(21, 20)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Id"
         '
@@ -167,6 +151,30 @@ Partial Class FrmIngresoUsuarios
         Me.Label1.Size = New System.Drawing.Size(313, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Ingreso de Usuarios Autorizados"
+        '
+        'BunifuSeparator1
+        '
+        Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator1.LineColor = System.Drawing.Color.DimGray
+        Me.BunifuSeparator1.LineThickness = 1
+        Me.BunifuSeparator1.Location = New System.Drawing.Point(43, 201)
+        Me.BunifuSeparator1.Name = "BunifuSeparator1"
+        Me.BunifuSeparator1.Size = New System.Drawing.Size(200, 21)
+        Me.BunifuSeparator1.TabIndex = 5
+        Me.BunifuSeparator1.Transparency = 255
+        Me.BunifuSeparator1.Vertical = False
+        '
+        'BunifuSeparator2
+        '
+        Me.BunifuSeparator2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator2.LineColor = System.Drawing.Color.DimGray
+        Me.BunifuSeparator2.LineThickness = 1
+        Me.BunifuSeparator2.Location = New System.Drawing.Point(43, 119)
+        Me.BunifuSeparator2.Name = "BunifuSeparator2"
+        Me.BunifuSeparator2.Size = New System.Drawing.Size(200, 18)
+        Me.BunifuSeparator2.TabIndex = 6
+        Me.BunifuSeparator2.Transparency = 255
+        Me.BunifuSeparator2.Vertical = False
         '
         'FrmIngresoUsuarios
         '
@@ -193,10 +201,10 @@ Partial Class FrmIngresoUsuarios
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents BtnSalir As Button
     Friend WithEvents BtnIngresar As Button
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents TxtContraseña As TextBox
     Friend WithEvents TxtId As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents BunifuSeparator2 As Bunifu.Framework.UI.BunifuSeparator
+    Friend WithEvents BunifuSeparator1 As Bunifu.Framework.UI.BunifuSeparator
 End Class

@@ -48,11 +48,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>D:\Programacion\Recursos Visual\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -79,6 +83,12 @@
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntrevistaInicial.Designer.vb">
+      <DependentUpon>FrmEntrevistaInicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntrevistaInicial.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmIngresoUsuarios.Designer.vb">
@@ -112,6 +122,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntrevistaInicial.resx">
+      <DependentUpon>FrmEntrevistaInicial.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresoUsuarios.resx">
       <DependentUpon>FrmIngresoUsuarios.vb</DependentUpon>

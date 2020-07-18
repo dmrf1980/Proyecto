@@ -48,6 +48,9 @@
         PanelIzquierdo.Width = 90
     End Sub
 
-
+    Private Sub BtnEntrevistaInicial_Click(sender As Object, e As EventArgs) Handles BtnEntrevistaInicial.Click
+        AbrirFormDentroDePanelPForm(Of FrmEntrevistaInicial)()
+        PanelIzquierdo.Width = 90
+    End Sub
 End Class
 

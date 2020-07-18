@@ -24,7 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PanelPrincipal = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelIzquierdo = New System.Windows.Forms.Panel()
         Me.PanelIzqIconos = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -37,6 +36,7 @@ Partial Class Form1
         Me.BtnPreDiaDiagnostico = New System.Windows.Forms.Button()
         Me.BtnEntrevistaInicial = New System.Windows.Forms.Button()
         Me.BtnMantenimiento = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.BarraSuperiorVerde = New System.Windows.Forms.Panel()
         Me.PictureLoguito = New System.Windows.Forms.PictureBox()
         Me.PictureBoxIconoUsuario = New System.Windows.Forms.PictureBox()
@@ -66,21 +66,8 @@ Partial Class Form1
         Me.PanelPrincipal.Location = New System.Drawing.Point(0, 0)
         Me.PanelPrincipal.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.PanelPrincipal.Name = "PanelPrincipal"
-        Me.PanelPrincipal.Size = New System.Drawing.Size(952, 706)
+        Me.PanelPrincipal.Size = New System.Drawing.Size(1184, 706)
         Me.PanelPrincipal.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(95, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(570, 536)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(252, 27)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Medical Software Division"
         '
         'PanelIzquierdo
         '
@@ -275,6 +262,19 @@ Partial Class Form1
         Me.BtnMantenimiento.UseVisualStyleBackColor = False
         Me.BtnMantenimiento.Visible = False
         '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(98, Byte), Integer), CType(CType(95, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(802, 536)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(252, 27)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Medical Software Division"
+        '
         'BarraSuperiorVerde
         '
         Me.BarraSuperiorVerde.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(111, Byte), Integer))
@@ -285,7 +285,7 @@ Partial Class Form1
         Me.BarraSuperiorVerde.Location = New System.Drawing.Point(0, 0)
         Me.BarraSuperiorVerde.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.BarraSuperiorVerde.Name = "BarraSuperiorVerde"
-        Me.BarraSuperiorVerde.Size = New System.Drawing.Size(952, 62)
+        Me.BarraSuperiorVerde.Size = New System.Drawing.Size(1184, 62)
         Me.BarraSuperiorVerde.TabIndex = 0
         '
         'PictureLoguito
@@ -303,7 +303,7 @@ Partial Class Form1
         '
         Me.PictureBoxIconoUsuario.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBoxIconoUsuario.Image = CType(resources.GetObject("PictureBoxIconoUsuario.Image"), System.Drawing.Image)
-        Me.PictureBoxIconoUsuario.Location = New System.Drawing.Point(889, 5)
+        Me.PictureBoxIconoUsuario.Location = New System.Drawing.Point(1121, 5)
         Me.PictureBoxIconoUsuario.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBoxIconoUsuario.Name = "PictureBoxIconoUsuario"
         Me.PictureBoxIconoUsuario.Size = New System.Drawing.Size(51, 53)
@@ -318,7 +318,7 @@ Partial Class Form1
         Me.BtnIngresoUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnIngresoUsuarios.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnIngresoUsuarios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BtnIngresoUsuarios.Location = New System.Drawing.Point(744, 15)
+        Me.BtnIngresoUsuarios.Location = New System.Drawing.Point(976, 15)
         Me.BtnIngresoUsuarios.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.BtnIngresoUsuarios.Name = "BtnIngresoUsuarios"
         Me.BtnIngresoUsuarios.Size = New System.Drawing.Size(130, 34)
@@ -330,7 +330,7 @@ Partial Class Form1
         '
         Me.PictureBoxPanelCentral.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBoxPanelCentral.Image = CType(resources.GetObject("PictureBoxPanelCentral.Image"), System.Drawing.Image)
-        Me.PictureBoxPanelCentral.Location = New System.Drawing.Point(362, 131)
+        Me.PictureBoxPanelCentral.Location = New System.Drawing.Point(594, 131)
         Me.PictureBoxPanelCentral.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBoxPanelCentral.Name = "PictureBoxPanelCentral"
         Me.PictureBoxPanelCentral.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
@@ -344,11 +344,11 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(952, 706)
+        Me.ClientSize = New System.Drawing.Size(1184, 706)
         Me.Controls.Add(Me.PanelPrincipal)
         Me.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.MinimumSize = New System.Drawing.Size(968, 745)
+        Me.MinimumSize = New System.Drawing.Size(1200, 745)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Medical Software"
