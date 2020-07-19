@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmFiebre
+Partial Class FrmMalestar
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -32,21 +32,21 @@ Partial Class FrmFiebre
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(221, 25)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Formulario para Fiebre"
+        Me.Label1.Size = New System.Drawing.Size(245, 25)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Formulario para Malestar"
         '
-        'FrmFiebre
+        'FrmMalestar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Gainsboro
+        Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.ClientSize = New System.Drawing.Size(818, 622)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximumSize = New System.Drawing.Size(818, 622)
-        Me.Name = "FrmFiebre"
-        Me.Text = "FrmFiebre"
+        Me.Name = "FrmMalestar"
+        Me.Text = "FrmMalestar"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

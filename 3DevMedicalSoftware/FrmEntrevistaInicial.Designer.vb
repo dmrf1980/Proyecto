@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmEntrevistaInicial
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmEntrevistaInicial
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GbxEntrevistaInicial = New System.Windows.Forms.GroupBox()
         Me.GbxMotivosdeConsulta = New System.Windows.Forms.GroupBox()
@@ -63,6 +63,7 @@ Partial Class FrmEntrevistaInicial
         Me.BtnRegistroGuardar = New System.Windows.Forms.Button()
         Me.BtnRegistroCancelar = New System.Windows.Forms.Button()
         Me.PanelDeRegistrosFormularios = New System.Windows.Forms.Panel()
+        Me.BtnCambiarFormulario = New System.Windows.Forms.Button()
         Me.GbxEntrevistaInicial.SuspendLayout()
         Me.GbxMotivosdeConsulta.SuspendLayout()
         Me.GbxConstantesVitales.SuspendLayout()
@@ -491,11 +492,12 @@ Partial Class FrmEntrevistaInicial
         'GrxRegistro
         '
         Me.GrxRegistro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GrxRegistro.Controls.Add(Me.BtnCambiarFormulario)
         Me.GrxRegistro.Controls.Add(Me.PanelDeRegistrosFormularios)
         Me.GrxRegistro.Controls.Add(Me.BtnRegistroGuardarYContinuar)
         Me.GrxRegistro.Controls.Add(Me.BtnRegistroGuardar)
         Me.GrxRegistro.Controls.Add(Me.BtnRegistroCancelar)
-        Me.GrxRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.GrxRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GrxRegistro.Font = New System.Drawing.Font("Ubuntu", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrxRegistro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.GrxRegistro.Location = New System.Drawing.Point(888, 26)
@@ -556,10 +558,26 @@ Partial Class FrmEntrevistaInicial
         '
         'PanelDeRegistrosFormularios
         '
+        Me.PanelDeRegistrosFormularios.AutoScroll = True
+        Me.PanelDeRegistrosFormularios.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.PanelDeRegistrosFormularios.Location = New System.Drawing.Point(14, 38)
         Me.PanelDeRegistrosFormularios.Name = "PanelDeRegistrosFormularios"
         Me.PanelDeRegistrosFormularios.Size = New System.Drawing.Size(818, 622)
         Me.PanelDeRegistrosFormularios.TabIndex = 6
+        '
+        'BtnCambiarFormulario
+        '
+        Me.BtnCambiarFormulario.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnCambiarFormulario.FlatAppearance.BorderSize = 0
+        Me.BtnCambiarFormulario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCambiarFormulario.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCambiarFormulario.Location = New System.Drawing.Point(30, 681)
+        Me.BtnCambiarFormulario.Name = "BtnCambiarFormulario"
+        Me.BtnCambiarFormulario.Size = New System.Drawing.Size(155, 34)
+        Me.BtnCambiarFormulario.TabIndex = 7
+        Me.BtnCambiarFormulario.Text = "Cambiar formulario"
+        Me.BtnCambiarFormulario.UseVisualStyleBackColor = False
+        Me.BtnCambiarFormulario.Visible = False
         '
         'FrmEntrevistaInicial
         '
@@ -631,4 +649,5 @@ Partial Class FrmEntrevistaInicial
     Friend WithEvents BtnRegistroGuardar As Button
     Friend WithEvents BtnRegistroCancelar As Button
     Friend WithEvents PanelDeRegistrosFormularios As Panel
+    Friend WithEvents BtnCambiarFormulario As Button
 End Class
