@@ -24,7 +24,6 @@ Partial Class FrmEntrevistaInicial
     Private Sub InitializeComponent()
         Me.GbxEntrevistaInicial = New System.Windows.Forms.GroupBox()
         Me.GbxMotivosdeConsulta = New System.Windows.Forms.GroupBox()
-        Me.TxtMotivoDeLaConsulta = New System.Windows.Forms.TextBox()
         Me.GbxConstantesVitales = New System.Windows.Forms.GroupBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -64,6 +63,8 @@ Partial Class FrmEntrevistaInicial
         Me.BtnRegistroCancelar = New System.Windows.Forms.Button()
         Me.PanelDeRegistrosFormularios = New System.Windows.Forms.Panel()
         Me.BtnCambiarFormulario = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GbxEntrevistaInicial.SuspendLayout()
         Me.GbxMotivosdeConsulta.SuspendLayout()
         Me.GbxConstantesVitales.SuspendLayout()
@@ -97,23 +98,16 @@ Partial Class FrmEntrevistaInicial
         '
         'GbxMotivosdeConsulta
         '
-        Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtMotivoDeLaConsulta)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.Label17)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.ComboBox1)
         Me.GbxMotivosdeConsulta.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GbxMotivosdeConsulta.Location = New System.Drawing.Point(26, 471)
+        Me.GbxMotivosdeConsulta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GbxMotivosdeConsulta.Location = New System.Drawing.Point(26, 447)
         Me.GbxMotivosdeConsulta.Name = "GbxMotivosdeConsulta"
         Me.GbxMotivosdeConsulta.Size = New System.Drawing.Size(798, 189)
         Me.GbxMotivosdeConsulta.TabIndex = 6
         Me.GbxMotivosdeConsulta.TabStop = False
         Me.GbxMotivosdeConsulta.Text = "Motivo de la consulta"
-        '
-        'TxtMotivoDeLaConsulta
-        '
-        Me.TxtMotivoDeLaConsulta.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtMotivoDeLaConsulta.Location = New System.Drawing.Point(25, 41)
-        Me.TxtMotivoDeLaConsulta.Multiline = True
-        Me.TxtMotivoDeLaConsulta.Name = "TxtMotivoDeLaConsulta"
-        Me.TxtMotivoDeLaConsulta.Size = New System.Drawing.Size(752, 123)
-        Me.TxtMotivoDeLaConsulta.TabIndex = 0
         '
         'GbxConstantesVitales
         '
@@ -134,7 +128,8 @@ Partial Class FrmEntrevistaInicial
         Me.GbxConstantesVitales.Controls.Add(Me.Label11)
         Me.GbxConstantesVitales.Controls.Add(Me.Label12)
         Me.GbxConstantesVitales.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GbxConstantesVitales.Location = New System.Drawing.Point(26, 259)
+        Me.GbxConstantesVitales.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GbxConstantesVitales.Location = New System.Drawing.Point(26, 250)
         Me.GbxConstantesVitales.Name = "GbxConstantesVitales"
         Me.GbxConstantesVitales.Size = New System.Drawing.Size(798, 188)
         Me.GbxConstantesVitales.TabIndex = 6
@@ -184,6 +179,7 @@ Partial Class FrmEntrevistaInicial
         'NudfrecuenciaRespiratoria
         '
         Me.NudfrecuenciaRespiratoria.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NudfrecuenciaRespiratoria.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudfrecuenciaRespiratoria.Location = New System.Drawing.Point(537, 86)
         Me.NudfrecuenciaRespiratoria.Maximum = New Decimal(New Integer() {70, 0, 0, 0})
         Me.NudfrecuenciaRespiratoria.Name = "NudfrecuenciaRespiratoria"
@@ -194,6 +190,7 @@ Partial Class FrmEntrevistaInicial
         'NudPresionArterialdiast
         '
         Me.NudPresionArterialdiast.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NudPresionArterialdiast.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudPresionArterialdiast.Location = New System.Drawing.Point(292, 138)
         Me.NudPresionArterialdiast.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
         Me.NudPresionArterialdiast.Minimum = New Decimal(New Integer() {60, 0, 0, 0})
@@ -205,6 +202,7 @@ Partial Class FrmEntrevistaInicial
         'NudPresionArterialSist
         '
         Me.NudPresionArterialSist.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NudPresionArterialSist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudPresionArterialSist.Location = New System.Drawing.Point(162, 138)
         Me.NudPresionArterialSist.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
         Me.NudPresionArterialSist.Minimum = New Decimal(New Integer() {60, 0, 0, 0})
@@ -216,6 +214,7 @@ Partial Class FrmEntrevistaInicial
         'NudFrecuenciacardiaca
         '
         Me.NudFrecuenciacardiaca.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NudFrecuenciacardiaca.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudFrecuenciacardiaca.Location = New System.Drawing.Point(164, 86)
         Me.NudFrecuenciacardiaca.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
         Me.NudFrecuenciacardiaca.Minimum = New Decimal(New Integer() {60, 0, 0, 0})
@@ -227,10 +226,14 @@ Partial Class FrmEntrevistaInicial
         'NudTemperatura
         '
         Me.NudTemperatura.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NudTemperatura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudTemperatura.Location = New System.Drawing.Point(164, 38)
+        Me.NudTemperatura.Maximum = New Decimal(New Integer() {42, 0, 0, 0})
+        Me.NudTemperatura.Minimum = New Decimal(New Integer() {25, 0, 0, 0})
         Me.NudTemperatura.Name = "NudTemperatura"
         Me.NudTemperatura.Size = New System.Drawing.Size(48, 28)
         Me.NudTemperatura.TabIndex = 1
+        Me.NudTemperatura.Value = New Decimal(New Integer() {25, 0, 0, 0})
         '
         'Label8
         '
@@ -317,7 +320,8 @@ Partial Class FrmEntrevistaInicial
         Me.GbxInspecciongeneral.Controls.Add(Me.Label2)
         Me.GbxInspecciongeneral.Controls.Add(Me.Label1)
         Me.GbxInspecciongeneral.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GbxInspecciongeneral.Location = New System.Drawing.Point(26, 46)
+        Me.GbxInspecciongeneral.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GbxInspecciongeneral.Location = New System.Drawing.Point(26, 51)
         Me.GbxInspecciongeneral.Name = "GbxInspecciongeneral"
         Me.GbxInspecciongeneral.Size = New System.Drawing.Size(798, 189)
         Me.GbxInspecciongeneral.TabIndex = 6
@@ -331,7 +335,7 @@ Partial Class FrmEntrevistaInicial
         Me.ComGradoDeColaboracion.Items.AddRange(New Object() {"Buena", "Normal", "Mala"})
         Me.ComGradoDeColaboracion.Location = New System.Drawing.Point(568, 38)
         Me.ComGradoDeColaboracion.Name = "ComGradoDeColaboracion"
-        Me.ComGradoDeColaboracion.Size = New System.Drawing.Size(205, 28)
+        Me.ComGradoDeColaboracion.Size = New System.Drawing.Size(209, 28)
         Me.ComGradoDeColaboracion.TabIndex = 2
         '
         'ComActitud
@@ -560,7 +564,9 @@ Partial Class FrmEntrevistaInicial
         '
         Me.PanelDeRegistrosFormularios.AutoScroll = True
         Me.PanelDeRegistrosFormularios.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.PanelDeRegistrosFormularios.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PanelDeRegistrosFormularios.Location = New System.Drawing.Point(14, 38)
+        Me.PanelDeRegistrosFormularios.MaximumSize = New System.Drawing.Size(818, 622)
         Me.PanelDeRegistrosFormularios.Name = "PanelDeRegistrosFormularios"
         Me.PanelDeRegistrosFormularios.Size = New System.Drawing.Size(818, 622)
         Me.PanelDeRegistrosFormularios.TabIndex = 6
@@ -578,6 +584,26 @@ Partial Class FrmEntrevistaInicial
         Me.BtnCambiarFormulario.Text = "Cambiar formulario"
         Me.BtnCambiarFormulario.UseVisualStyleBackColor = False
         Me.BtnCambiarFormulario.Visible = False
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(9, 48)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(161, 20)
+        Me.Label17.TabIndex = 0
+        Me.Label17.Text = "Estado de la consulta"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Ingreso-Primera consulta"})
+        Me.ComboBox1.Location = New System.Drawing.Point(179, 44)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(242, 28)
+        Me.ComboBox1.TabIndex = 2
         '
         'FrmEntrevistaInicial
         '
@@ -643,11 +669,12 @@ Partial Class FrmEntrevistaInicial
     Friend WithEvents ComGradoDeColaboracion As ComboBox
     Friend WithEvents ComMovilidad As ComboBox
     Friend WithEvents ComGradoDeHidratacion As ComboBox
-    Friend WithEvents TxtMotivoDeLaConsulta As TextBox
     Friend WithEvents GrxRegistro As GroupBox
     Friend WithEvents BtnRegistroGuardarYContinuar As Button
     Friend WithEvents BtnRegistroGuardar As Button
     Friend WithEvents BtnRegistroCancelar As Button
     Friend WithEvents PanelDeRegistrosFormularios As Panel
     Friend WithEvents BtnCambiarFormulario As Button
+    Friend WithEvents Label17 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

@@ -30,7 +30,6 @@ Partial Class FrmMantenimiento
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.PicturemantenimientoPaciente = New System.Windows.Forms.PictureBox()
         Me.TxtApellidoPaterno = New System.Windows.Forms.TextBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
@@ -47,10 +46,8 @@ Partial Class FrmMantenimiento
         Me.TxtCedula = New System.Windows.Forms.TextBox()
         Me.LbxIngresodeAnalisis = New System.Windows.Forms.ListBox()
         Me.LbxConsultasAnteriores = New System.Windows.Forms.ListBox()
-        Me.LblIngresodeAnalisis = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.LblApellidoMaterno = New System.Windows.Forms.Label()
-        Me.LblConsultasAnteriores = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.LblFechadeNacimiento = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -77,8 +74,21 @@ Partial Class FrmMantenimiento
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.PicturemantenimientoPaciente = New System.Windows.Forms.PictureBox()
+        Me.RbtnCedulaConsultasAnteriores = New System.Windows.Forms.RadioButton()
+        Me.RbtnFechaConsultasAnteriores = New System.Windows.Forms.RadioButton()
+        Me.DateConsultasAnteriores = New System.Windows.Forms.DateTimePicker()
+        Me.BtnBuscarConsultasAnteriores = New System.Windows.Forms.Button()
+        Me.RbtnCedulaIngresoAnalisis = New System.Windows.Forms.RadioButton()
+        Me.RbtnFechaIngresoAnalisis = New System.Windows.Forms.RadioButton()
+        Me.DateIngresoAnalisis = New System.Windows.Forms.DateTimePicker()
+        Me.BtnBuscarIngresoAnalisis = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GbxIngresoPacientes.SuspendLayout()
         CType(Me.PicturemantenimientoPaciente, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GbxIngresoPacientes
@@ -109,12 +119,8 @@ Partial Class FrmMantenimiento
         Me.GbxIngresoPacientes.Controls.Add(Me.TextBox1)
         Me.GbxIngresoPacientes.Controls.Add(Me.TxtSegundoNombre)
         Me.GbxIngresoPacientes.Controls.Add(Me.TxtCedula)
-        Me.GbxIngresoPacientes.Controls.Add(Me.LbxIngresodeAnalisis)
-        Me.GbxIngresoPacientes.Controls.Add(Me.LbxConsultasAnteriores)
-        Me.GbxIngresoPacientes.Controls.Add(Me.LblIngresodeAnalisis)
         Me.GbxIngresoPacientes.Controls.Add(Me.Label14)
         Me.GbxIngresoPacientes.Controls.Add(Me.LblApellidoMaterno)
-        Me.GbxIngresoPacientes.Controls.Add(Me.LblConsultasAnteriores)
         Me.GbxIngresoPacientes.Controls.Add(Me.Label11)
         Me.GbxIngresoPacientes.Controls.Add(Me.Label17)
         Me.GbxIngresoPacientes.Controls.Add(Me.LblFechadeNacimiento)
@@ -135,14 +141,12 @@ Partial Class FrmMantenimiento
         Me.GbxIngresoPacientes.Controls.Add(Me.Label2)
         Me.GbxIngresoPacientes.Controls.Add(Me.LblPrimerNombre)
         Me.GbxIngresoPacientes.Controls.Add(Me.LblCedula)
-        Me.GbxIngresoPacientes.Controls.Add(Me.Button3)
-        Me.GbxIngresoPacientes.Controls.Add(Me.Button2)
-        Me.GbxIngresoPacientes.Controls.Add(Me.BtnMantenimientoCancelar)
+        Me.GbxIngresoPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GbxIngresoPacientes.Font = New System.Drawing.Font("Ubuntu", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
         Me.GbxIngresoPacientes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.GbxIngresoPacientes.Location = New System.Drawing.Point(29, 24)
         Me.GbxIngresoPacientes.Name = "GbxIngresoPacientes"
-        Me.GbxIngresoPacientes.Size = New System.Drawing.Size(1003, 1063)
+        Me.GbxIngresoPacientes.Size = New System.Drawing.Size(1003, 598)
         Me.GbxIngresoPacientes.TabIndex = 0
         Me.GbxIngresoPacientes.TabStop = False
         Me.GbxIngresoPacientes.Text = "Anamnesis"
@@ -163,6 +167,8 @@ Partial Class FrmMantenimiento
         'DateTimeFechaNacimiento
         '
         Me.DateTimeFechaNacimiento.CalendarFont = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimeFechaNacimiento.CalendarForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.DateTimeFechaNacimiento.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.DateTimeFechaNacimiento.Checked = False
         Me.DateTimeFechaNacimiento.CustomFormat = "MMMM dd, yyyy - dddd"
         Me.DateTimeFechaNacimiento.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -179,6 +185,7 @@ Partial Class FrmMantenimiento
         'DateTimeFechaAlta
         '
         Me.DateTimeFechaAlta.CalendarFont = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimeFechaAlta.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.DateTimeFechaAlta.Checked = False
         Me.DateTimeFechaAlta.CustomFormat = "MMMM dd, yyyy - dddd"
         Me.DateTimeFechaAlta.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -202,7 +209,7 @@ Partial Class FrmMantenimiento
         Me.TextBox9.Location = New System.Drawing.Point(227, 551)
         Me.TextBox9.MinimumSize = New System.Drawing.Size(214, 26)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(705, 26)
+        Me.TextBox9.Size = New System.Drawing.Size(705, 19)
         Me.TextBox9.TabIndex = 7
         '
         'TextBox7
@@ -215,7 +222,7 @@ Partial Class FrmMantenimiento
         Me.TextBox7.Location = New System.Drawing.Point(227, 511)
         Me.TextBox7.MinimumSize = New System.Drawing.Size(214, 26)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(705, 26)
+        Me.TextBox7.Size = New System.Drawing.Size(705, 19)
         Me.TextBox7.TabIndex = 7
         '
         'TextBox5
@@ -228,7 +235,7 @@ Partial Class FrmMantenimiento
         Me.TextBox5.Location = New System.Drawing.Point(227, 434)
         Me.TextBox5.MinimumSize = New System.Drawing.Size(214, 26)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(705, 26)
+        Me.TextBox5.Size = New System.Drawing.Size(705, 19)
         Me.TextBox5.TabIndex = 7
         '
         'TextBox4
@@ -241,21 +248,8 @@ Partial Class FrmMantenimiento
         Me.TextBox4.Location = New System.Drawing.Point(227, 394)
         Me.TextBox4.MinimumSize = New System.Drawing.Size(214, 26)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(705, 26)
+        Me.TextBox4.Size = New System.Drawing.Size(705, 19)
         Me.TextBox4.TabIndex = 7
-        '
-        'PicturemantenimientoPaciente
-        '
-        Me.PicturemantenimientoPaciente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PicturemantenimientoPaciente.Image = Global._3DevMedicalSoftware.My.Resources.Resources.user2
-        Me.PicturemantenimientoPaciente.Location = New System.Drawing.Point(857, 36)
-        Me.PicturemantenimientoPaciente.MaximumSize = New System.Drawing.Size(137, 138)
-        Me.PicturemantenimientoPaciente.MinimumSize = New System.Drawing.Size(137, 138)
-        Me.PicturemantenimientoPaciente.Name = "PicturemantenimientoPaciente"
-        Me.PicturemantenimientoPaciente.Size = New System.Drawing.Size(137, 138)
-        Me.PicturemantenimientoPaciente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PicturemantenimientoPaciente.TabIndex = 6
-        Me.PicturemantenimientoPaciente.TabStop = False
         '
         'TxtApellidoPaterno
         '
@@ -464,11 +458,11 @@ Partial Class FrmMantenimiento
         Me.LbxIngresodeAnalisis.FormattingEnabled = True
         Me.LbxIngresodeAnalisis.HorizontalScrollbar = True
         Me.LbxIngresodeAnalisis.ItemHeight = 20
-        Me.LbxIngresodeAnalisis.Location = New System.Drawing.Point(227, 753)
+        Me.LbxIngresodeAnalisis.Location = New System.Drawing.Point(210, 74)
         Me.LbxIngresodeAnalisis.MaximumSize = New System.Drawing.Size(702, 124)
-        Me.LbxIngresodeAnalisis.MinimumSize = New System.Drawing.Size(702, 124)
+        Me.LbxIngresodeAnalisis.MinimumSize = New System.Drawing.Size(702, 60)
         Me.LbxIngresodeAnalisis.Name = "LbxIngresodeAnalisis"
-        Me.LbxIngresodeAnalisis.Size = New System.Drawing.Size(702, 120)
+        Me.LbxIngresodeAnalisis.Size = New System.Drawing.Size(702, 60)
         Me.LbxIngresodeAnalisis.TabIndex = 1
         '
         'LbxConsultasAnteriores
@@ -481,25 +475,12 @@ Partial Class FrmMantenimiento
         Me.LbxConsultasAnteriores.FormattingEnabled = True
         Me.LbxConsultasAnteriores.HorizontalScrollbar = True
         Me.LbxConsultasAnteriores.ItemHeight = 20
-        Me.LbxConsultasAnteriores.Location = New System.Drawing.Point(227, 613)
+        Me.LbxConsultasAnteriores.Location = New System.Drawing.Point(211, 74)
         Me.LbxConsultasAnteriores.MaximumSize = New System.Drawing.Size(702, 124)
-        Me.LbxConsultasAnteriores.MinimumSize = New System.Drawing.Size(702, 124)
+        Me.LbxConsultasAnteriores.MinimumSize = New System.Drawing.Size(702, 60)
         Me.LbxConsultasAnteriores.Name = "LbxConsultasAnteriores"
-        Me.LbxConsultasAnteriores.Size = New System.Drawing.Size(702, 120)
+        Me.LbxConsultasAnteriores.Size = New System.Drawing.Size(702, 60)
         Me.LbxConsultasAnteriores.TabIndex = 1
-        '
-        'LblIngresodeAnalisis
-        '
-        Me.LblIngresodeAnalisis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LblIngresodeAnalisis.AutoSize = True
-        Me.LblIngresodeAnalisis.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblIngresodeAnalisis.Location = New System.Drawing.Point(81, 752)
-        Me.LblIngresodeAnalisis.Name = "LblIngresodeAnalisis"
-        Me.LblIngresodeAnalisis.Size = New System.Drawing.Size(137, 20)
-        Me.LblIngresodeAnalisis.TabIndex = 0
-        Me.LblIngresodeAnalisis.Text = "Ingreso de analisis"
         '
         'Label14
         '
@@ -526,19 +507,6 @@ Partial Class FrmMantenimiento
         Me.LblApellidoMaterno.Size = New System.Drawing.Size(133, 20)
         Me.LblApellidoMaterno.TabIndex = 0
         Me.LblApellidoMaterno.Text = "Apellido materno"
-        '
-        'LblConsultasAnteriores
-        '
-        Me.LblConsultasAnteriores.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LblConsultasAnteriores.AutoSize = True
-        Me.LblConsultasAnteriores.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblConsultasAnteriores.Location = New System.Drawing.Point(59, 612)
-        Me.LblConsultasAnteriores.Name = "LblConsultasAnteriores"
-        Me.LblConsultasAnteriores.Size = New System.Drawing.Size(157, 20)
-        Me.LblConsultasAnteriores.TabIndex = 0
-        Me.LblConsultasAnteriores.Text = "Consultas anteriores"
         '
         'Label11
         '
@@ -771,7 +739,7 @@ Partial Class FrmMantenimiento
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(755, 904)
+        Me.Button3.Location = New System.Drawing.Point(783, 1046)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(174, 42)
         Me.Button3.TabIndex = 5
@@ -786,7 +754,7 @@ Partial Class FrmMantenimiento
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(617, 904)
+        Me.Button2.Location = New System.Drawing.Point(645, 1046)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(117, 42)
         Me.Button2.TabIndex = 5
@@ -801,7 +769,7 @@ Partial Class FrmMantenimiento
         Me.BtnMantenimientoCancelar.FlatAppearance.BorderSize = 0
         Me.BtnMantenimientoCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMantenimientoCancelar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnMantenimientoCancelar.Location = New System.Drawing.Point(479, 904)
+        Me.BtnMantenimientoCancelar.Location = New System.Drawing.Point(507, 1046)
         Me.BtnMantenimientoCancelar.Name = "BtnMantenimientoCancelar"
         Me.BtnMantenimientoCancelar.Size = New System.Drawing.Size(117, 42)
         Me.BtnMantenimientoCancelar.TabIndex = 5
@@ -832,7 +800,7 @@ Partial Class FrmMantenimiento
         Me.TextBox14.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TextBox14.MinimumSize = New System.Drawing.Size(214, 26)
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(214, 26)
+        Me.TextBox14.Size = New System.Drawing.Size(214, 19)
         Me.TextBox14.TabIndex = 2
         '
         'Label16
@@ -859,7 +827,7 @@ Partial Class FrmMantenimiento
         Me.TextBox15.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TextBox15.MinimumSize = New System.Drawing.Size(214, 26)
         Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(214, 26)
+        Me.TextBox15.Size = New System.Drawing.Size(214, 19)
         Me.TextBox15.TabIndex = 2
         '
         'Label17
@@ -885,24 +853,183 @@ Partial Class FrmMantenimiento
         Me.TextBox16.Location = New System.Drawing.Point(226, 472)
         Me.TextBox16.MinimumSize = New System.Drawing.Size(214, 26)
         Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(705, 26)
+        Me.TextBox16.Size = New System.Drawing.Size(705, 19)
         Me.TextBox16.TabIndex = 7
+        '
+        'PicturemantenimientoPaciente
+        '
+        Me.PicturemantenimientoPaciente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PicturemantenimientoPaciente.Image = Global._3DevMedicalSoftware.My.Resources.Resources.user2
+        Me.PicturemantenimientoPaciente.Location = New System.Drawing.Point(857, 36)
+        Me.PicturemantenimientoPaciente.MaximumSize = New System.Drawing.Size(137, 138)
+        Me.PicturemantenimientoPaciente.MinimumSize = New System.Drawing.Size(137, 138)
+        Me.PicturemantenimientoPaciente.Name = "PicturemantenimientoPaciente"
+        Me.PicturemantenimientoPaciente.Size = New System.Drawing.Size(137, 138)
+        Me.PicturemantenimientoPaciente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PicturemantenimientoPaciente.TabIndex = 6
+        Me.PicturemantenimientoPaciente.TabStop = False
+        '
+        'RbtnCedulaConsultasAnteriores
+        '
+        Me.RbtnCedulaConsultasAnteriores.AutoSize = True
+        Me.RbtnCedulaConsultasAnteriores.Checked = True
+        Me.RbtnCedulaConsultasAnteriores.Font = New System.Drawing.Font("Ubuntu", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RbtnCedulaConsultasAnteriores.Location = New System.Drawing.Point(324, 35)
+        Me.RbtnCedulaConsultasAnteriores.Name = "RbtnCedulaConsultasAnteriores"
+        Me.RbtnCedulaConsultasAnteriores.Size = New System.Drawing.Size(101, 23)
+        Me.RbtnCedulaConsultasAnteriores.TabIndex = 11
+        Me.RbtnCedulaConsultasAnteriores.TabStop = True
+        Me.RbtnCedulaConsultasAnteriores.Text = "Por cedula"
+        Me.RbtnCedulaConsultasAnteriores.UseVisualStyleBackColor = True
+        '
+        'RbtnFechaConsultasAnteriores
+        '
+        Me.RbtnFechaConsultasAnteriores.AutoSize = True
+        Me.RbtnFechaConsultasAnteriores.Font = New System.Drawing.Font("Ubuntu", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RbtnFechaConsultasAnteriores.Location = New System.Drawing.Point(443, 35)
+        Me.RbtnFechaConsultasAnteriores.Name = "RbtnFechaConsultasAnteriores"
+        Me.RbtnFechaConsultasAnteriores.Size = New System.Drawing.Size(94, 23)
+        Me.RbtnFechaConsultasAnteriores.TabIndex = 11
+        Me.RbtnFechaConsultasAnteriores.Text = "Por fecha"
+        Me.RbtnFechaConsultasAnteriores.UseVisualStyleBackColor = True
+        '
+        'DateConsultasAnteriores
+        '
+        Me.DateConsultasAnteriores.CalendarFont = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateConsultasAnteriores.Checked = False
+        Me.DateConsultasAnteriores.CustomFormat = "MMMM dd, yyyy - dddd"
+        Me.DateConsultasAnteriores.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateConsultasAnteriores.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateConsultasAnteriores.Location = New System.Drawing.Point(553, 32)
+        Me.DateConsultasAnteriores.MaximumSize = New System.Drawing.Size(214, 26)
+        Me.DateConsultasAnteriores.MinDate = New Date(1930, 1, 1, 0, 0, 0, 0)
+        Me.DateConsultasAnteriores.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.DateConsultasAnteriores.Name = "DateConsultasAnteriores"
+        Me.DateConsultasAnteriores.Size = New System.Drawing.Size(214, 26)
+        Me.DateConsultasAnteriores.TabIndex = 12
+        Me.DateConsultasAnteriores.Value = New Date(2020, 7, 18, 16, 13, 7, 0)
+        '
+        'BtnBuscarConsultasAnteriores
+        '
+        Me.BtnBuscarConsultasAnteriores.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnBuscarConsultasAnteriores.FlatAppearance.BorderSize = 0
+        Me.BtnBuscarConsultasAnteriores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBuscarConsultasAnteriores.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnBuscarConsultasAnteriores.Location = New System.Drawing.Point(799, 26)
+        Me.BtnBuscarConsultasAnteriores.Name = "BtnBuscarConsultasAnteriores"
+        Me.BtnBuscarConsultasAnteriores.Size = New System.Drawing.Size(114, 41)
+        Me.BtnBuscarConsultasAnteriores.TabIndex = 13
+        Me.BtnBuscarConsultasAnteriores.Text = "Buscar"
+        Me.BtnBuscarConsultasAnteriores.UseVisualStyleBackColor = False
+        '
+        'RbtnCedulaIngresoAnalisis
+        '
+        Me.RbtnCedulaIngresoAnalisis.AutoSize = True
+        Me.RbtnCedulaIngresoAnalisis.Checked = True
+        Me.RbtnCedulaIngresoAnalisis.Font = New System.Drawing.Font("Ubuntu", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RbtnCedulaIngresoAnalisis.Location = New System.Drawing.Point(323, 36)
+        Me.RbtnCedulaIngresoAnalisis.Name = "RbtnCedulaIngresoAnalisis"
+        Me.RbtnCedulaIngresoAnalisis.Size = New System.Drawing.Size(101, 23)
+        Me.RbtnCedulaIngresoAnalisis.TabIndex = 11
+        Me.RbtnCedulaIngresoAnalisis.TabStop = True
+        Me.RbtnCedulaIngresoAnalisis.Text = "Por cedula"
+        Me.RbtnCedulaIngresoAnalisis.UseVisualStyleBackColor = True
+        '
+        'RbtnFechaIngresoAnalisis
+        '
+        Me.RbtnFechaIngresoAnalisis.AutoSize = True
+        Me.RbtnFechaIngresoAnalisis.Font = New System.Drawing.Font("Ubuntu", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RbtnFechaIngresoAnalisis.Location = New System.Drawing.Point(442, 36)
+        Me.RbtnFechaIngresoAnalisis.Name = "RbtnFechaIngresoAnalisis"
+        Me.RbtnFechaIngresoAnalisis.Size = New System.Drawing.Size(94, 23)
+        Me.RbtnFechaIngresoAnalisis.TabIndex = 11
+        Me.RbtnFechaIngresoAnalisis.Text = "Por fecha"
+        Me.RbtnFechaIngresoAnalisis.UseVisualStyleBackColor = True
+        '
+        'DateIngresoAnalisis
+        '
+        Me.DateIngresoAnalisis.CalendarFont = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateIngresoAnalisis.Checked = False
+        Me.DateIngresoAnalisis.CustomFormat = "MMMM dd, yyyy - dddd"
+        Me.DateIngresoAnalisis.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateIngresoAnalisis.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateIngresoAnalisis.Location = New System.Drawing.Point(552, 33)
+        Me.DateIngresoAnalisis.MaximumSize = New System.Drawing.Size(214, 26)
+        Me.DateIngresoAnalisis.MinDate = New Date(1930, 1, 1, 0, 0, 0, 0)
+        Me.DateIngresoAnalisis.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.DateIngresoAnalisis.Name = "DateIngresoAnalisis"
+        Me.DateIngresoAnalisis.Size = New System.Drawing.Size(214, 26)
+        Me.DateIngresoAnalisis.TabIndex = 12
+        Me.DateIngresoAnalisis.Value = New Date(2020, 7, 18, 16, 13, 7, 0)
+        '
+        'BtnBuscarIngresoAnalisis
+        '
+        Me.BtnBuscarIngresoAnalisis.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnBuscarIngresoAnalisis.FlatAppearance.BorderSize = 0
+        Me.BtnBuscarIngresoAnalisis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBuscarIngresoAnalisis.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnBuscarIngresoAnalisis.Location = New System.Drawing.Point(798, 27)
+        Me.BtnBuscarIngresoAnalisis.Name = "BtnBuscarIngresoAnalisis"
+        Me.BtnBuscarIngresoAnalisis.Size = New System.Drawing.Size(114, 41)
+        Me.BtnBuscarIngresoAnalisis.TabIndex = 13
+        Me.BtnBuscarIngresoAnalisis.Text = "Buscar"
+        Me.BtnBuscarIngresoAnalisis.UseVisualStyleBackColor = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.BtnBuscarConsultasAnteriores)
+        Me.GroupBox1.Controls.Add(Me.DateConsultasAnteriores)
+        Me.GroupBox1.Controls.Add(Me.RbtnFechaConsultasAnteriores)
+        Me.GroupBox1.Controls.Add(Me.RbtnCedulaConsultasAnteriores)
+        Me.GroupBox1.Controls.Add(Me.LbxConsultasAnteriores)
+        Me.GroupBox1.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GroupBox1.Location = New System.Drawing.Point(29, 643)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(1003, 147)
+        Me.GroupBox1.TabIndex = 14
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Consultas anteriores"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.LbxIngresodeAnalisis)
+        Me.GroupBox2.Controls.Add(Me.RbtnCedulaIngresoAnalisis)
+        Me.GroupBox2.Controls.Add(Me.BtnBuscarIngresoAnalisis)
+        Me.GroupBox2.Controls.Add(Me.RbtnFechaIngresoAnalisis)
+        Me.GroupBox2.Controls.Add(Me.DateIngresoAnalisis)
+        Me.GroupBox2.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GroupBox2.Location = New System.Drawing.Point(29, 806)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(1003, 147)
+        Me.GroupBox2.TabIndex = 15
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Ingreso de analisis"
         '
         'FrmMantenimiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1055, 1100)
+        Me.ClientSize = New System.Drawing.Size(1773, 1100)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GbxIngresoPacientes)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.BtnMantenimientoCancelar)
+        Me.Controls.Add(Me.Button2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmMantenimiento"
         Me.Text = "FrmMantenimiento"
         Me.GbxIngresoPacientes.ResumeLayout(False)
         Me.GbxIngresoPacientes.PerformLayout()
         CType(Me.PicturemantenimientoPaciente, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -915,14 +1042,12 @@ Partial Class FrmMantenimiento
     Friend WithEvents LblFechadeNacimiento As Label
     Friend WithEvents LblSegundoNombre As Label
     Friend WithEvents LbxConsultasAnteriores As ListBox
-    Friend WithEvents LblConsultasAnteriores As Label
     Friend WithEvents TxtApellidoPaterno As TextBox
     Friend WithEvents TxtPrimerNombre As TextBox
     Friend WithEvents TxtApellidoMaterno As TextBox
     Friend WithEvents TxtSegundoNombre As TextBox
     Friend WithEvents TxtCedula As TextBox
     Friend WithEvents LbxIngresodeAnalisis As ListBox
-    Friend WithEvents LblIngresodeAnalisis As Label
     Friend WithEvents BtnMantenimientoCancelar As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
@@ -962,4 +1087,14 @@ Partial Class FrmMantenimiento
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
+    Friend WithEvents BtnBuscarIngresoAnalisis As Button
+    Friend WithEvents DateIngresoAnalisis As DateTimePicker
+    Friend WithEvents BtnBuscarConsultasAnteriores As Button
+    Friend WithEvents RbtnFechaIngresoAnalisis As RadioButton
+    Friend WithEvents DateConsultasAnteriores As DateTimePicker
+    Friend WithEvents RbtnCedulaIngresoAnalisis As RadioButton
+    Friend WithEvents RbtnFechaConsultasAnteriores As RadioButton
+    Friend WithEvents RbtnCedulaConsultasAnteriores As RadioButton
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

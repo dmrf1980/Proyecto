@@ -18,7 +18,7 @@
             Formulario = New Miform()
             Formulario.TopLevel = False
             Formulario.FormBorderStyle = FormBorderStyle.None
-            Formulario.Dock = DockStyle.None
+            Formulario.Dock = DockStyle.Fill
             PanelDeRegistrosFormularios.Controls.Add(Formulario)
             PanelDeRegistrosFormularios.Tag = Formulario
             Formulario.Show()

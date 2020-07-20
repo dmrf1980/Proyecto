@@ -26,6 +26,7 @@ Partial Class Form1
         Me.PanelPrincipal = New System.Windows.Forms.Panel()
         Me.PanelIzquierdo = New System.Windows.Forms.Panel()
         Me.PanelIzqIconos = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BtnPlan = New System.Windows.Forms.Button()
         Me.BtnPreDiaDiagnostico = New System.Windows.Forms.Button()
@@ -42,7 +43,6 @@ Partial Class Form1
         Me.PictureLoguito = New System.Windows.Forms.PictureBox()
         Me.PictureBoxIconoUsuario = New System.Windows.Forms.PictureBox()
         Me.PictureBoxPanelCentral = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.PanelPrincipal.SuspendLayout()
         Me.PanelIzquierdo.SuspendLayout()
         Me.PanelIzqIconos.SuspendLayout()
@@ -103,6 +103,18 @@ Partial Class Form1
         Me.PanelIzqIconos.Size = New System.Drawing.Size(91, 644)
         Me.PanelIzqIconos.TabIndex = 2
         Me.PanelIzqIconos.Visible = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(13, 2)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(62, 25)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Menu"
         '
         'Panel1
         '
@@ -341,18 +353,6 @@ Partial Class Form1
         Me.PictureBoxPanelCentral.TabIndex = 2
         Me.PictureBoxPanelCentral.TabStop = False
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(13, 2)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 25)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Menu"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
@@ -361,6 +361,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(1184, 706)
         Me.Controls.Add(Me.PanelPrincipal)
         Me.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HelpButton = True
         Me.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.MinimumSize = New System.Drawing.Size(1200, 745)
         Me.Name = "Form1"

@@ -6,17 +6,17 @@
     End Sub
 
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles BtnIngresar.Click
-        If TxtId.Text = "" And TxtContraseña.Text = "" Then
+        'If TxtId.Text = "" And TxtContraseña.Text = "" Then
 
-            If MsgBox("No ingreso ningun dato, Desea salir?", vbYesNo) = MsgBoxResult.Yes Then
+        'If MsgBox("No ingreso ningun dato, Desea salir?", vbYesNo) = MsgBoxResult.Yes Then
 
-                Application.Exit()
+        '    Application.Exit()
 
-            End If
+        'End If
 
-        Else
+        'Else
 
-            MsgBox("Bienvenido " + TxtId.Text)
+        MsgBox("Bienvenido " + TxtId.Text)
             Form1.PanelIzquierdo.Visible = True
             Form1.PanelIzqIconos.Visible = True
             Form1.BtnMantenimiento.Visible = True
@@ -30,7 +30,7 @@
             Form1.BtnMenu.Visible = True
 
 
-        End If
+        'End If
 
 
         Me.Close()
