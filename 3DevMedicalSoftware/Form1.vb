@@ -5,7 +5,7 @@
     End Sub
 
     ''METODO COLOCAR FORM EN PANEL CENTRAL--------------------------------------------
-    Private Sub AbrirFormDentroDePanelPForm(Of Miform As {Form, New})()
+    Public Sub AbrirFormDentroDePanelPForm(Of Miform As {Form, New})()
         Dim Formulario As Form
 
         'Busca el formulario en la coleccion'
@@ -55,6 +55,16 @@
 
     Private Sub BtnEntrevistaInicial_Click(sender As Object, e As EventArgs) Handles BtnEntrevistaInicial.Click
         AbrirFormDentroDePanelPForm(Of FrmEntrevistaInicial)()
+        PanelIzquierdo.Width = 90
+    End Sub
+
+    Private Sub BtnPreDiaDiagnostico_Click(sender As Object, e As EventArgs) Handles BtnPreDiaDiagnostico.Click
+        AbrirFormDentroDePanelPForm(Of FrmPreDiagnosticoyDiagnostico)()
+        PanelIzquierdo.Width = 90
+    End Sub
+
+    Private Sub BtnPlan_Click(sender As Object, e As EventArgs) Handles BtnPlan.Click
+        AbrirFormDentroDePanelPForm(Of FrmPlanTratamiento)()
         PanelIzquierdo.Width = 90
     End Sub
 End Class

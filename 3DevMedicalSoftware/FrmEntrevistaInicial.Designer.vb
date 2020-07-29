@@ -22,8 +22,15 @@ Partial Class FrmEntrevistaInicial
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmEntrevistaInicial))
         Me.GbxEntrevistaInicial = New System.Windows.Forms.GroupBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.GrxBotonesGuardarCancelarContinuar = New System.Windows.Forms.GroupBox()
+        Me.BtnEntrevistaInicialGuardarYContinuar = New System.Windows.Forms.Button()
+        Me.BtnEntrevistaInicialCancelar = New System.Windows.Forms.Button()
+        Me.BtnEntrevistaInicialGuardar = New System.Windows.Forms.Button()
         Me.GbxMotivosdeConsulta = New System.Windows.Forms.GroupBox()
+        Me.TxtMotivoprincipal = New System.Windows.Forms.TextBox()
         Me.GbxConstantesVitales = New System.Windows.Forms.GroupBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -54,18 +61,30 @@ Partial Class FrmEntrevistaInicial
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnEntrevistaInicialGuardarYContinuar = New System.Windows.Forms.Button()
-        Me.BtnEntrevistaInicialGuardar = New System.Windows.Forms.Button()
-        Me.BtnEntrevistaInicialCancelar = New System.Windows.Forms.Button()
         Me.GrxRegistro = New System.Windows.Forms.GroupBox()
-        Me.BtnRegistroGuardarYContinuar = New System.Windows.Forms.Button()
-        Me.BtnRegistroGuardar = New System.Windows.Forms.Button()
+        Me.TbcRegistroyAnalisisFisico = New System.Windows.Forms.TabControl()
+        Me.TabFiebre = New System.Windows.Forms.TabPage()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.TabDolor = New System.Windows.Forms.TabPage()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TabMalestar = New System.Windows.Forms.TabPage()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.GrxCambiarContinurDiagnostico = New System.Windows.Forms.GroupBox()
+        Me.BtnContinuarADiagnostico = New System.Windows.Forms.Button()
         Me.BtnRegistroCancelar = New System.Windows.Forms.Button()
-        Me.PanelDeRegistrosFormularios = New System.Windows.Forms.Panel()
-        Me.BtnCambiarFormulario = New System.Windows.Forms.Button()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.BtnCrearEntrevista = New System.Windows.Forms.Button()
+        Me.LblNumEntrevista = New System.Windows.Forms.Label()
+        Me.CbxEstadoTratamientoEntrevista = New System.Windows.Forms.ComboBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.TxtEvolucion = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GbxEntrevistaInicial.SuspendLayout()
+        Me.GrxBotonesGuardarCancelarContinuar.SuspendLayout()
         Me.GbxMotivosdeConsulta.SuspendLayout()
         Me.GbxConstantesVitales.SuspendLayout()
         CType(Me.NudfrecuenciaRespiratoria, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,17 +94,26 @@ Partial Class FrmEntrevistaInicial
         CType(Me.NudTemperatura, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GbxInspecciongeneral.SuspendLayout()
         Me.GrxRegistro.SuspendLayout()
+        Me.TbcRegistroyAnalisisFisico.SuspendLayout()
+        Me.TabFiebre.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabDolor.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabMalestar.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GrxCambiarContinurDiagnostico.SuspendLayout()
         Me.SuspendLayout()
         '
         'GbxEntrevistaInicial
         '
         Me.GbxEntrevistaInicial.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.GbxEntrevistaInicial.Controls.Add(Me.LblNumEntrevista)
+        Me.GbxEntrevistaInicial.Controls.Add(Me.BtnCrearEntrevista)
+        Me.GbxEntrevistaInicial.Controls.Add(Me.Label17)
+        Me.GbxEntrevistaInicial.Controls.Add(Me.GrxBotonesGuardarCancelarContinuar)
         Me.GbxEntrevistaInicial.Controls.Add(Me.GbxMotivosdeConsulta)
         Me.GbxEntrevistaInicial.Controls.Add(Me.GbxConstantesVitales)
         Me.GbxEntrevistaInicial.Controls.Add(Me.GbxInspecciongeneral)
-        Me.GbxEntrevistaInicial.Controls.Add(Me.BtnEntrevistaInicialGuardarYContinuar)
-        Me.GbxEntrevistaInicial.Controls.Add(Me.BtnEntrevistaInicialGuardar)
-        Me.GbxEntrevistaInicial.Controls.Add(Me.BtnEntrevistaInicialCancelar)
         Me.GbxEntrevistaInicial.Font = New System.Drawing.Font("Ubuntu", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbxEntrevistaInicial.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.GbxEntrevistaInicial.Location = New System.Drawing.Point(32, 26)
@@ -96,18 +124,112 @@ Partial Class FrmEntrevistaInicial
         Me.GbxEntrevistaInicial.TabStop = False
         Me.GbxEntrevistaInicial.Text = "Entrevista Inicial"
         '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(619, 69)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(99, 20)
+        Me.Label17.TabIndex = 8
+        Me.Label17.Text = "Id Entrevista:"
+        '
+        'GrxBotonesGuardarCancelarContinuar
+        '
+        Me.GrxBotonesGuardarCancelarContinuar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnEntrevistaInicialGuardarYContinuar)
+        Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnEntrevistaInicialCancelar)
+        Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnEntrevistaInicialGuardar)
+        Me.GrxBotonesGuardarCancelarContinuar.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrxBotonesGuardarCancelarContinuar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GrxBotonesGuardarCancelarContinuar.Location = New System.Drawing.Point(26, 978)
+        Me.GrxBotonesGuardarCancelarContinuar.Name = "GrxBotonesGuardarCancelarContinuar"
+        Me.GrxBotonesGuardarCancelarContinuar.Size = New System.Drawing.Size(798, 79)
+        Me.GrxBotonesGuardarCancelarContinuar.TabIndex = 7
+        Me.GrxBotonesGuardarCancelarContinuar.TabStop = False
+        '
+        'BtnEntrevistaInicialGuardarYContinuar
+        '
+        Me.BtnEntrevistaInicialGuardarYContinuar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnEntrevistaInicialGuardarYContinuar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnEntrevistaInicialGuardarYContinuar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnEntrevistaInicialGuardarYContinuar.FlatAppearance.BorderSize = 0
+        Me.BtnEntrevistaInicialGuardarYContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEntrevistaInicialGuardarYContinuar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEntrevistaInicialGuardarYContinuar.Location = New System.Drawing.Point(452, 26)
+        Me.BtnEntrevistaInicialGuardarYContinuar.Name = "BtnEntrevistaInicialGuardarYContinuar"
+        Me.BtnEntrevistaInicialGuardarYContinuar.Size = New System.Drawing.Size(325, 42)
+        Me.BtnEntrevistaInicialGuardarYContinuar.TabIndex = 5
+        Me.BtnEntrevistaInicialGuardarYContinuar.Text = "Guardar y Continuar a Registro >>>"
+        Me.BtnEntrevistaInicialGuardarYContinuar.UseVisualStyleBackColor = False
+        '
+        'BtnEntrevistaInicialCancelar
+        '
+        Me.BtnEntrevistaInicialCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnEntrevistaInicialCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnEntrevistaInicialCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnEntrevistaInicialCancelar.FlatAppearance.BorderSize = 0
+        Me.BtnEntrevistaInicialCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEntrevistaInicialCancelar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEntrevistaInicialCancelar.Location = New System.Drawing.Point(179, 26)
+        Me.BtnEntrevistaInicialCancelar.Name = "BtnEntrevistaInicialCancelar"
+        Me.BtnEntrevistaInicialCancelar.Size = New System.Drawing.Size(117, 42)
+        Me.BtnEntrevistaInicialCancelar.TabIndex = 5
+        Me.BtnEntrevistaInicialCancelar.Text = "Cancelar"
+        Me.BtnEntrevistaInicialCancelar.UseVisualStyleBackColor = False
+        '
+        'BtnEntrevistaInicialGuardar
+        '
+        Me.BtnEntrevistaInicialGuardar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnEntrevistaInicialGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnEntrevistaInicialGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnEntrevistaInicialGuardar.FlatAppearance.BorderSize = 0
+        Me.BtnEntrevistaInicialGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEntrevistaInicialGuardar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEntrevistaInicialGuardar.Location = New System.Drawing.Point(316, 26)
+        Me.BtnEntrevistaInicialGuardar.Name = "BtnEntrevistaInicialGuardar"
+        Me.BtnEntrevistaInicialGuardar.Size = New System.Drawing.Size(117, 42)
+        Me.BtnEntrevistaInicialGuardar.TabIndex = 5
+        Me.BtnEntrevistaInicialGuardar.Text = "Guardar"
+        Me.BtnEntrevistaInicialGuardar.UseVisualStyleBackColor = False
+        '
         'GbxMotivosdeConsulta
         '
-        Me.GbxMotivosdeConsulta.Controls.Add(Me.Label17)
-        Me.GbxMotivosdeConsulta.Controls.Add(Me.ComboBox1)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.Label23)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.TextBox2)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.Label22)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.Label21)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.TextBox1)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.CbxEstadoTratamientoEntrevista)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.Label20)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.Label18)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtEvolucion)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtMotivoprincipal)
         Me.GbxMotivosdeConsulta.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbxMotivosdeConsulta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GbxMotivosdeConsulta.Location = New System.Drawing.Point(26, 447)
+        Me.GbxMotivosdeConsulta.Location = New System.Drawing.Point(26, 514)
         Me.GbxMotivosdeConsulta.Name = "GbxMotivosdeConsulta"
-        Me.GbxMotivosdeConsulta.Size = New System.Drawing.Size(798, 189)
+        Me.GbxMotivosdeConsulta.Size = New System.Drawing.Size(798, 458)
         Me.GbxMotivosdeConsulta.TabIndex = 6
         Me.GbxMotivosdeConsulta.TabStop = False
         Me.GbxMotivosdeConsulta.Text = "Motivo de la consulta"
+        Me.GbxMotivosdeConsulta.Visible = False
+        '
+        'TxtMotivoprincipal
+        '
+        Me.TxtMotivoprincipal.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtMotivoprincipal.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtMotivoprincipal.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtMotivoprincipal.Location = New System.Drawing.Point(195, 48)
+        Me.TxtMotivoprincipal.MaximumSize = New System.Drawing.Size(581, 30)
+        Me.TxtMotivoprincipal.MaxLength = 200
+        Me.TxtMotivoprincipal.MinimumSize = New System.Drawing.Size(581, 30)
+        Me.TxtMotivoprincipal.Multiline = True
+        Me.TxtMotivoprincipal.Name = "TxtMotivoprincipal"
+        Me.TxtMotivoprincipal.Size = New System.Drawing.Size(581, 30)
+        Me.TxtMotivoprincipal.TabIndex = 8
         '
         'GbxConstantesVitales
         '
@@ -129,12 +251,13 @@ Partial Class FrmEntrevistaInicial
         Me.GbxConstantesVitales.Controls.Add(Me.Label12)
         Me.GbxConstantesVitales.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbxConstantesVitales.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GbxConstantesVitales.Location = New System.Drawing.Point(26, 250)
+        Me.GbxConstantesVitales.Location = New System.Drawing.Point(26, 308)
         Me.GbxConstantesVitales.Name = "GbxConstantesVitales"
         Me.GbxConstantesVitales.Size = New System.Drawing.Size(798, 188)
         Me.GbxConstantesVitales.TabIndex = 6
         Me.GbxConstantesVitales.TabStop = False
         Me.GbxConstantesVitales.Text = "Constantes Vitales"
+        Me.GbxConstantesVitales.Visible = False
         '
         'Label16
         '
@@ -321,12 +444,13 @@ Partial Class FrmEntrevistaInicial
         Me.GbxInspecciongeneral.Controls.Add(Me.Label1)
         Me.GbxInspecciongeneral.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbxInspecciongeneral.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GbxInspecciongeneral.Location = New System.Drawing.Point(26, 51)
+        Me.GbxInspecciongeneral.Location = New System.Drawing.Point(26, 103)
         Me.GbxInspecciongeneral.Name = "GbxInspecciongeneral"
         Me.GbxInspecciongeneral.Size = New System.Drawing.Size(798, 189)
         Me.GbxInspecciongeneral.TabIndex = 6
         Me.GbxInspecciongeneral.TabStop = False
         Me.GbxInspecciongeneral.Text = "Inspeccion general"
+        Me.GbxInspecciongeneral.Visible = False
         '
         'ComGradoDeColaboracion
         '
@@ -448,61 +572,13 @@ Partial Class FrmEntrevistaInicial
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Estado de consciencia"
         '
-        'BtnEntrevistaInicialGuardarYContinuar
-        '
-        Me.BtnEntrevistaInicialGuardarYContinuar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.BtnEntrevistaInicialGuardarYContinuar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnEntrevistaInicialGuardarYContinuar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnEntrevistaInicialGuardarYContinuar.FlatAppearance.BorderSize = 0
-        Me.BtnEntrevistaInicialGuardarYContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEntrevistaInicialGuardarYContinuar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEntrevistaInicialGuardarYContinuar.Location = New System.Drawing.Point(649, 677)
-        Me.BtnEntrevistaInicialGuardarYContinuar.Name = "BtnEntrevistaInicialGuardarYContinuar"
-        Me.BtnEntrevistaInicialGuardarYContinuar.Size = New System.Drawing.Size(174, 42)
-        Me.BtnEntrevistaInicialGuardarYContinuar.TabIndex = 5
-        Me.BtnEntrevistaInicialGuardarYContinuar.Text = "Guardar y continuar"
-        Me.BtnEntrevistaInicialGuardarYContinuar.UseVisualStyleBackColor = False
-        '
-        'BtnEntrevistaInicialGuardar
-        '
-        Me.BtnEntrevistaInicialGuardar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.BtnEntrevistaInicialGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnEntrevistaInicialGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnEntrevistaInicialGuardar.FlatAppearance.BorderSize = 0
-        Me.BtnEntrevistaInicialGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEntrevistaInicialGuardar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEntrevistaInicialGuardar.Location = New System.Drawing.Point(511, 677)
-        Me.BtnEntrevistaInicialGuardar.Name = "BtnEntrevistaInicialGuardar"
-        Me.BtnEntrevistaInicialGuardar.Size = New System.Drawing.Size(117, 42)
-        Me.BtnEntrevistaInicialGuardar.TabIndex = 5
-        Me.BtnEntrevistaInicialGuardar.Text = "Guardar"
-        Me.BtnEntrevistaInicialGuardar.UseVisualStyleBackColor = False
-        '
-        'BtnEntrevistaInicialCancelar
-        '
-        Me.BtnEntrevistaInicialCancelar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.BtnEntrevistaInicialCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnEntrevistaInicialCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnEntrevistaInicialCancelar.FlatAppearance.BorderSize = 0
-        Me.BtnEntrevistaInicialCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEntrevistaInicialCancelar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEntrevistaInicialCancelar.Location = New System.Drawing.Point(373, 677)
-        Me.BtnEntrevistaInicialCancelar.Name = "BtnEntrevistaInicialCancelar"
-        Me.BtnEntrevistaInicialCancelar.Size = New System.Drawing.Size(117, 42)
-        Me.BtnEntrevistaInicialCancelar.TabIndex = 5
-        Me.BtnEntrevistaInicialCancelar.Text = "Cancelar"
-        Me.BtnEntrevistaInicialCancelar.UseVisualStyleBackColor = False
-        '
         'GrxRegistro
         '
         Me.GrxRegistro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GrxRegistro.Controls.Add(Me.BtnCambiarFormulario)
-        Me.GrxRegistro.Controls.Add(Me.PanelDeRegistrosFormularios)
-        Me.GrxRegistro.Controls.Add(Me.BtnRegistroGuardarYContinuar)
-        Me.GrxRegistro.Controls.Add(Me.BtnRegistroGuardar)
-        Me.GrxRegistro.Controls.Add(Me.BtnRegistroCancelar)
+        Me.GrxRegistro.Controls.Add(Me.TbcRegistroyAnalisisFisico)
+        Me.GrxRegistro.Controls.Add(Me.GrxCambiarContinurDiagnostico)
         Me.GrxRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GrxRegistro.Font = New System.Drawing.Font("Ubuntu", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrxRegistro.Font = New System.Drawing.Font("Ubuntu", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrxRegistro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.GrxRegistro.Location = New System.Drawing.Point(888, 26)
         Me.GrxRegistro.MaximumSize = New System.Drawing.Size(1000, 1063)
@@ -510,100 +586,276 @@ Partial Class FrmEntrevistaInicial
         Me.GrxRegistro.Size = New System.Drawing.Size(850, 1063)
         Me.GrxRegistro.TabIndex = 7
         Me.GrxRegistro.TabStop = False
-        Me.GrxRegistro.Text = "Registro"
+        Me.GrxRegistro.Text = "Registro y Analisis fisico"
         '
-        'BtnRegistroGuardarYContinuar
+        'TbcRegistroyAnalisisFisico
         '
-        Me.BtnRegistroGuardarYContinuar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.BtnRegistroGuardarYContinuar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnRegistroGuardarYContinuar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnRegistroGuardarYContinuar.FlatAppearance.BorderSize = 0
-        Me.BtnRegistroGuardarYContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnRegistroGuardarYContinuar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRegistroGuardarYContinuar.Location = New System.Drawing.Point(649, 677)
-        Me.BtnRegistroGuardarYContinuar.Name = "BtnRegistroGuardarYContinuar"
-        Me.BtnRegistroGuardarYContinuar.Size = New System.Drawing.Size(174, 42)
-        Me.BtnRegistroGuardarYContinuar.TabIndex = 5
-        Me.BtnRegistroGuardarYContinuar.Text = "Guardar y continuar"
-        Me.BtnRegistroGuardarYContinuar.UseVisualStyleBackColor = False
-        Me.BtnRegistroGuardarYContinuar.Visible = False
+        Me.TbcRegistroyAnalisisFisico.Controls.Add(Me.TabFiebre)
+        Me.TbcRegistroyAnalisisFisico.Controls.Add(Me.TabDolor)
+        Me.TbcRegistroyAnalisisFisico.Controls.Add(Me.TabMalestar)
+        Me.TbcRegistroyAnalisisFisico.Location = New System.Drawing.Point(20, 48)
+        Me.TbcRegistroyAnalisisFisico.Name = "TbcRegistroyAnalisisFisico"
+        Me.TbcRegistroyAnalisisFisico.SelectedIndex = 0
+        Me.TbcRegistroyAnalisisFisico.Size = New System.Drawing.Size(818, 925)
+        Me.TbcRegistroyAnalisisFisico.TabIndex = 10
+        Me.TbcRegistroyAnalisisFisico.Visible = False
         '
-        'BtnRegistroGuardar
+        'TabFiebre
         '
-        Me.BtnRegistroGuardar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.BtnRegistroGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnRegistroGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnRegistroGuardar.FlatAppearance.BorderSize = 0
-        Me.BtnRegistroGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnRegistroGuardar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRegistroGuardar.Location = New System.Drawing.Point(511, 677)
-        Me.BtnRegistroGuardar.Name = "BtnRegistroGuardar"
-        Me.BtnRegistroGuardar.Size = New System.Drawing.Size(117, 42)
-        Me.BtnRegistroGuardar.TabIndex = 5
-        Me.BtnRegistroGuardar.Text = "Guardar"
-        Me.BtnRegistroGuardar.UseVisualStyleBackColor = False
-        Me.BtnRegistroGuardar.Visible = False
+        Me.TabFiebre.BackColor = System.Drawing.Color.MintCream
+        Me.TabFiebre.Controls.Add(Me.PictureBox2)
+        Me.TabFiebre.Location = New System.Drawing.Point(4, 43)
+        Me.TabFiebre.Name = "TabFiebre"
+        Me.TabFiebre.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabFiebre.Size = New System.Drawing.Size(810, 878)
+        Me.TabFiebre.TabIndex = 0
+        Me.TabFiebre.Text = "Fiebre"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(347, 22)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(447, 298)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'TabDolor
+        '
+        Me.TabDolor.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TabDolor.Controls.Add(Me.PictureBox1)
+        Me.TabDolor.Location = New System.Drawing.Point(4, 43)
+        Me.TabDolor.Name = "TabDolor"
+        Me.TabDolor.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabDolor.Size = New System.Drawing.Size(810, 878)
+        Me.TabDolor.TabIndex = 1
+        Me.TabDolor.Text = "Dolor"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(347, 22)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(447, 298)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'TabMalestar
+        '
+        Me.TabMalestar.BackColor = System.Drawing.Color.FloralWhite
+        Me.TabMalestar.Controls.Add(Me.PictureBox3)
+        Me.TabMalestar.Location = New System.Drawing.Point(4, 43)
+        Me.TabMalestar.Name = "TabMalestar"
+        Me.TabMalestar.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabMalestar.Size = New System.Drawing.Size(810, 878)
+        Me.TabMalestar.TabIndex = 2
+        Me.TabMalestar.Text = "Malestar"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(348, 22)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(447, 298)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 1
+        Me.PictureBox3.TabStop = False
+        '
+        'GrxCambiarContinurDiagnostico
+        '
+        Me.GrxCambiarContinurDiagnostico.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GrxCambiarContinurDiagnostico.Controls.Add(Me.BtnContinuarADiagnostico)
+        Me.GrxCambiarContinurDiagnostico.Controls.Add(Me.BtnRegistroCancelar)
+        Me.GrxCambiarContinurDiagnostico.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrxCambiarContinurDiagnostico.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GrxCambiarContinurDiagnostico.Location = New System.Drawing.Point(20, 979)
+        Me.GrxCambiarContinurDiagnostico.Name = "GrxCambiarContinurDiagnostico"
+        Me.GrxCambiarContinurDiagnostico.Size = New System.Drawing.Size(836, 79)
+        Me.GrxCambiarContinurDiagnostico.TabIndex = 9
+        Me.GrxCambiarContinurDiagnostico.TabStop = False
+        '
+        'BtnContinuarADiagnostico
+        '
+        Me.BtnContinuarADiagnostico.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnContinuarADiagnostico.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnContinuarADiagnostico.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnContinuarADiagnostico.FlatAppearance.BorderSize = 0
+        Me.BtnContinuarADiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnContinuarADiagnostico.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnContinuarADiagnostico.Location = New System.Drawing.Point(573, 23)
+        Me.BtnContinuarADiagnostico.Name = "BtnContinuarADiagnostico"
+        Me.BtnContinuarADiagnostico.Size = New System.Drawing.Size(245, 42)
+        Me.BtnContinuarADiagnostico.TabIndex = 5
+        Me.BtnContinuarADiagnostico.Text = "Continuar a Diagnostico >>>"
+        Me.BtnContinuarADiagnostico.UseVisualStyleBackColor = False
         '
         'BtnRegistroCancelar
         '
-        Me.BtnRegistroCancelar.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.BtnRegistroCancelar.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnRegistroCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BtnRegistroCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnRegistroCancelar.FlatAppearance.BorderSize = 0
         Me.BtnRegistroCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRegistroCancelar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRegistroCancelar.Location = New System.Drawing.Point(373, 677)
+        Me.BtnRegistroCancelar.Location = New System.Drawing.Point(424, 23)
         Me.BtnRegistroCancelar.Name = "BtnRegistroCancelar"
         Me.BtnRegistroCancelar.Size = New System.Drawing.Size(117, 42)
         Me.BtnRegistroCancelar.TabIndex = 5
         Me.BtnRegistroCancelar.Text = "Cancelar"
         Me.BtnRegistroCancelar.UseVisualStyleBackColor = False
-        Me.BtnRegistroCancelar.Visible = False
         '
-        'PanelDeRegistrosFormularios
+        'Label18
         '
-        Me.PanelDeRegistrosFormularios.AutoScroll = True
-        Me.PanelDeRegistrosFormularios.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.PanelDeRegistrosFormularios.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PanelDeRegistrosFormularios.Location = New System.Drawing.Point(14, 38)
-        Me.PanelDeRegistrosFormularios.MaximumSize = New System.Drawing.Size(818, 622)
-        Me.PanelDeRegistrosFormularios.Name = "PanelDeRegistrosFormularios"
-        Me.PanelDeRegistrosFormularios.Size = New System.Drawing.Size(818, 622)
-        Me.PanelDeRegistrosFormularios.TabIndex = 6
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(59, 48)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(121, 20)
+        Me.Label18.TabIndex = 9
+        Me.Label18.Text = "Motivo principal"
         '
-        'BtnCambiarFormulario
+        'BtnCrearEntrevista
         '
-        Me.BtnCambiarFormulario.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnCambiarFormulario.FlatAppearance.BorderSize = 0
-        Me.BtnCambiarFormulario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCambiarFormulario.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCambiarFormulario.Location = New System.Drawing.Point(30, 681)
-        Me.BtnCambiarFormulario.Name = "BtnCambiarFormulario"
-        Me.BtnCambiarFormulario.Size = New System.Drawing.Size(155, 34)
-        Me.BtnCambiarFormulario.TabIndex = 7
-        Me.BtnCambiarFormulario.Text = "Cambiar formulario"
-        Me.BtnCambiarFormulario.UseVisualStyleBackColor = False
-        Me.BtnCambiarFormulario.Visible = False
+        Me.BtnCrearEntrevista.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnCrearEntrevista.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnCrearEntrevista.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnCrearEntrevista.FlatAppearance.BorderSize = 0
+        Me.BtnCrearEntrevista.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCrearEntrevista.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCrearEntrevista.Location = New System.Drawing.Point(27, 51)
+        Me.BtnCrearEntrevista.Name = "BtnCrearEntrevista"
+        Me.BtnCrearEntrevista.Size = New System.Drawing.Size(224, 42)
+        Me.BtnCrearEntrevista.TabIndex = 13
+        Me.BtnCrearEntrevista.Text = "Crear Entrevista"
+        Me.BtnCrearEntrevista.UseVisualStyleBackColor = False
         '
-        'Label17
+        'LblNumEntrevista
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(9, 48)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(161, 20)
-        Me.Label17.TabIndex = 0
-        Me.Label17.Text = "Estado de la consulta"
+        Me.LblNumEntrevista.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LblNumEntrevista.Font = New System.Drawing.Font("Ubuntu Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNumEntrevista.Location = New System.Drawing.Point(722, 64)
+        Me.LblNumEntrevista.MaximumSize = New System.Drawing.Size(94, 30)
+        Me.LblNumEntrevista.MinimumSize = New System.Drawing.Size(94, 30)
+        Me.LblNumEntrevista.Name = "LblNumEntrevista"
+        Me.LblNumEntrevista.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.LblNumEntrevista.Size = New System.Drawing.Size(94, 30)
+        Me.LblNumEntrevista.TabIndex = 14
+        Me.LblNumEntrevista.Text = "00000"
+        Me.LblNumEntrevista.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ComboBox1
+        'CbxEstadoTratamientoEntrevista
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Ingreso-Primera consulta"})
-        Me.ComboBox1.Location = New System.Drawing.Point(179, 44)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(242, 28)
-        Me.ComboBox1.TabIndex = 2
+        Me.CbxEstadoTratamientoEntrevista.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CbxEstadoTratamientoEntrevista.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CbxEstadoTratamientoEntrevista.FormattingEnabled = True
+        Me.CbxEstadoTratamientoEntrevista.Items.AddRange(New Object() {"Ingreso", "Final consulta", "En espera", "Evolucionando", "Publicacion"})
+        Me.CbxEstadoTratamientoEntrevista.Location = New System.Drawing.Point(194, 136)
+        Me.CbxEstadoTratamientoEntrevista.Name = "CbxEstadoTratamientoEntrevista"
+        Me.CbxEstadoTratamientoEntrevista.Size = New System.Drawing.Size(353, 28)
+        Me.CbxEstadoTratamientoEntrevista.TabIndex = 18
+        '
+        'Label20
+        '
+        Me.Label20.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(8, 144)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(172, 20)
+        Me.Label20.TabIndex = 17
+        Me.Label20.Text = "Estado del tratamiento"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(64, 191)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(116, 20)
+        Me.Label21.TabIndex = 20
+        Me.Label21.Text = "Ampliar motivo"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(194, 191)
+        Me.TextBox1.MaximumSize = New System.Drawing.Size(581, 64)
+        Me.TextBox1.MaxLength = 200
+        Me.TextBox1.MinimumSize = New System.Drawing.Size(581, 64)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(581, 64)
+        Me.TextBox1.TabIndex = 19
+        '
+        'Label22
+        '
+        Me.Label22.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(102, 285)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(78, 20)
+        Me.Label22.TabIndex = 21
+        Me.Label22.Text = "Evolucion"
+        '
+        'TxtEvolucion
+        '
+        Me.TxtEvolucion.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtEvolucion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtEvolucion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtEvolucion.Location = New System.Drawing.Point(194, 280)
+        Me.TxtEvolucion.MaximumSize = New System.Drawing.Size(581, 30)
+        Me.TxtEvolucion.MaxLength = 200
+        Me.TxtEvolucion.MinimumSize = New System.Drawing.Size(581, 30)
+        Me.TxtEvolucion.Multiline = True
+        Me.TxtEvolucion.Name = "TxtEvolucion"
+        Me.TxtEvolucion.Size = New System.Drawing.Size(581, 30)
+        Me.TxtEvolucion.TabIndex = 8
+        '
+        'Label23
+        '
+        Me.Label23.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(38, 341)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(142, 20)
+        Me.Label23.TabIndex = 23
+        Me.Label23.Text = "Tratamiento actual"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(194, 335)
+        Me.TextBox2.MaximumSize = New System.Drawing.Size(581, 30)
+        Me.TextBox2.MaxLength = 200
+        Me.TextBox2.MinimumSize = New System.Drawing.Size(581, 30)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(581, 30)
+        Me.TextBox2.TabIndex = 22
         '
         'FrmEntrevistaInicial
         '
@@ -618,6 +870,8 @@ Partial Class FrmEntrevistaInicial
         Me.Name = "FrmEntrevistaInicial"
         Me.Text = "FrmEntrevistaInicial"
         Me.GbxEntrevistaInicial.ResumeLayout(False)
+        Me.GbxEntrevistaInicial.PerformLayout()
+        Me.GrxBotonesGuardarCancelarContinuar.ResumeLayout(False)
         Me.GbxMotivosdeConsulta.ResumeLayout(False)
         Me.GbxMotivosdeConsulta.PerformLayout()
         Me.GbxConstantesVitales.ResumeLayout(False)
@@ -630,12 +884,19 @@ Partial Class FrmEntrevistaInicial
         Me.GbxInspecciongeneral.ResumeLayout(False)
         Me.GbxInspecciongeneral.PerformLayout()
         Me.GrxRegistro.ResumeLayout(False)
+        Me.TbcRegistroyAnalisisFisico.ResumeLayout(False)
+        Me.TabFiebre.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabDolor.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabMalestar.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GrxCambiarContinurDiagnostico.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents GbxEntrevistaInicial As GroupBox
-    Friend WithEvents BtnEntrevistaInicialGuardarYContinuar As Button
     Friend WithEvents BtnEntrevistaInicialGuardar As Button
     Friend WithEvents BtnEntrevistaInicialCancelar As Button
     Friend WithEvents GbxInspecciongeneral As GroupBox
@@ -670,11 +931,29 @@ Partial Class FrmEntrevistaInicial
     Friend WithEvents ComMovilidad As ComboBox
     Friend WithEvents ComGradoDeHidratacion As ComboBox
     Friend WithEvents GrxRegistro As GroupBox
-    Friend WithEvents BtnRegistroGuardarYContinuar As Button
-    Friend WithEvents BtnRegistroGuardar As Button
+    Friend WithEvents TxtMotivoprincipal As TextBox
+    Friend WithEvents GrxBotonesGuardarCancelarContinuar As GroupBox
+    Friend WithEvents GrxCambiarContinurDiagnostico As GroupBox
+    Friend WithEvents BtnContinuarADiagnostico As Button
     Friend WithEvents BtnRegistroCancelar As Button
-    Friend WithEvents PanelDeRegistrosFormularios As Panel
-    Friend WithEvents BtnCambiarFormulario As Button
+    Friend WithEvents TbcRegistroyAnalisisFisico As TabControl
+    Friend WithEvents TabFiebre As TabPage
+    Friend WithEvents TabDolor As TabPage
+    Friend WithEvents TabMalestar As TabPage
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents BtnEntrevistaInicialGuardarYContinuar As Button
     Friend WithEvents Label17 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents LblNumEntrevista As Label
+    Friend WithEvents BtnCrearEntrevista As Button
+    Friend WithEvents CbxEstadoTratamientoEntrevista As ComboBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtEvolucion As TextBox
 End Class
