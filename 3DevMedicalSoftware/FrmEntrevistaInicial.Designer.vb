@@ -24,12 +24,21 @@ Partial Class FrmEntrevistaInicial
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmEntrevistaInicial))
         Me.GbxEntrevistaInicial = New System.Windows.Forms.GroupBox()
+        Me.LblNumEntrevista = New System.Windows.Forms.Label()
+        Me.BtnCrearEntrevista = New System.Windows.Forms.Button()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.GrxBotonesGuardarCancelarContinuar = New System.Windows.Forms.GroupBox()
         Me.BtnEntrevistaInicialGuardarYContinuar = New System.Windows.Forms.Button()
         Me.BtnEntrevistaInicialCancelar = New System.Windows.Forms.Button()
         Me.BtnEntrevistaInicialGuardar = New System.Windows.Forms.Button()
         Me.GbxMotivosdeConsulta = New System.Windows.Forms.GroupBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.TxtEvolucion = New System.Windows.Forms.TextBox()
         Me.TxtMotivoprincipal = New System.Windows.Forms.TextBox()
         Me.GbxConstantesVitales = New System.Windows.Forms.GroupBox()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -72,17 +81,6 @@ Partial Class FrmEntrevistaInicial
         Me.GrxCambiarContinurDiagnostico = New System.Windows.Forms.GroupBox()
         Me.BtnContinuarADiagnostico = New System.Windows.Forms.Button()
         Me.BtnRegistroCancelar = New System.Windows.Forms.Button()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.BtnCrearEntrevista = New System.Windows.Forms.Button()
-        Me.LblNumEntrevista = New System.Windows.Forms.Label()
-        Me.CbxEstadoTratamientoEntrevista = New System.Windows.Forms.ComboBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.TxtEvolucion = New System.Windows.Forms.TextBox()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GbxEntrevistaInicial.SuspendLayout()
         Me.GrxBotonesGuardarCancelarContinuar.SuspendLayout()
         Me.GbxMotivosdeConsulta.SuspendLayout()
@@ -124,11 +122,40 @@ Partial Class FrmEntrevistaInicial
         Me.GbxEntrevistaInicial.TabStop = False
         Me.GbxEntrevistaInicial.Text = "Entrevista Inicial"
         '
+        'LblNumEntrevista
+        '
+        Me.LblNumEntrevista.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LblNumEntrevista.Font = New System.Drawing.Font("Ubuntu Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNumEntrevista.Location = New System.Drawing.Point(710, 64)
+        Me.LblNumEntrevista.MaximumSize = New System.Drawing.Size(94, 30)
+        Me.LblNumEntrevista.MinimumSize = New System.Drawing.Size(94, 30)
+        Me.LblNumEntrevista.Name = "LblNumEntrevista"
+        Me.LblNumEntrevista.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.LblNumEntrevista.Size = New System.Drawing.Size(94, 30)
+        Me.LblNumEntrevista.TabIndex = 14
+        Me.LblNumEntrevista.Text = "00000"
+        Me.LblNumEntrevista.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'BtnCrearEntrevista
+        '
+        Me.BtnCrearEntrevista.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnCrearEntrevista.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnCrearEntrevista.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnCrearEntrevista.FlatAppearance.BorderSize = 0
+        Me.BtnCrearEntrevista.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCrearEntrevista.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCrearEntrevista.Location = New System.Drawing.Point(27, 51)
+        Me.BtnCrearEntrevista.Name = "BtnCrearEntrevista"
+        Me.BtnCrearEntrevista.Size = New System.Drawing.Size(224, 42)
+        Me.BtnCrearEntrevista.TabIndex = 13
+        Me.BtnCrearEntrevista.Text = "Crear Entrevista"
+        Me.BtnCrearEntrevista.UseVisualStyleBackColor = False
+        '
         'Label17
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(619, 69)
+        Me.Label17.Location = New System.Drawing.Point(607, 69)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(99, 20)
         Me.Label17.TabIndex = 8
@@ -200,8 +227,6 @@ Partial Class FrmEntrevistaInicial
         Me.GbxMotivosdeConsulta.Controls.Add(Me.Label22)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.Label21)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.TextBox1)
-        Me.GbxMotivosdeConsulta.Controls.Add(Me.CbxEstadoTratamientoEntrevista)
-        Me.GbxMotivosdeConsulta.Controls.Add(Me.Label20)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.Label18)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtEvolucion)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtMotivoprincipal)
@@ -214,6 +239,100 @@ Partial Class FrmEntrevistaInicial
         Me.GbxMotivosdeConsulta.TabStop = False
         Me.GbxMotivosdeConsulta.Text = "Motivo de la consulta"
         Me.GbxMotivosdeConsulta.Visible = False
+        '
+        'Label23
+        '
+        Me.Label23.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(38, 254)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(142, 20)
+        Me.Label23.TabIndex = 23
+        Me.Label23.Text = "Tratamiento actual"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(194, 248)
+        Me.TextBox2.MaximumSize = New System.Drawing.Size(581, 30)
+        Me.TextBox2.MaxLength = 200
+        Me.TextBox2.MinimumSize = New System.Drawing.Size(581, 30)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(581, 30)
+        Me.TextBox2.TabIndex = 22
+        '
+        'Label22
+        '
+        Me.Label22.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(102, 198)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(78, 20)
+        Me.Label22.TabIndex = 21
+        Me.Label22.Text = "Evolucion"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(64, 104)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(116, 20)
+        Me.Label21.TabIndex = 20
+        Me.Label21.Text = "Ampliar motivo"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(194, 104)
+        Me.TextBox1.MaximumSize = New System.Drawing.Size(581, 64)
+        Me.TextBox1.MaxLength = 200
+        Me.TextBox1.MinimumSize = New System.Drawing.Size(581, 64)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(581, 64)
+        Me.TextBox1.TabIndex = 19
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(59, 48)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(121, 20)
+        Me.Label18.TabIndex = 9
+        Me.Label18.Text = "Motivo principal"
+        '
+        'TxtEvolucion
+        '
+        Me.TxtEvolucion.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtEvolucion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtEvolucion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtEvolucion.Location = New System.Drawing.Point(194, 193)
+        Me.TxtEvolucion.MaximumSize = New System.Drawing.Size(581, 30)
+        Me.TxtEvolucion.MaxLength = 200
+        Me.TxtEvolucion.MinimumSize = New System.Drawing.Size(581, 30)
+        Me.TxtEvolucion.Multiline = True
+        Me.TxtEvolucion.Name = "TxtEvolucion"
+        Me.TxtEvolucion.Size = New System.Drawing.Size(581, 30)
+        Me.TxtEvolucion.TabIndex = 8
         '
         'TxtMotivoprincipal
         '
@@ -340,7 +459,7 @@ Partial Class FrmEntrevistaInicial
         Me.NudFrecuenciacardiaca.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudFrecuenciacardiaca.Location = New System.Drawing.Point(164, 86)
         Me.NudFrecuenciacardiaca.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
-        Me.NudFrecuenciacardiaca.Minimum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.NudFrecuenciacardiaca.Minimum = New Decimal(New Integer() {40, 0, 0, 0})
         Me.NudFrecuenciacardiaca.Name = "NudFrecuenciacardiaca"
         Me.NudFrecuenciacardiaca.Size = New System.Drawing.Size(70, 28)
         Me.NudFrecuenciacardiaca.TabIndex = 1
@@ -351,12 +470,12 @@ Partial Class FrmEntrevistaInicial
         Me.NudTemperatura.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.NudTemperatura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudTemperatura.Location = New System.Drawing.Point(164, 38)
-        Me.NudTemperatura.Maximum = New Decimal(New Integer() {42, 0, 0, 0})
-        Me.NudTemperatura.Minimum = New Decimal(New Integer() {25, 0, 0, 0})
+        Me.NudTemperatura.Maximum = New Decimal(New Integer() {43, 0, 0, 0})
+        Me.NudTemperatura.Minimum = New Decimal(New Integer() {30, 0, 0, 0})
         Me.NudTemperatura.Name = "NudTemperatura"
         Me.NudTemperatura.Size = New System.Drawing.Size(48, 28)
         Me.NudTemperatura.TabIndex = 1
-        Me.NudTemperatura.Value = New Decimal(New Integer() {25, 0, 0, 0})
+        Me.NudTemperatura.Value = New Decimal(New Integer() {30, 0, 0, 0})
         '
         'Label8
         '
@@ -708,155 +827,6 @@ Partial Class FrmEntrevistaInicial
         Me.BtnRegistroCancelar.Text = "Cancelar"
         Me.BtnRegistroCancelar.UseVisualStyleBackColor = False
         '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(59, 48)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(121, 20)
-        Me.Label18.TabIndex = 9
-        Me.Label18.Text = "Motivo principal"
-        '
-        'BtnCrearEntrevista
-        '
-        Me.BtnCrearEntrevista.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnCrearEntrevista.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnCrearEntrevista.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnCrearEntrevista.FlatAppearance.BorderSize = 0
-        Me.BtnCrearEntrevista.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCrearEntrevista.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCrearEntrevista.Location = New System.Drawing.Point(27, 51)
-        Me.BtnCrearEntrevista.Name = "BtnCrearEntrevista"
-        Me.BtnCrearEntrevista.Size = New System.Drawing.Size(224, 42)
-        Me.BtnCrearEntrevista.TabIndex = 13
-        Me.BtnCrearEntrevista.Text = "Crear Entrevista"
-        Me.BtnCrearEntrevista.UseVisualStyleBackColor = False
-        '
-        'LblNumEntrevista
-        '
-        Me.LblNumEntrevista.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.LblNumEntrevista.Font = New System.Drawing.Font("Ubuntu Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblNumEntrevista.Location = New System.Drawing.Point(722, 64)
-        Me.LblNumEntrevista.MaximumSize = New System.Drawing.Size(94, 30)
-        Me.LblNumEntrevista.MinimumSize = New System.Drawing.Size(94, 30)
-        Me.LblNumEntrevista.Name = "LblNumEntrevista"
-        Me.LblNumEntrevista.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.LblNumEntrevista.Size = New System.Drawing.Size(94, 30)
-        Me.LblNumEntrevista.TabIndex = 14
-        Me.LblNumEntrevista.Text = "00000"
-        Me.LblNumEntrevista.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'CbxEstadoTratamientoEntrevista
-        '
-        Me.CbxEstadoTratamientoEntrevista.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CbxEstadoTratamientoEntrevista.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CbxEstadoTratamientoEntrevista.FormattingEnabled = True
-        Me.CbxEstadoTratamientoEntrevista.Items.AddRange(New Object() {"Ingreso", "Final consulta", "En espera", "Evolucionando", "Publicacion"})
-        Me.CbxEstadoTratamientoEntrevista.Location = New System.Drawing.Point(194, 136)
-        Me.CbxEstadoTratamientoEntrevista.Name = "CbxEstadoTratamientoEntrevista"
-        Me.CbxEstadoTratamientoEntrevista.Size = New System.Drawing.Size(353, 28)
-        Me.CbxEstadoTratamientoEntrevista.TabIndex = 18
-        '
-        'Label20
-        '
-        Me.Label20.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(8, 144)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(172, 20)
-        Me.Label20.TabIndex = 17
-        Me.Label20.Text = "Estado del tratamiento"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(64, 191)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(116, 20)
-        Me.Label21.TabIndex = 20
-        Me.Label21.Text = "Ampliar motivo"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(194, 191)
-        Me.TextBox1.MaximumSize = New System.Drawing.Size(581, 64)
-        Me.TextBox1.MaxLength = 200
-        Me.TextBox1.MinimumSize = New System.Drawing.Size(581, 64)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(581, 64)
-        Me.TextBox1.TabIndex = 19
-        '
-        'Label22
-        '
-        Me.Label22.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(102, 285)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(78, 20)
-        Me.Label22.TabIndex = 21
-        Me.Label22.Text = "Evolucion"
-        '
-        'TxtEvolucion
-        '
-        Me.TxtEvolucion.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtEvolucion.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtEvolucion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtEvolucion.Location = New System.Drawing.Point(194, 280)
-        Me.TxtEvolucion.MaximumSize = New System.Drawing.Size(581, 30)
-        Me.TxtEvolucion.MaxLength = 200
-        Me.TxtEvolucion.MinimumSize = New System.Drawing.Size(581, 30)
-        Me.TxtEvolucion.Multiline = True
-        Me.TxtEvolucion.Name = "TxtEvolucion"
-        Me.TxtEvolucion.Size = New System.Drawing.Size(581, 30)
-        Me.TxtEvolucion.TabIndex = 8
-        '
-        'Label23
-        '
-        Me.Label23.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(38, 341)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(142, 20)
-        Me.Label23.TabIndex = 23
-        Me.Label23.Text = "Tratamiento actual"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(194, 335)
-        Me.TextBox2.MaximumSize = New System.Drawing.Size(581, 30)
-        Me.TextBox2.MaxLength = 200
-        Me.TextBox2.MinimumSize = New System.Drawing.Size(581, 30)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(581, 30)
-        Me.TextBox2.TabIndex = 22
-        '
         'FrmEntrevistaInicial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -948,8 +918,6 @@ Partial Class FrmEntrevistaInicial
     Friend WithEvents Label18 As Label
     Friend WithEvents LblNumEntrevista As Label
     Friend WithEvents BtnCrearEntrevista As Button
-    Friend WithEvents CbxEstadoTratamientoEntrevista As ComboBox
-    Friend WithEvents Label20 As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label22 As Label

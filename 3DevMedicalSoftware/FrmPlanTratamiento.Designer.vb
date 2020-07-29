@@ -23,31 +23,29 @@ Partial Class FrmPlanTratamiento
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GbxPlan = New System.Windows.Forms.GroupBox()
+        Me.GrxTratamiento = New System.Windows.Forms.GroupBox()
+        Me.LblNumEntrevista = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.CbxEstadoTratamientoPlan = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.DateproximaConsulta = New System.Windows.Forms.DateTimePicker()
+        Me.DateFinTratamiento = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.DateInicioTratamiento = New System.Windows.Forms.DateTimePicker()
         Me.LblFechadeNacimiento = New System.Windows.Forms.Label()
-        Me.BtnCrearTratamiento = New System.Windows.Forms.Button()
-        Me.TxtPresentarAnalisis = New System.Windows.Forms.TextBox()
         Me.TxtRegistrodeTratamiento = New System.Windows.Forms.TextBox()
-        Me.TxtIdTratamiento = New System.Windows.Forms.TextBox()
         Me.TxtNombreTratamiento = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.BtnCrearTratamiento = New System.Windows.Forms.Button()
         Me.GrxBotonesGuardarCancelarContinuar = New System.Windows.Forms.GroupBox()
         Me.BtnVolverAEntrevista = New System.Windows.Forms.Button()
         Me.BtnPreDigCancelar = New System.Windows.Forms.Button()
         Me.BtnPreDiagGuardar = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.DateFinTratamiento = New System.Windows.Forms.DateTimePicker()
-        Me.CbxEstadoTratamientoPlan = New System.Windows.Forms.ComboBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.GrxTratamiento = New System.Windows.Forms.GroupBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GbxPlan.SuspendLayout()
-        Me.GrxBotonesGuardarCancelarContinuar.SuspendLayout()
         Me.GrxTratamiento.SuspendLayout()
+        Me.GrxBotonesGuardarCancelarContinuar.SuspendLayout()
         Me.SuspendLayout()
         '
         'GbxPlan
@@ -65,6 +63,133 @@ Partial Class FrmPlanTratamiento
         Me.GbxPlan.TabIndex = 3
         Me.GbxPlan.TabStop = False
         Me.GbxPlan.Text = "Plan "
+        '
+        'GrxTratamiento
+        '
+        Me.GrxTratamiento.Controls.Add(Me.LblNumEntrevista)
+        Me.GrxTratamiento.Controls.Add(Me.Label7)
+        Me.GrxTratamiento.Controls.Add(Me.CbxEstadoTratamientoPlan)
+        Me.GrxTratamiento.Controls.Add(Me.Label6)
+        Me.GrxTratamiento.Controls.Add(Me.DateproximaConsulta)
+        Me.GrxTratamiento.Controls.Add(Me.DateFinTratamiento)
+        Me.GrxTratamiento.Controls.Add(Me.Label5)
+        Me.GrxTratamiento.Controls.Add(Me.DateInicioTratamiento)
+        Me.GrxTratamiento.Controls.Add(Me.LblFechadeNacimiento)
+        Me.GrxTratamiento.Controls.Add(Me.TxtRegistrodeTratamiento)
+        Me.GrxTratamiento.Controls.Add(Me.TxtNombreTratamiento)
+        Me.GrxTratamiento.Controls.Add(Me.Label1)
+        Me.GrxTratamiento.Controls.Add(Me.Label3)
+        Me.GrxTratamiento.Controls.Add(Me.Label2)
+        Me.GrxTratamiento.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrxTratamiento.Location = New System.Drawing.Point(31, 130)
+        Me.GrxTratamiento.Name = "GrxTratamiento"
+        Me.GrxTratamiento.Size = New System.Drawing.Size(793, 822)
+        Me.GrxTratamiento.TabIndex = 17
+        Me.GrxTratamiento.TabStop = False
+        Me.GrxTratamiento.Text = "Tratamiento"
+        Me.GrxTratamiento.Visible = False
+        '
+        'LblNumEntrevista
+        '
+        Me.LblNumEntrevista.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LblNumEntrevista.Font = New System.Drawing.Font("Ubuntu Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNumEntrevista.Location = New System.Drawing.Point(599, 59)
+        Me.LblNumEntrevista.MaximumSize = New System.Drawing.Size(94, 30)
+        Me.LblNumEntrevista.MinimumSize = New System.Drawing.Size(94, 30)
+        Me.LblNumEntrevista.Name = "LblNumEntrevista"
+        Me.LblNumEntrevista.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.LblNumEntrevista.Size = New System.Drawing.Size(94, 30)
+        Me.LblNumEntrevista.TabIndex = 17
+        Me.LblNumEntrevista.Text = "00000"
+        Me.LblNumEntrevista.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label7
+        '
+        Me.Label7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(52, 466)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(190, 20)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "Proxima Consulta(aprox.)"
+        '
+        'CbxEstadoTratamientoPlan
+        '
+        Me.CbxEstadoTratamientoPlan.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CbxEstadoTratamientoPlan.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CbxEstadoTratamientoPlan.FormattingEnabled = True
+        Me.CbxEstadoTratamientoPlan.Items.AddRange(New Object() {"Ingreso", "Final consulta", "En espera", "Evolucionando", "Publicacion"})
+        Me.CbxEstadoTratamientoPlan.Location = New System.Drawing.Point(245, 387)
+        Me.CbxEstadoTratamientoPlan.Name = "CbxEstadoTratamientoPlan"
+        Me.CbxEstadoTratamientoPlan.Size = New System.Drawing.Size(448, 28)
+        Me.CbxEstadoTratamientoPlan.TabIndex = 16
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(70, 393)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(172, 20)
+        Me.Label6.TabIndex = 15
+        Me.Label6.Text = "Estado del tratamiento"
+        '
+        'DateproximaConsulta
+        '
+        Me.DateproximaConsulta.CalendarFont = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateproximaConsulta.CalendarForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.DateproximaConsulta.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.DateproximaConsulta.Checked = False
+        Me.DateproximaConsulta.CustomFormat = "MMMM dd, yyyy - dddd"
+        Me.DateproximaConsulta.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateproximaConsulta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateproximaConsulta.Location = New System.Drawing.Point(479, 460)
+        Me.DateproximaConsulta.MaximumSize = New System.Drawing.Size(214, 26)
+        Me.DateproximaConsulta.MinDate = New Date(1930, 1, 1, 0, 0, 0, 0)
+        Me.DateproximaConsulta.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.DateproximaConsulta.Name = "DateproximaConsulta"
+        Me.DateproximaConsulta.Size = New System.Drawing.Size(214, 26)
+        Me.DateproximaConsulta.TabIndex = 14
+        Me.DateproximaConsulta.Value = New Date(2020, 7, 18, 16, 13, 7, 0)
+        '
+        'DateFinTratamiento
+        '
+        Me.DateFinTratamiento.CalendarFont = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateFinTratamiento.CalendarForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.DateFinTratamiento.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.DateFinTratamiento.Checked = False
+        Me.DateFinTratamiento.CustomFormat = "MMMM dd, yyyy - dddd"
+        Me.DateFinTratamiento.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateFinTratamiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateFinTratamiento.Location = New System.Drawing.Point(479, 318)
+        Me.DateFinTratamiento.MaximumSize = New System.Drawing.Size(214, 26)
+        Me.DateFinTratamiento.MinDate = New Date(1930, 1, 1, 0, 0, 0, 0)
+        Me.DateFinTratamiento.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.DateFinTratamiento.Name = "DateFinTratamiento"
+        Me.DateFinTratamiento.Size = New System.Drawing.Size(214, 26)
+        Me.DateFinTratamiento.TabIndex = 14
+        Me.DateFinTratamiento.Value = New Date(2020, 7, 18, 16, 13, 7, 0)
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(248, 318)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(97, 20)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Fecha de fin"
         '
         'DateInicioTratamiento
         '
@@ -97,36 +222,6 @@ Partial Class FrmPlanTratamiento
         Me.LblFechadeNacimiento.TabIndex = 13
         Me.LblFechadeNacimiento.Text = "Fecha de inicio"
         '
-        'BtnCrearTratamiento
-        '
-        Me.BtnCrearTratamiento.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnCrearTratamiento.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnCrearTratamiento.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnCrearTratamiento.FlatAppearance.BorderSize = 0
-        Me.BtnCrearTratamiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCrearTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCrearTratamiento.Location = New System.Drawing.Point(42, 62)
-        Me.BtnCrearTratamiento.Name = "BtnCrearTratamiento"
-        Me.BtnCrearTratamiento.Size = New System.Drawing.Size(224, 42)
-        Me.BtnCrearTratamiento.TabIndex = 12
-        Me.BtnCrearTratamiento.Text = "Crear Tratamiento"
-        Me.BtnCrearTratamiento.UseVisualStyleBackColor = False
-        '
-        'TxtPresentarAnalisis
-        '
-        Me.TxtPresentarAnalisis.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtPresentarAnalisis.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtPresentarAnalisis.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPresentarAnalisis.Location = New System.Drawing.Point(245, 331)
-        Me.TxtPresentarAnalisis.MaximumSize = New System.Drawing.Size(448, 67)
-        Me.TxtPresentarAnalisis.MinimumSize = New System.Drawing.Size(353, 67)
-        Me.TxtPresentarAnalisis.Multiline = True
-        Me.TxtPresentarAnalisis.Name = "TxtPresentarAnalisis"
-        Me.TxtPresentarAnalisis.Size = New System.Drawing.Size(448, 67)
-        Me.TxtPresentarAnalisis.TabIndex = 11
-        '
         'TxtRegistrodeTratamiento
         '
         Me.TxtRegistrodeTratamiento.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -142,19 +237,6 @@ Partial Class FrmPlanTratamiento
         Me.TxtRegistrodeTratamiento.Size = New System.Drawing.Size(448, 67)
         Me.TxtRegistrodeTratamiento.TabIndex = 11
         '
-        'TxtIdTratamiento
-        '
-        Me.TxtIdTratamiento.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtIdTratamiento.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtIdTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtIdTratamiento.Location = New System.Drawing.Point(245, 64)
-        Me.TxtIdTratamiento.MinimumSize = New System.Drawing.Size(214, 26)
-        Me.TxtIdTratamiento.Name = "TxtIdTratamiento"
-        Me.TxtIdTratamiento.Size = New System.Drawing.Size(448, 26)
-        Me.TxtIdTratamiento.TabIndex = 11
-        '
         'TxtNombreTratamiento
         '
         Me.TxtNombreTratamiento.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -165,21 +247,8 @@ Partial Class FrmPlanTratamiento
         Me.TxtNombreTratamiento.Location = New System.Drawing.Point(245, 129)
         Me.TxtNombreTratamiento.MinimumSize = New System.Drawing.Size(214, 26)
         Me.TxtNombreTratamiento.Name = "TxtNombreTratamiento"
-        Me.TxtNombreTratamiento.Size = New System.Drawing.Size(448, 26)
+        Me.TxtNombreTratamiento.Size = New System.Drawing.Size(448, 19)
         Me.TxtNombreTratamiento.TabIndex = 11
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(113, 331)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(119, 20)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Solicitar analisis"
         '
         'Label1
         '
@@ -188,7 +257,7 @@ Partial Class FrmPlanTratamiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(68, 226)
+        Me.Label1.Location = New System.Drawing.Point(78, 226)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(164, 20)
         Me.Label1.TabIndex = 9
@@ -201,7 +270,7 @@ Partial Class FrmPlanTratamiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(75, 128)
+        Me.Label3.Location = New System.Drawing.Point(85, 128)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(157, 20)
         Me.Label3.TabIndex = 9
@@ -214,11 +283,26 @@ Partial Class FrmPlanTratamiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(121, 64)
+        Me.Label2.Location = New System.Drawing.Point(482, 65)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(111, 20)
+        Me.Label2.Size = New System.Drawing.Size(115, 20)
         Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Id Tratamiento"
+        Me.Label2.Text = "Id Tratamiento:"
+        '
+        'BtnCrearTratamiento
+        '
+        Me.BtnCrearTratamiento.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnCrearTratamiento.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnCrearTratamiento.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnCrearTratamiento.FlatAppearance.BorderSize = 0
+        Me.BtnCrearTratamiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCrearTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCrearTratamiento.Location = New System.Drawing.Point(42, 62)
+        Me.BtnCrearTratamiento.Name = "BtnCrearTratamiento"
+        Me.BtnCrearTratamiento.Size = New System.Drawing.Size(224, 42)
+        Me.BtnCrearTratamiento.TabIndex = 12
+        Me.BtnCrearTratamiento.Text = "Crear Tratamiento"
+        Me.BtnCrearTratamiento.UseVisualStyleBackColor = False
         '
         'GrxBotonesGuardarCancelarContinuar
         '
@@ -279,121 +363,6 @@ Partial Class FrmPlanTratamiento
         Me.BtnPreDiagGuardar.Text = "Guardar"
         Me.BtnPreDiagGuardar.UseVisualStyleBackColor = False
         '
-        'Label5
-        '
-        Me.Label5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(248, 426)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(97, 20)
-        Me.Label5.TabIndex = 13
-        Me.Label5.Text = "Fecha de fin"
-        '
-        'DateFinTratamiento
-        '
-        Me.DateFinTratamiento.CalendarFont = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateFinTratamiento.CalendarForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.DateFinTratamiento.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.DateFinTratamiento.Checked = False
-        Me.DateFinTratamiento.CustomFormat = "MMMM dd, yyyy - dddd"
-        Me.DateFinTratamiento.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateFinTratamiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateFinTratamiento.Location = New System.Drawing.Point(479, 426)
-        Me.DateFinTratamiento.MaximumSize = New System.Drawing.Size(214, 26)
-        Me.DateFinTratamiento.MinDate = New Date(1930, 1, 1, 0, 0, 0, 0)
-        Me.DateFinTratamiento.MinimumSize = New System.Drawing.Size(214, 26)
-        Me.DateFinTratamiento.Name = "DateFinTratamiento"
-        Me.DateFinTratamiento.Size = New System.Drawing.Size(214, 26)
-        Me.DateFinTratamiento.TabIndex = 14
-        Me.DateFinTratamiento.Value = New Date(2020, 7, 18, 16, 13, 7, 0)
-        '
-        'CbxEstadoTratamientoPlan
-        '
-        Me.CbxEstadoTratamientoPlan.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CbxEstadoTratamientoPlan.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CbxEstadoTratamientoPlan.FormattingEnabled = True
-        Me.CbxEstadoTratamientoPlan.Items.AddRange(New Object() {"Ingreso", "Final consulta", "En espera", "Evolucionando", "Publicacion"})
-        Me.CbxEstadoTratamientoPlan.Location = New System.Drawing.Point(245, 495)
-        Me.CbxEstadoTratamientoPlan.Name = "CbxEstadoTratamientoPlan"
-        Me.CbxEstadoTratamientoPlan.Size = New System.Drawing.Size(448, 28)
-        Me.CbxEstadoTratamientoPlan.TabIndex = 16
-        '
-        'Label6
-        '
-        Me.Label6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(60, 503)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(172, 20)
-        Me.Label6.TabIndex = 15
-        Me.Label6.Text = "Estado del tratamiento"
-        '
-        'GrxTratamiento
-        '
-        Me.GrxTratamiento.Controls.Add(Me.Label7)
-        Me.GrxTratamiento.Controls.Add(Me.CbxEstadoTratamientoPlan)
-        Me.GrxTratamiento.Controls.Add(Me.Label6)
-        Me.GrxTratamiento.Controls.Add(Me.DateTimePicker1)
-        Me.GrxTratamiento.Controls.Add(Me.DateFinTratamiento)
-        Me.GrxTratamiento.Controls.Add(Me.Label5)
-        Me.GrxTratamiento.Controls.Add(Me.DateInicioTratamiento)
-        Me.GrxTratamiento.Controls.Add(Me.LblFechadeNacimiento)
-        Me.GrxTratamiento.Controls.Add(Me.TxtPresentarAnalisis)
-        Me.GrxTratamiento.Controls.Add(Me.TxtRegistrodeTratamiento)
-        Me.GrxTratamiento.Controls.Add(Me.TxtIdTratamiento)
-        Me.GrxTratamiento.Controls.Add(Me.TxtNombreTratamiento)
-        Me.GrxTratamiento.Controls.Add(Me.Label4)
-        Me.GrxTratamiento.Controls.Add(Me.Label1)
-        Me.GrxTratamiento.Controls.Add(Me.Label3)
-        Me.GrxTratamiento.Controls.Add(Me.Label2)
-        Me.GrxTratamiento.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GrxTratamiento.Location = New System.Drawing.Point(31, 130)
-        Me.GrxTratamiento.Name = "GrxTratamiento"
-        Me.GrxTratamiento.Size = New System.Drawing.Size(793, 822)
-        Me.GrxTratamiento.TabIndex = 17
-        Me.GrxTratamiento.TabStop = False
-        Me.GrxTratamiento.Text = "Tratamiento"
-        Me.GrxTratamiento.Visible = False
-        '
-        'Label7
-        '
-        Me.Label7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(60, 574)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(190, 20)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Proxima Consulta(aprox.)"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.DateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.DateTimePicker1.Checked = False
-        Me.DateTimePicker1.CustomFormat = "MMMM dd, yyyy - dddd"
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(479, 568)
-        Me.DateTimePicker1.MaximumSize = New System.Drawing.Size(214, 26)
-        Me.DateTimePicker1.MinDate = New Date(1930, 1, 1, 0, 0, 0, 0)
-        Me.DateTimePicker1.MinimumSize = New System.Drawing.Size(214, 26)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(214, 26)
-        Me.DateTimePicker1.TabIndex = 14
-        Me.DateTimePicker1.Value = New Date(2020, 7, 18, 16, 13, 7, 0)
-        '
         'FrmPlanTratamiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -406,9 +375,9 @@ Partial Class FrmPlanTratamiento
         Me.Name = "FrmPlanTratamiento"
         Me.Text = "FrmPlanTratamiento"
         Me.GbxPlan.ResumeLayout(False)
-        Me.GrxBotonesGuardarCancelarContinuar.ResumeLayout(False)
         Me.GrxTratamiento.ResumeLayout(False)
         Me.GrxTratamiento.PerformLayout()
+        Me.GrxBotonesGuardarCancelarContinuar.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -424,9 +393,6 @@ Partial Class FrmPlanTratamiento
     Friend WithEvents TxtNombreTratamiento As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents TxtRegistrodeTratamiento As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TxtPresentarAnalisis As TextBox
-    Friend WithEvents TxtIdTratamiento As TextBox
     Friend WithEvents DateInicioTratamiento As DateTimePicker
     Friend WithEvents LblFechadeNacimiento As Label
     Friend WithEvents DateFinTratamiento As DateTimePicker
@@ -435,5 +401,6 @@ Partial Class FrmPlanTratamiento
     Friend WithEvents Label6 As Label
     Friend WithEvents GrxTratamiento As GroupBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DateproximaConsulta As DateTimePicker
+    Friend WithEvents LblNumEntrevista As Label
 End Class

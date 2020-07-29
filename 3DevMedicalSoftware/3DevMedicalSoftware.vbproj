@@ -85,34 +85,16 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDolor.Designer.vb">
-      <DependentUpon>FrmDolor.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmDolor.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmEntrevistaInicial.Designer.vb">
       <DependentUpon>FrmEntrevistaInicial.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmEntrevistaInicial.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFiebre.Designer.vb">
-      <DependentUpon>FrmFiebre.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmFiebre.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmIngresoUsuarios.Designer.vb">
       <DependentUpon>FrmIngresoUsuarios.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmIngresoUsuarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMalestar.Designer.vb">
-      <DependentUpon>FrmMalestar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMalestar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMantenimiento.Designer.vb">
@@ -153,20 +135,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDolor.resx">
-      <DependentUpon>FrmDolor.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmEntrevistaInicial.resx">
       <DependentUpon>FrmEntrevistaInicial.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFiebre.resx">
-      <DependentUpon>FrmFiebre.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresoUsuarios.resx">
       <DependentUpon>FrmIngresoUsuarios.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMalestar.resx">
-      <DependentUpon>FrmMalestar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimiento.resx">
       <DependentUpon>FrmMantenimiento.vb</DependentUpon>
