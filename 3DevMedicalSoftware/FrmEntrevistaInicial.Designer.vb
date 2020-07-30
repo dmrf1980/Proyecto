@@ -33,10 +33,10 @@ Partial Class FrmEntrevistaInicial
         Me.BtnEntrevistaInicialGuardar = New System.Windows.Forms.Button()
         Me.GbxMotivosdeConsulta = New System.Windows.Forms.GroupBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TxtTratamientoActual = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtAmpliarMotivo = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.TxtEvolucion = New System.Windows.Forms.TextBox()
         Me.TxtMotivoprincipal = New System.Windows.Forms.TextBox()
@@ -81,6 +81,7 @@ Partial Class FrmEntrevistaInicial
         Me.GrxCambiarContinurDiagnostico = New System.Windows.Forms.GroupBox()
         Me.BtnContinuarADiagnostico = New System.Windows.Forms.Button()
         Me.BtnRegistroCancelar = New System.Windows.Forms.Button()
+        Me.LblGuardelosdatos = New System.Windows.Forms.Label()
         Me.GbxEntrevistaInicial.SuspendLayout()
         Me.GrxBotonesGuardarCancelarContinuar.SuspendLayout()
         Me.GbxMotivosdeConsulta.SuspendLayout()
@@ -133,7 +134,6 @@ Partial Class FrmEntrevistaInicial
         Me.LblNumEntrevista.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.LblNumEntrevista.Size = New System.Drawing.Size(94, 30)
         Me.LblNumEntrevista.TabIndex = 14
-        Me.LblNumEntrevista.Text = "00000"
         Me.LblNumEntrevista.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'BtnCrearEntrevista
@@ -155,7 +155,7 @@ Partial Class FrmEntrevistaInicial
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(607, 69)
+        Me.Label17.Location = New System.Drawing.Point(597, 69)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(99, 20)
         Me.Label17.TabIndex = 8
@@ -183,11 +183,11 @@ Partial Class FrmEntrevistaInicial
         Me.BtnEntrevistaInicialGuardarYContinuar.FlatAppearance.BorderSize = 0
         Me.BtnEntrevistaInicialGuardarYContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEntrevistaInicialGuardarYContinuar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEntrevistaInicialGuardarYContinuar.Location = New System.Drawing.Point(452, 26)
+        Me.BtnEntrevistaInicialGuardarYContinuar.Location = New System.Drawing.Point(567, 26)
         Me.BtnEntrevistaInicialGuardarYContinuar.Name = "BtnEntrevistaInicialGuardarYContinuar"
-        Me.BtnEntrevistaInicialGuardarYContinuar.Size = New System.Drawing.Size(325, 42)
+        Me.BtnEntrevistaInicialGuardarYContinuar.Size = New System.Drawing.Size(209, 42)
         Me.BtnEntrevistaInicialGuardarYContinuar.TabIndex = 5
-        Me.BtnEntrevistaInicialGuardarYContinuar.Text = "Guardar y Continuar a Registro >>>"
+        Me.BtnEntrevistaInicialGuardarYContinuar.Text = "Guardar y abrir formularios"
         Me.BtnEntrevistaInicialGuardarYContinuar.UseVisualStyleBackColor = False
         '
         'BtnEntrevistaInicialCancelar
@@ -213,7 +213,7 @@ Partial Class FrmEntrevistaInicial
         Me.BtnEntrevistaInicialGuardar.FlatAppearance.BorderSize = 0
         Me.BtnEntrevistaInicialGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEntrevistaInicialGuardar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEntrevistaInicialGuardar.Location = New System.Drawing.Point(316, 26)
+        Me.BtnEntrevistaInicialGuardar.Location = New System.Drawing.Point(373, 26)
         Me.BtnEntrevistaInicialGuardar.Name = "BtnEntrevistaInicialGuardar"
         Me.BtnEntrevistaInicialGuardar.Size = New System.Drawing.Size(117, 42)
         Me.BtnEntrevistaInicialGuardar.TabIndex = 5
@@ -223,10 +223,10 @@ Partial Class FrmEntrevistaInicial
         'GbxMotivosdeConsulta
         '
         Me.GbxMotivosdeConsulta.Controls.Add(Me.Label23)
-        Me.GbxMotivosdeConsulta.Controls.Add(Me.TextBox2)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtTratamientoActual)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.Label22)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.Label21)
-        Me.GbxMotivosdeConsulta.Controls.Add(Me.TextBox1)
+        Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtAmpliarMotivo)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.Label18)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtEvolucion)
         Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtMotivoprincipal)
@@ -253,21 +253,21 @@ Partial Class FrmEntrevistaInicial
         Me.Label23.TabIndex = 23
         Me.Label23.Text = "Tratamiento actual"
         '
-        'TextBox2
+        'TxtTratamientoActual
         '
-        Me.TextBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TxtTratamientoActual.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(194, 248)
-        Me.TextBox2.MaximumSize = New System.Drawing.Size(581, 30)
-        Me.TextBox2.MaxLength = 200
-        Me.TextBox2.MinimumSize = New System.Drawing.Size(581, 30)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(581, 30)
-        Me.TextBox2.TabIndex = 22
+        Me.TxtTratamientoActual.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtTratamientoActual.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTratamientoActual.Location = New System.Drawing.Point(194, 248)
+        Me.TxtTratamientoActual.MaximumSize = New System.Drawing.Size(581, 30)
+        Me.TxtTratamientoActual.MaxLength = 200
+        Me.TxtTratamientoActual.MinimumSize = New System.Drawing.Size(581, 30)
+        Me.TxtTratamientoActual.Multiline = True
+        Me.TxtTratamientoActual.Name = "TxtTratamientoActual"
+        Me.TxtTratamientoActual.Size = New System.Drawing.Size(581, 30)
+        Me.TxtTratamientoActual.TabIndex = 22
         '
         'Label22
         '
@@ -292,21 +292,21 @@ Partial Class FrmEntrevistaInicial
         Me.Label21.TabIndex = 20
         Me.Label21.Text = "Ampliar motivo"
         '
-        'TextBox1
+        'TxtAmpliarMotivo
         '
-        Me.TextBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TxtAmpliarMotivo.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(194, 104)
-        Me.TextBox1.MaximumSize = New System.Drawing.Size(581, 64)
-        Me.TextBox1.MaxLength = 200
-        Me.TextBox1.MinimumSize = New System.Drawing.Size(581, 64)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(581, 64)
-        Me.TextBox1.TabIndex = 19
+        Me.TxtAmpliarMotivo.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtAmpliarMotivo.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtAmpliarMotivo.Location = New System.Drawing.Point(194, 104)
+        Me.TxtAmpliarMotivo.MaximumSize = New System.Drawing.Size(581, 64)
+        Me.TxtAmpliarMotivo.MaxLength = 250
+        Me.TxtAmpliarMotivo.MinimumSize = New System.Drawing.Size(581, 64)
+        Me.TxtAmpliarMotivo.Multiline = True
+        Me.TxtAmpliarMotivo.Name = "TxtAmpliarMotivo"
+        Me.TxtAmpliarMotivo.Size = New System.Drawing.Size(581, 64)
+        Me.TxtAmpliarMotivo.TabIndex = 19
         '
         'Label18
         '
@@ -327,7 +327,7 @@ Partial Class FrmEntrevistaInicial
         Me.TxtEvolucion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtEvolucion.Location = New System.Drawing.Point(194, 193)
         Me.TxtEvolucion.MaximumSize = New System.Drawing.Size(581, 30)
-        Me.TxtEvolucion.MaxLength = 200
+        Me.TxtEvolucion.MaxLength = 250
         Me.TxtEvolucion.MinimumSize = New System.Drawing.Size(581, 30)
         Me.TxtEvolucion.Multiline = True
         Me.TxtEvolucion.Name = "TxtEvolucion"
@@ -343,7 +343,7 @@ Partial Class FrmEntrevistaInicial
         Me.TxtMotivoprincipal.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtMotivoprincipal.Location = New System.Drawing.Point(195, 48)
         Me.TxtMotivoprincipal.MaximumSize = New System.Drawing.Size(581, 30)
-        Me.TxtMotivoprincipal.MaxLength = 200
+        Me.TxtMotivoprincipal.MaxLength = 250
         Me.TxtMotivoprincipal.MinimumSize = New System.Drawing.Size(581, 30)
         Me.TxtMotivoprincipal.Multiline = True
         Me.TxtMotivoprincipal.Name = "TxtMotivoprincipal"
@@ -827,6 +827,17 @@ Partial Class FrmEntrevistaInicial
         Me.BtnRegistroCancelar.Text = "Cancelar"
         Me.BtnRegistroCancelar.UseVisualStyleBackColor = False
         '
+        'LblGuardelosdatos
+        '
+        Me.LblGuardelosdatos.AutoSize = True
+        Me.LblGuardelosdatos.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblGuardelosdatos.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.LblGuardelosdatos.Location = New System.Drawing.Point(1091, 146)
+        Me.LblGuardelosdatos.Name = "LblGuardelosdatos"
+        Me.LblGuardelosdatos.Size = New System.Drawing.Size(425, 20)
+        Me.LblGuardelosdatos.TabIndex = 3
+        Me.LblGuardelosdatos.Text = "Guarde los datos de la entrevista para ver algun formulario"
+        '
         'FrmEntrevistaInicial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -834,6 +845,7 @@ Partial Class FrmEntrevistaInicial
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1773, 1100)
+        Me.Controls.Add(Me.LblGuardelosdatos)
         Me.Controls.Add(Me.GrxRegistro)
         Me.Controls.Add(Me.GbxEntrevistaInicial)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -863,6 +875,7 @@ Partial Class FrmEntrevistaInicial
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GrxCambiarContinurDiagnostico.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -919,9 +932,10 @@ Partial Class FrmEntrevistaInicial
     Friend WithEvents LblNumEntrevista As Label
     Friend WithEvents BtnCrearEntrevista As Button
     Friend WithEvents Label23 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtTratamientoActual As TextBox
     Friend WithEvents Label22 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtAmpliarMotivo As TextBox
     Friend WithEvents TxtEvolucion As TextBox
+    Friend WithEvents LblGuardelosdatos As Label
 End Class

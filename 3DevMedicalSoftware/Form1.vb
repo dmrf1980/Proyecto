@@ -2,6 +2,7 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PanelIzquierdo.Width = 90
+        PictureBoxIconoUsuario.Image = FrmMantenimiento.PictureImagenPerfil.Image
     End Sub
 
     ''METODO COLOCAR FORM EN PANEL CENTRAL--------------------------------------------
@@ -67,5 +68,7 @@
         AbrirFormDentroDePanelPForm(Of FrmPlanTratamiento)()
         PanelIzquierdo.Width = 90
     End Sub
+
+
 End Class
 

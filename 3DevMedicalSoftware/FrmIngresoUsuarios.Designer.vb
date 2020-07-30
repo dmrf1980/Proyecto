@@ -24,16 +24,16 @@ Partial Class FrmIngresoUsuarios
     Private Sub InitializeComponent()
         Me.PanelCentralInicioUsuarios = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.BtnSalir = New System.Windows.Forms.Button()
-        Me.BtnIngresar = New System.Windows.Forms.Button()
         Me.TxtContraseña = New System.Windows.Forms.TextBox()
         Me.TxtId = New System.Windows.Forms.TextBox()
+        Me.BtnSalir = New System.Windows.Forms.Button()
+        Me.BtnIngresar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.BunifuSeparator2 = New Bunifu.Framework.UI.BunifuSeparator()
+        Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.BarritaSuperiorFrmIngresoUsuarios = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
-        Me.BunifuSeparator2 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.PanelCentralInicioUsuarios.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.BarritaSuperiorFrmIngresoUsuarios.SuspendLayout()
@@ -66,6 +66,31 @@ Partial Class FrmIngresoUsuarios
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         '
+        'TxtContraseña
+        '
+        Me.TxtContraseña.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TxtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtContraseña.Font = New System.Drawing.Font("Fira Code", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtContraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TxtContraseña.Location = New System.Drawing.Point(43, 180)
+        Me.TxtContraseña.MaxLength = 15
+        Me.TxtContraseña.Name = "TxtContraseña"
+        Me.TxtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TxtContraseña.Size = New System.Drawing.Size(200, 25)
+        Me.TxtContraseña.TabIndex = 2
+        '
+        'TxtId
+        '
+        Me.TxtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TxtId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtId.Font = New System.Drawing.Font("Fira Code", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TxtId.Location = New System.Drawing.Point(43, 96)
+        Me.TxtId.MaxLength = 8
+        Me.TxtId.Name = "TxtId"
+        Me.TxtId.Size = New System.Drawing.Size(200, 25)
+        Me.TxtId.TabIndex = 2
+        '
         'BtnSalir
         '
         Me.BtnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -85,29 +110,6 @@ Partial Class FrmIngresoUsuarios
         Me.BtnIngresar.TabIndex = 4
         Me.BtnIngresar.Text = "Ingresar"
         Me.BtnIngresar.UseVisualStyleBackColor = True
-        '
-        'TxtContraseña
-        '
-        Me.TxtContraseña.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TxtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtContraseña.Font = New System.Drawing.Font("Fira Code", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtContraseña.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TxtContraseña.Location = New System.Drawing.Point(43, 180)
-        Me.TxtContraseña.Name = "TxtContraseña"
-        Me.TxtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TxtContraseña.Size = New System.Drawing.Size(200, 25)
-        Me.TxtContraseña.TabIndex = 2
-        '
-        'TxtId
-        '
-        Me.TxtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TxtId.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtId.Font = New System.Drawing.Font("Fira Code", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.TxtId.Location = New System.Drawing.Point(43, 96)
-        Me.TxtId.Name = "TxtId"
-        Me.TxtId.Size = New System.Drawing.Size(200, 25)
-        Me.TxtId.TabIndex = 2
         '
         'Label3
         '
@@ -131,6 +133,30 @@ Partial Class FrmIngresoUsuarios
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Id"
         '
+        'BunifuSeparator2
+        '
+        Me.BunifuSeparator2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.BunifuSeparator2.LineThickness = 1
+        Me.BunifuSeparator2.Location = New System.Drawing.Point(43, 119)
+        Me.BunifuSeparator2.Name = "BunifuSeparator2"
+        Me.BunifuSeparator2.Size = New System.Drawing.Size(200, 18)
+        Me.BunifuSeparator2.TabIndex = 6
+        Me.BunifuSeparator2.Transparency = 255
+        Me.BunifuSeparator2.Vertical = False
+        '
+        'BunifuSeparator1
+        '
+        Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.BunifuSeparator1.LineThickness = 1
+        Me.BunifuSeparator1.Location = New System.Drawing.Point(43, 201)
+        Me.BunifuSeparator1.Name = "BunifuSeparator1"
+        Me.BunifuSeparator1.Size = New System.Drawing.Size(200, 21)
+        Me.BunifuSeparator1.TabIndex = 5
+        Me.BunifuSeparator1.Transparency = 255
+        Me.BunifuSeparator1.Vertical = False
+        '
         'BarritaSuperiorFrmIngresoUsuarios
         '
         Me.BarritaSuperiorFrmIngresoUsuarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(65, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(111, Byte), Integer))
@@ -151,30 +177,6 @@ Partial Class FrmIngresoUsuarios
         Me.Label1.Size = New System.Drawing.Size(313, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Ingreso de Usuarios Autorizados"
-        '
-        'BunifuSeparator1
-        '
-        Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator1.LineColor = System.Drawing.Color.DimGray
-        Me.BunifuSeparator1.LineThickness = 1
-        Me.BunifuSeparator1.Location = New System.Drawing.Point(43, 201)
-        Me.BunifuSeparator1.Name = "BunifuSeparator1"
-        Me.BunifuSeparator1.Size = New System.Drawing.Size(200, 21)
-        Me.BunifuSeparator1.TabIndex = 5
-        Me.BunifuSeparator1.Transparency = 255
-        Me.BunifuSeparator1.Vertical = False
-        '
-        'BunifuSeparator2
-        '
-        Me.BunifuSeparator2.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator2.LineColor = System.Drawing.Color.DimGray
-        Me.BunifuSeparator2.LineThickness = 1
-        Me.BunifuSeparator2.Location = New System.Drawing.Point(43, 119)
-        Me.BunifuSeparator2.Name = "BunifuSeparator2"
-        Me.BunifuSeparator2.Size = New System.Drawing.Size(200, 18)
-        Me.BunifuSeparator2.TabIndex = 6
-        Me.BunifuSeparator2.Transparency = 255
-        Me.BunifuSeparator2.Vertical = False
         '
         'FrmIngresoUsuarios
         '

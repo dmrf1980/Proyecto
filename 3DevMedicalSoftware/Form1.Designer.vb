@@ -316,7 +316,9 @@ Partial Class Form1
         'PictureBoxIconoUsuario
         '
         Me.PictureBoxIconoUsuario.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxIconoUsuario.Image = CType(resources.GetObject("PictureBoxIconoUsuario.Image"), System.Drawing.Image)
+        Me.PictureBoxIconoUsuario.BackgroundImage = Global._3DevMedicalSoftware.My.Resources.Resources.user2
+        Me.PictureBoxIconoUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBoxIconoUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBoxIconoUsuario.Location = New System.Drawing.Point(1121, 5)
         Me.PictureBoxIconoUsuario.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBoxIconoUsuario.Name = "PictureBoxIconoUsuario"

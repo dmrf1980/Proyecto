@@ -40,7 +40,7 @@ Partial Class FrmPlanTratamiento
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BtnCrearTratamiento = New System.Windows.Forms.Button()
         Me.GrxBotonesGuardarCancelarContinuar = New System.Windows.Forms.GroupBox()
-        Me.BtnVolverAEntrevista = New System.Windows.Forms.Button()
+        Me.BtnVolverADiagnostico = New System.Windows.Forms.Button()
         Me.BtnPreDigCancelar = New System.Windows.Forms.Button()
         Me.BtnPreDiagGuardar = New System.Windows.Forms.Button()
         Me.GbxPlan.SuspendLayout()
@@ -307,7 +307,7 @@ Partial Class FrmPlanTratamiento
         'GrxBotonesGuardarCancelarContinuar
         '
         Me.GrxBotonesGuardarCancelarContinuar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnVolverAEntrevista)
+        Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnVolverADiagnostico)
         Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnPreDigCancelar)
         Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnPreDiagGuardar)
         Me.GrxBotonesGuardarCancelarContinuar.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -318,20 +318,20 @@ Partial Class FrmPlanTratamiento
         Me.GrxBotonesGuardarCancelarContinuar.TabIndex = 7
         Me.GrxBotonesGuardarCancelarContinuar.TabStop = False
         '
-        'BtnVolverAEntrevista
+        'BtnVolverADiagnostico
         '
-        Me.BtnVolverAEntrevista.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnVolverAEntrevista.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BtnVolverAEntrevista.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnVolverAEntrevista.FlatAppearance.BorderSize = 0
-        Me.BtnVolverAEntrevista.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnVolverAEntrevista.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnVolverAEntrevista.Location = New System.Drawing.Point(15, 24)
-        Me.BtnVolverAEntrevista.Name = "BtnVolverAEntrevista"
-        Me.BtnVolverAEntrevista.Size = New System.Drawing.Size(224, 42)
-        Me.BtnVolverAEntrevista.TabIndex = 6
-        Me.BtnVolverAEntrevista.Text = "<<< Volver a entrevista inicial"
-        Me.BtnVolverAEntrevista.UseVisualStyleBackColor = False
+        Me.BtnVolverADiagnostico.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnVolverADiagnostico.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnVolverADiagnostico.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnVolverADiagnostico.FlatAppearance.BorderSize = 0
+        Me.BtnVolverADiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnVolverADiagnostico.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnVolverADiagnostico.Location = New System.Drawing.Point(15, 24)
+        Me.BtnVolverADiagnostico.Name = "BtnVolverADiagnostico"
+        Me.BtnVolverADiagnostico.Size = New System.Drawing.Size(224, 42)
+        Me.BtnVolverADiagnostico.TabIndex = 6
+        Me.BtnVolverADiagnostico.Text = "<<< Volver a diagnosticos"
+        Me.BtnVolverADiagnostico.UseVisualStyleBackColor = False
         '
         'BtnPreDigCancelar
         '
@@ -386,7 +386,7 @@ Partial Class FrmPlanTratamiento
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents GrxBotonesGuardarCancelarContinuar As GroupBox
-    Friend WithEvents BtnVolverAEntrevista As Button
+    Friend WithEvents BtnVolverADiagnostico As Button
     Friend WithEvents BtnPreDigCancelar As Button
     Friend WithEvents BtnPreDiagGuardar As Button
     Friend WithEvents BtnCrearTratamiento As Button
