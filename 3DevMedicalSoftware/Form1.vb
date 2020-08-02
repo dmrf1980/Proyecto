@@ -39,7 +39,7 @@
 
         If PanelIzquierdo.Width = 90 Then
 
-            PanelIzquierdo.Width = 362
+            PanelIzquierdo.Width = 370
 
         Else
 
@@ -58,7 +58,10 @@
         AbrirFormDentroDePanelPForm(Of FrmEntrevistaInicial)()
         PanelIzquierdo.Width = 90
     End Sub
-
+    Private Sub BtnExploracion_Click(sender As Object, e As EventArgs) Handles BtnExploracion.Click
+        AbrirFormDentroDePanelPForm(Of FrmExploracionYDolor)()
+        PanelIzquierdo.Width = 90
+    End Sub
     Private Sub BtnPreDiaDiagnostico_Click(sender As Object, e As EventArgs) Handles BtnPreDiaDiagnostico.Click
         AbrirFormDentroDePanelPForm(Of FrmPreDiagnosticoyDiagnostico)()
         PanelIzquierdo.Width = 90
@@ -68,7 +71,5 @@
         AbrirFormDentroDePanelPForm(Of FrmPlanTratamiento)()
         PanelIzquierdo.Width = 90
     End Sub
-
-
 End Class
 

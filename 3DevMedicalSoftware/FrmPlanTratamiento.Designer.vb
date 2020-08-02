@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmPlanTratamiento
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,24 +20,24 @@ Partial Class FrmPlanTratamiento
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GbxPlan = New System.Windows.Forms.GroupBox()
         Me.GrxTratamiento = New System.Windows.Forms.GroupBox()
         Me.LblNumEntrevista = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.LblProximaConsulta = New System.Windows.Forms.Label()
         Me.CbxEstadoTratamientoPlan = New System.Windows.Forms.ComboBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.LblEstadoDeTratamiento = New System.Windows.Forms.Label()
         Me.DateproximaConsulta = New System.Windows.Forms.DateTimePicker()
         Me.DateFinTratamiento = New System.Windows.Forms.DateTimePicker()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.LblFechaFinTratam = New System.Windows.Forms.Label()
         Me.DateInicioTratamiento = New System.Windows.Forms.DateTimePicker()
         Me.LblFechadeNacimiento = New System.Windows.Forms.Label()
         Me.TxtRegistrodeTratamiento = New System.Windows.Forms.TextBox()
         Me.TxtNombreTratamiento = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LblRegistrodeControles = New System.Windows.Forms.Label()
+        Me.LblNombretratamiento = New System.Windows.Forms.Label()
+        Me.LblIdTratamiento = New System.Windows.Forms.Label()
         Me.BtnCrearTratamiento = New System.Windows.Forms.Button()
         Me.GrxBotonesGuardarCancelarContinuar = New System.Windows.Forms.GroupBox()
         Me.BtnVolverADiagnostico = New System.Windows.Forms.Button()
@@ -50,16 +50,14 @@ Partial Class FrmPlanTratamiento
         '
         'GbxPlan
         '
-        Me.GbxPlan.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.GbxPlan.Controls.Add(Me.GrxTratamiento)
         Me.GbxPlan.Controls.Add(Me.BtnCrearTratamiento)
-        Me.GbxPlan.Controls.Add(Me.GrxBotonesGuardarCancelarContinuar)
         Me.GbxPlan.Font = New System.Drawing.Font("Ubuntu", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbxPlan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
-        Me.GbxPlan.Location = New System.Drawing.Point(23, 12)
+        Me.GbxPlan.Location = New System.Drawing.Point(25, 5)
         Me.GbxPlan.MaximumSize = New System.Drawing.Size(1000, 1063)
         Me.GbxPlan.Name = "GbxPlan"
-        Me.GbxPlan.Size = New System.Drawing.Size(850, 1054)
+        Me.GbxPlan.Size = New System.Drawing.Size(850, 655)
         Me.GbxPlan.TabIndex = 3
         Me.GbxPlan.TabStop = False
         Me.GbxPlan.Text = "Plan "
@@ -67,23 +65,23 @@ Partial Class FrmPlanTratamiento
         'GrxTratamiento
         '
         Me.GrxTratamiento.Controls.Add(Me.LblNumEntrevista)
-        Me.GrxTratamiento.Controls.Add(Me.Label7)
+        Me.GrxTratamiento.Controls.Add(Me.LblProximaConsulta)
         Me.GrxTratamiento.Controls.Add(Me.CbxEstadoTratamientoPlan)
-        Me.GrxTratamiento.Controls.Add(Me.Label6)
+        Me.GrxTratamiento.Controls.Add(Me.LblEstadoDeTratamiento)
         Me.GrxTratamiento.Controls.Add(Me.DateproximaConsulta)
         Me.GrxTratamiento.Controls.Add(Me.DateFinTratamiento)
-        Me.GrxTratamiento.Controls.Add(Me.Label5)
+        Me.GrxTratamiento.Controls.Add(Me.LblFechaFinTratam)
         Me.GrxTratamiento.Controls.Add(Me.DateInicioTratamiento)
         Me.GrxTratamiento.Controls.Add(Me.LblFechadeNacimiento)
         Me.GrxTratamiento.Controls.Add(Me.TxtRegistrodeTratamiento)
         Me.GrxTratamiento.Controls.Add(Me.TxtNombreTratamiento)
-        Me.GrxTratamiento.Controls.Add(Me.Label1)
-        Me.GrxTratamiento.Controls.Add(Me.Label3)
-        Me.GrxTratamiento.Controls.Add(Me.Label2)
+        Me.GrxTratamiento.Controls.Add(Me.LblRegistrodeControles)
+        Me.GrxTratamiento.Controls.Add(Me.LblNombretratamiento)
+        Me.GrxTratamiento.Controls.Add(Me.LblIdTratamiento)
         Me.GrxTratamiento.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GrxTratamiento.Location = New System.Drawing.Point(31, 130)
+        Me.GrxTratamiento.Location = New System.Drawing.Point(31, 96)
         Me.GrxTratamiento.Name = "GrxTratamiento"
-        Me.GrxTratamiento.Size = New System.Drawing.Size(793, 822)
+        Me.GrxTratamiento.Size = New System.Drawing.Size(793, 530)
         Me.GrxTratamiento.TabIndex = 17
         Me.GrxTratamiento.TabStop = False
         Me.GrxTratamiento.Text = "Tratamiento"
@@ -103,18 +101,18 @@ Partial Class FrmPlanTratamiento
         Me.LblNumEntrevista.Text = "00000"
         Me.LblNumEntrevista.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label7
+        'LblProximaConsulta
         '
-        Me.Label7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.LblProximaConsulta.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(52, 466)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(190, 20)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Proxima Consulta(aprox.)"
+        Me.LblProximaConsulta.AutoSize = True
+        Me.LblProximaConsulta.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblProximaConsulta.Location = New System.Drawing.Point(52, 466)
+        Me.LblProximaConsulta.Name = "LblProximaConsulta"
+        Me.LblProximaConsulta.Size = New System.Drawing.Size(190, 20)
+        Me.LblProximaConsulta.TabIndex = 15
+        Me.LblProximaConsulta.Text = "Proxima Consulta(aprox.)"
         '
         'CbxEstadoTratamientoPlan
         '
@@ -129,18 +127,18 @@ Partial Class FrmPlanTratamiento
         Me.CbxEstadoTratamientoPlan.Size = New System.Drawing.Size(448, 28)
         Me.CbxEstadoTratamientoPlan.TabIndex = 16
         '
-        'Label6
+        'LblEstadoDeTratamiento
         '
-        Me.Label6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.LblEstadoDeTratamiento.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(70, 393)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(172, 20)
-        Me.Label6.TabIndex = 15
-        Me.Label6.Text = "Estado del tratamiento"
+        Me.LblEstadoDeTratamiento.AutoSize = True
+        Me.LblEstadoDeTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblEstadoDeTratamiento.Location = New System.Drawing.Point(70, 393)
+        Me.LblEstadoDeTratamiento.Name = "LblEstadoDeTratamiento"
+        Me.LblEstadoDeTratamiento.Size = New System.Drawing.Size(172, 20)
+        Me.LblEstadoDeTratamiento.TabIndex = 15
+        Me.LblEstadoDeTratamiento.Text = "Estado del tratamiento"
         '
         'DateproximaConsulta
         '
@@ -178,18 +176,18 @@ Partial Class FrmPlanTratamiento
         Me.DateFinTratamiento.TabIndex = 14
         Me.DateFinTratamiento.Value = New Date(2020, 7, 18, 16, 13, 7, 0)
         '
-        'Label5
+        'LblFechaFinTratam
         '
-        Me.Label5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.LblFechaFinTratam.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(248, 318)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(97, 20)
-        Me.Label5.TabIndex = 13
-        Me.Label5.Text = "Fecha de fin"
+        Me.LblFechaFinTratam.AutoSize = True
+        Me.LblFechaFinTratam.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblFechaFinTratam.Location = New System.Drawing.Point(248, 318)
+        Me.LblFechaFinTratam.Name = "LblFechaFinTratam"
+        Me.LblFechaFinTratam.Size = New System.Drawing.Size(97, 20)
+        Me.LblFechaFinTratam.TabIndex = 13
+        Me.LblFechaFinTratam.Text = "Fecha de fin"
         '
         'DateInicioTratamiento
         '
@@ -227,7 +225,7 @@ Partial Class FrmPlanTratamiento
         Me.TxtRegistrodeTratamiento.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtRegistrodeTratamiento.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtRegistrodeTratamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtRegistrodeTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtRegistrodeTratamiento.Location = New System.Drawing.Point(245, 226)
         Me.TxtRegistrodeTratamiento.MaximumSize = New System.Drawing.Size(448, 67)
@@ -242,62 +240,62 @@ Partial Class FrmPlanTratamiento
         Me.TxtNombreTratamiento.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtNombreTratamiento.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtNombreTratamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtNombreTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNombreTratamiento.Location = New System.Drawing.Point(245, 129)
-        Me.TxtNombreTratamiento.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.TxtNombreTratamiento.MinimumSize = New System.Drawing.Size(214, 30)
         Me.TxtNombreTratamiento.Name = "TxtNombreTratamiento"
-        Me.TxtNombreTratamiento.Size = New System.Drawing.Size(448, 19)
+        Me.TxtNombreTratamiento.Size = New System.Drawing.Size(448, 26)
         Me.TxtNombreTratamiento.TabIndex = 11
         '
-        'Label1
+        'LblRegistrodeControles
         '
-        Me.Label1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.LblRegistrodeControles.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(78, 226)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(164, 20)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Registro de controles"
+        Me.LblRegistrodeControles.AutoSize = True
+        Me.LblRegistrodeControles.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblRegistrodeControles.Location = New System.Drawing.Point(78, 226)
+        Me.LblRegistrodeControles.Name = "LblRegistrodeControles"
+        Me.LblRegistrodeControles.Size = New System.Drawing.Size(164, 20)
+        Me.LblRegistrodeControles.TabIndex = 9
+        Me.LblRegistrodeControles.Text = "Registro de controles"
         '
-        'Label3
+        'LblNombretratamiento
         '
-        Me.Label3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.LblNombretratamiento.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(85, 128)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(157, 20)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "Nombre Tratamiento"
+        Me.LblNombretratamiento.AutoSize = True
+        Me.LblNombretratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNombretratamiento.Location = New System.Drawing.Point(85, 128)
+        Me.LblNombretratamiento.Name = "LblNombretratamiento"
+        Me.LblNombretratamiento.Size = New System.Drawing.Size(157, 20)
+        Me.LblNombretratamiento.TabIndex = 9
+        Me.LblNombretratamiento.Text = "Nombre Tratamiento"
         '
-        'Label2
+        'LblIdTratamiento
         '
-        Me.Label2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.LblIdTratamiento.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(482, 65)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 20)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Id Tratamiento:"
+        Me.LblIdTratamiento.AutoSize = True
+        Me.LblIdTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblIdTratamiento.Location = New System.Drawing.Point(482, 65)
+        Me.LblIdTratamiento.Name = "LblIdTratamiento"
+        Me.LblIdTratamiento.Size = New System.Drawing.Size(115, 20)
+        Me.LblIdTratamiento.TabIndex = 9
+        Me.LblIdTratamiento.Text = "Id Tratamiento:"
         '
         'BtnCrearTratamiento
         '
-        Me.BtnCrearTratamiento.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnCrearTratamiento.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BtnCrearTratamiento.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BtnCrearTratamiento.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnCrearTratamiento.FlatAppearance.BorderSize = 0
         Me.BtnCrearTratamiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCrearTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCrearTratamiento.Location = New System.Drawing.Point(42, 62)
+        Me.BtnCrearTratamiento.Location = New System.Drawing.Point(248, 21)
         Me.BtnCrearTratamiento.Name = "BtnCrearTratamiento"
         Me.BtnCrearTratamiento.Size = New System.Drawing.Size(224, 42)
         Me.BtnCrearTratamiento.TabIndex = 12
@@ -306,42 +304,38 @@ Partial Class FrmPlanTratamiento
         '
         'GrxBotonesGuardarCancelarContinuar
         '
-        Me.GrxBotonesGuardarCancelarContinuar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnVolverADiagnostico)
         Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnPreDigCancelar)
         Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnPreDiagGuardar)
         Me.GrxBotonesGuardarCancelarContinuar.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrxBotonesGuardarCancelarContinuar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GrxBotonesGuardarCancelarContinuar.Location = New System.Drawing.Point(26, 952)
+        Me.GrxBotonesGuardarCancelarContinuar.Location = New System.Drawing.Point(25, 690)
         Me.GrxBotonesGuardarCancelarContinuar.Name = "GrxBotonesGuardarCancelarContinuar"
-        Me.GrxBotonesGuardarCancelarContinuar.Size = New System.Drawing.Size(798, 79)
+        Me.GrxBotonesGuardarCancelarContinuar.Size = New System.Drawing.Size(850, 79)
         Me.GrxBotonesGuardarCancelarContinuar.TabIndex = 7
         Me.GrxBotonesGuardarCancelarContinuar.TabStop = False
         '
         'BtnVolverADiagnostico
         '
-        Me.BtnVolverADiagnostico.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnVolverADiagnostico.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BtnVolverADiagnostico.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnVolverADiagnostico.FlatAppearance.BorderSize = 0
         Me.BtnVolverADiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnVolverADiagnostico.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnVolverADiagnostico.Location = New System.Drawing.Point(15, 24)
+        Me.BtnVolverADiagnostico.Location = New System.Drawing.Point(18, 23)
+        Me.BtnVolverADiagnostico.MaximumSize = New System.Drawing.Size(260, 42)
         Me.BtnVolverADiagnostico.Name = "BtnVolverADiagnostico"
-        Me.BtnVolverADiagnostico.Size = New System.Drawing.Size(224, 42)
+        Me.BtnVolverADiagnostico.Size = New System.Drawing.Size(260, 42)
         Me.BtnVolverADiagnostico.TabIndex = 6
         Me.BtnVolverADiagnostico.Text = "<<< Volver a diagnosticos"
         Me.BtnVolverADiagnostico.UseVisualStyleBackColor = False
         '
         'BtnPreDigCancelar
         '
-        Me.BtnPreDigCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnPreDigCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BtnPreDigCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnPreDigCancelar.FlatAppearance.BorderSize = 0
         Me.BtnPreDigCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPreDigCancelar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnPreDigCancelar.Location = New System.Drawing.Point(520, 24)
+        Me.BtnPreDigCancelar.Location = New System.Drawing.Point(573, 24)
         Me.BtnPreDigCancelar.Name = "BtnPreDigCancelar"
         Me.BtnPreDigCancelar.Size = New System.Drawing.Size(117, 42)
         Me.BtnPreDigCancelar.TabIndex = 5
@@ -350,13 +344,11 @@ Partial Class FrmPlanTratamiento
         '
         'BtnPreDiagGuardar
         '
-        Me.BtnPreDiagGuardar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnPreDiagGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BtnPreDiagGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnPreDiagGuardar.FlatAppearance.BorderSize = 0
         Me.BtnPreDiagGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPreDiagGuardar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnPreDiagGuardar.Location = New System.Drawing.Point(663, 24)
+        Me.BtnPreDiagGuardar.Location = New System.Drawing.Point(715, 24)
         Me.BtnPreDiagGuardar.Name = "BtnPreDiagGuardar"
         Me.BtnPreDiagGuardar.Size = New System.Drawing.Size(117, 42)
         Me.BtnPreDiagGuardar.TabIndex = 5
@@ -369,10 +361,12 @@ Partial Class FrmPlanTratamiento
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1773, 1100)
+        Me.ClientSize = New System.Drawing.Size(1770, 800)
         Me.Controls.Add(Me.GbxPlan)
+        Me.Controls.Add(Me.GrxBotonesGuardarCancelarContinuar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmPlanTratamiento"
+        Me.Padding = New System.Windows.Forms.Padding(25, 5, 25, 10)
         Me.Text = "FrmPlanTratamiento"
         Me.GbxPlan.ResumeLayout(False)
         Me.GrxTratamiento.ResumeLayout(False)
@@ -383,24 +377,24 @@ Partial Class FrmPlanTratamiento
     End Sub
 
     Friend WithEvents GbxPlan As GroupBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents LblRegistrodeControles As Label
+    Friend WithEvents LblIdTratamiento As Label
     Friend WithEvents GrxBotonesGuardarCancelarContinuar As GroupBox
     Friend WithEvents BtnVolverADiagnostico As Button
     Friend WithEvents BtnPreDigCancelar As Button
     Friend WithEvents BtnPreDiagGuardar As Button
     Friend WithEvents BtnCrearTratamiento As Button
     Friend WithEvents TxtNombreTratamiento As TextBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents LblNombretratamiento As Label
     Friend WithEvents TxtRegistrodeTratamiento As TextBox
     Friend WithEvents DateInicioTratamiento As DateTimePicker
     Friend WithEvents LblFechadeNacimiento As Label
     Friend WithEvents DateFinTratamiento As DateTimePicker
-    Friend WithEvents Label5 As Label
+    Friend WithEvents LblFechaFinTratam As Label
     Friend WithEvents CbxEstadoTratamientoPlan As ComboBox
-    Friend WithEvents Label6 As Label
+    Friend WithEvents LblEstadoDeTratamiento As Label
     Friend WithEvents GrxTratamiento As GroupBox
-    Friend WithEvents Label7 As Label
+    Friend WithEvents LblProximaConsulta As Label
     Friend WithEvents DateproximaConsulta As DateTimePicker
     Friend WithEvents LblNumEntrevista As Label
 End Class
