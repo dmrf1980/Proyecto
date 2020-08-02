@@ -13,4 +13,7 @@
         Form1.AbrirFormDentroDePanelPForm(Of FrmPreDiagnosticoyDiagnostico)()
     End Sub
 
+    Private Sub FrmPlanTratamiento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

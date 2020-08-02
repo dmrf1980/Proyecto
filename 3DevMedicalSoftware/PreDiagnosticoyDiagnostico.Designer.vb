@@ -35,13 +35,9 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.BtnVolverAExploracion = New System.Windows.Forms.Button()
         Me.BtnPreDigCancelar = New System.Windows.Forms.Button()
         Me.BtnPreDiagGuardar = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.BtnContinuarAPlan = New System.Windows.Forms.Button()
-        Me.BtnGuargarDiagnostico = New System.Windows.Forms.Button()
         Me.GbxEntrevistaInicial.SuspendLayout()
         Me.GrxBotonesGuardarCancelarContinuar.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GbxEntrevistaInicial
@@ -72,12 +68,12 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.TxtIngresoDeAnalisisClinicos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtIngresoDeAnalisisClinicos.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtIngresoDeAnalisisClinicos.Location = New System.Drawing.Point(256, 427)
-        Me.TxtIngresoDeAnalisisClinicos.MaximumSize = New System.Drawing.Size(353, 86)
+        Me.TxtIngresoDeAnalisisClinicos.MaximumSize = New System.Drawing.Size(571, 86)
         Me.TxtIngresoDeAnalisisClinicos.MaxLength = 250
         Me.TxtIngresoDeAnalisisClinicos.MinimumSize = New System.Drawing.Size(353, 86)
         Me.TxtIngresoDeAnalisisClinicos.Multiline = True
         Me.TxtIngresoDeAnalisisClinicos.Name = "TxtIngresoDeAnalisisClinicos"
-        Me.TxtIngresoDeAnalisisClinicos.Size = New System.Drawing.Size(353, 86)
+        Me.TxtIngresoDeAnalisisClinicos.Size = New System.Drawing.Size(571, 86)
         Me.TxtIngresoDeAnalisisClinicos.TabIndex = 11
         '
         'TxtSolicitudDeAnalisisClinicos
@@ -88,12 +84,12 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.TxtSolicitudDeAnalisisClinicos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtSolicitudDeAnalisisClinicos.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtSolicitudDeAnalisisClinicos.Location = New System.Drawing.Point(256, 293)
-        Me.TxtSolicitudDeAnalisisClinicos.MaximumSize = New System.Drawing.Size(353, 86)
+        Me.TxtSolicitudDeAnalisisClinicos.MaximumSize = New System.Drawing.Size(571, 86)
         Me.TxtSolicitudDeAnalisisClinicos.MaxLength = 250
         Me.TxtSolicitudDeAnalisisClinicos.MinimumSize = New System.Drawing.Size(353, 86)
         Me.TxtSolicitudDeAnalisisClinicos.Multiline = True
         Me.TxtSolicitudDeAnalisisClinicos.Name = "TxtSolicitudDeAnalisisClinicos"
-        Me.TxtSolicitudDeAnalisisClinicos.Size = New System.Drawing.Size(353, 86)
+        Me.TxtSolicitudDeAnalisisClinicos.Size = New System.Drawing.Size(571, 86)
         Me.TxtSolicitudDeAnalisisClinicos.TabIndex = 11
         '
         'TxtRegistroDeDiagnostico
@@ -104,12 +100,12 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.TxtRegistroDeDiagnostico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtRegistroDeDiagnostico.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtRegistroDeDiagnostico.Location = New System.Drawing.Point(256, 159)
-        Me.TxtRegistroDeDiagnostico.MaximumSize = New System.Drawing.Size(353, 86)
+        Me.TxtRegistroDeDiagnostico.MaximumSize = New System.Drawing.Size(571, 86)
         Me.TxtRegistroDeDiagnostico.MaxLength = 250
         Me.TxtRegistroDeDiagnostico.MinimumSize = New System.Drawing.Size(353, 86)
         Me.TxtRegistroDeDiagnostico.Multiline = True
         Me.TxtRegistroDeDiagnostico.Name = "TxtRegistroDeDiagnostico"
-        Me.TxtRegistroDeDiagnostico.Size = New System.Drawing.Size(353, 86)
+        Me.TxtRegistroDeDiagnostico.Size = New System.Drawing.Size(571, 86)
         Me.TxtRegistroDeDiagnostico.TabIndex = 11
         '
         'CbxTipoDeDiagnostico
@@ -122,7 +118,7 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.CbxTipoDeDiagnostico.Items.AddRange(New Object() {"Diagnostico individual", "Diagnostico de certeza", "Diagnostico diferencia", "Diagnostico etiologico", "Diagnostico generico", "Diagnostico heroico", "Diagnostico lesional, anatomico o topografico", "Diagnostico nosologico", "Diagnostico patojenico", "Diagnostico presuntivo", "Diagnostico sindromico funcional", "Diagnostico sintomatico"})
         Me.CbxTipoDeDiagnostico.Location = New System.Drawing.Point(256, 83)
         Me.CbxTipoDeDiagnostico.Name = "CbxTipoDeDiagnostico"
-        Me.CbxTipoDeDiagnostico.Size = New System.Drawing.Size(353, 28)
+        Me.CbxTipoDeDiagnostico.Size = New System.Drawing.Size(352, 28)
         Me.CbxTipoDeDiagnostico.TabIndex = 10
         '
         'Label4
@@ -179,6 +175,7 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         '
         'GrxBotonesGuardarCancelarContinuar
         '
+        Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnContinuarAPlan)
         Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnVolverAExploracion)
         Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnPreDigCancelar)
         Me.GrxBotonesGuardarCancelarContinuar.Controls.Add(Me.BtnPreDiagGuardar)
@@ -210,7 +207,7 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.BtnPreDigCancelar.FlatAppearance.BorderSize = 0
         Me.BtnPreDigCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPreDigCancelar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnPreDigCancelar.Location = New System.Drawing.Point(573, 24)
+        Me.BtnPreDigCancelar.Location = New System.Drawing.Point(300, 24)
         Me.BtnPreDigCancelar.Name = "BtnPreDigCancelar"
         Me.BtnPreDigCancelar.Size = New System.Drawing.Size(117, 42)
         Me.BtnPreDigCancelar.TabIndex = 5
@@ -223,36 +220,12 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.BtnPreDiagGuardar.FlatAppearance.BorderSize = 0
         Me.BtnPreDiagGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPreDiagGuardar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnPreDiagGuardar.Location = New System.Drawing.Point(715, 24)
+        Me.BtnPreDiagGuardar.Location = New System.Drawing.Point(439, 24)
         Me.BtnPreDiagGuardar.Name = "BtnPreDiagGuardar"
         Me.BtnPreDiagGuardar.Size = New System.Drawing.Size(117, 42)
         Me.BtnPreDiagGuardar.TabIndex = 5
         Me.BtnPreDiagGuardar.Text = "Guardar"
         Me.BtnPreDiagGuardar.UseVisualStyleBackColor = False
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Font = New System.Drawing.Font("Ubuntu", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(898, 5)
-        Me.GroupBox1.MaximumSize = New System.Drawing.Size(850, 689)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(850, 530)
-        Me.GroupBox1.TabIndex = 3
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Diagnostico"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.BtnContinuarAPlan)
-        Me.GroupBox2.Controls.Add(Me.BtnGuargarDiagnostico)
-        Me.GroupBox2.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GroupBox2.Location = New System.Drawing.Point(895, 690)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(850, 79)
-        Me.GroupBox2.TabIndex = 7
-        Me.GroupBox2.TabStop = False
         '
         'BtnContinuarAPlan
         '
@@ -260,7 +233,7 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.BtnContinuarAPlan.FlatAppearance.BorderSize = 0
         Me.BtnContinuarAPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnContinuarAPlan.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnContinuarAPlan.Location = New System.Drawing.Point(568, 23)
+        Me.BtnContinuarAPlan.Location = New System.Drawing.Point(578, 24)
         Me.BtnContinuarAPlan.MaximumSize = New System.Drawing.Size(260, 42)
         Me.BtnContinuarAPlan.Name = "BtnContinuarAPlan"
         Me.BtnContinuarAPlan.Size = New System.Drawing.Size(260, 42)
@@ -268,28 +241,13 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.BtnContinuarAPlan.Text = "Continuar a Plan >>>"
         Me.BtnContinuarAPlan.UseVisualStyleBackColor = False
         '
-        'BtnGuargarDiagnostico
-        '
-        Me.BtnGuargarDiagnostico.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnGuargarDiagnostico.FlatAppearance.BorderSize = 0
-        Me.BtnGuargarDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnGuargarDiagnostico.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGuargarDiagnostico.Location = New System.Drawing.Point(426, 23)
-        Me.BtnGuargarDiagnostico.Name = "BtnGuargarDiagnostico"
-        Me.BtnGuargarDiagnostico.Size = New System.Drawing.Size(117, 42)
-        Me.BtnGuargarDiagnostico.TabIndex = 5
-        Me.BtnGuargarDiagnostico.Text = "Guardar"
-        Me.BtnGuargarDiagnostico.UseVisualStyleBackColor = False
-        '
         'FrmPreDiagnosticoyDiagnostico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1770, 800)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.ClientSize = New System.Drawing.Size(905, 800)
         Me.Controls.Add(Me.GbxEntrevistaInicial)
         Me.Controls.Add(Me.GrxBotonesGuardarCancelarContinuar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -299,7 +257,6 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.GbxEntrevistaInicial.ResumeLayout(False)
         Me.GbxEntrevistaInicial.PerformLayout()
         Me.GrxBotonesGuardarCancelarContinuar.ResumeLayout(False)
-        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -308,10 +265,7 @@ Partial Class FrmPreDiagnosticoyDiagnostico
     Friend WithEvents GrxBotonesGuardarCancelarContinuar As GroupBox
     Friend WithEvents BtnPreDigCancelar As Button
     Friend WithEvents BtnPreDiagGuardar As Button
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents BtnContinuarAPlan As Button
-    Friend WithEvents BtnGuargarDiagnostico As Button
     Friend WithEvents CbxTipoDeDiagnostico As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label

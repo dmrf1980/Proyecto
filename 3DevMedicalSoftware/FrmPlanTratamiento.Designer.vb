@@ -361,7 +361,7 @@ Partial Class FrmPlanTratamiento
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1770, 800)
+        Me.ClientSize = New System.Drawing.Size(904, 800)
         Me.Controls.Add(Me.GbxPlan)
         Me.Controls.Add(Me.GrxBotonesGuardarCancelarContinuar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
