@@ -28,6 +28,12 @@ Partial Class Form1
         Me.PanelIzqIconos = New System.Windows.Forms.Panel()
         Me.LblMenu = New System.Windows.Forms.Label()
         Me.PnlSeparadorPequeño = New System.Windows.Forms.Panel()
+        Me.BtnMenu = New System.Windows.Forms.Button()
+        Me.PictureBoxIconoPlan = New System.Windows.Forms.PictureBox()
+        Me.PictureIconoMantenimiento = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxIconoExploracion = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxIconoPreDiagnostico = New System.Windows.Forms.PictureBox()
+        Me.PictureBoxIconoEntrevista = New System.Windows.Forms.PictureBox()
         Me.BtnPlan = New System.Windows.Forms.Button()
         Me.BtnPreDiaDiagnostico = New System.Windows.Forms.Button()
         Me.BtnExploracion = New System.Windows.Forms.Button()
@@ -35,25 +41,19 @@ Partial Class Form1
         Me.BtnMantenimiento = New System.Windows.Forms.Button()
         Me.LblMedicalSoftwdivision = New System.Windows.Forms.Label()
         Me.BarraSuperiorVerde = New System.Windows.Forms.Panel()
-        Me.BtnIngresoUsuarios = New System.Windows.Forms.Button()
-        Me.BtnMenu = New System.Windows.Forms.Button()
-        Me.PictureBoxIconoPlan = New System.Windows.Forms.PictureBox()
-        Me.PictureIconoMantenimiento = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxIconoExploracion = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxIconoPreDiagnostico = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxIconoEntrevista = New System.Windows.Forms.PictureBox()
         Me.PictureLoguito = New System.Windows.Forms.PictureBox()
         Me.PictureBoxIconoUsuario = New System.Windows.Forms.PictureBox()
+        Me.BtnIngresoUsuarios = New System.Windows.Forms.Button()
         Me.PictureBoxPanelCentral = New System.Windows.Forms.PictureBox()
         Me.PanelPrincipal.SuspendLayout()
         Me.PanelIzquierdo.SuspendLayout()
         Me.PanelIzqIconos.SuspendLayout()
-        Me.BarraSuperiorVerde.SuspendLayout()
         CType(Me.PictureBoxIconoPlan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureIconoMantenimiento, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxIconoExploracion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxIconoPreDiagnostico, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxIconoEntrevista, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BarraSuperiorVerde.SuspendLayout()
         CType(Me.PictureLoguito, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxIconoUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxPanelCentral, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,6 +61,7 @@ Partial Class Form1
         '
         'PanelPrincipal
         '
+        Me.PanelPrincipal.AutoScroll = True
         Me.PanelPrincipal.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.PanelPrincipal.Controls.Add(Me.PanelIzquierdo)
         Me.PanelPrincipal.Controls.Add(Me.LblMedicalSoftwdivision)
@@ -130,6 +131,90 @@ Partial Class Form1
         Me.PnlSeparadorPequeño.Size = New System.Drawing.Size(83, 6)
         Me.PnlSeparadorPequeño.TabIndex = 3
         '
+        'BtnMenu
+        '
+        Me.BtnMenu.BackColor = System.Drawing.Color.Transparent
+        Me.BtnMenu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnMenu.FlatAppearance.BorderSize = 0
+        Me.BtnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMenu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BtnMenu.Image = CType(resources.GetObject("BtnMenu.Image"), System.Drawing.Image)
+        Me.BtnMenu.Location = New System.Drawing.Point(3, 29)
+        Me.BtnMenu.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.BtnMenu.Name = "BtnMenu"
+        Me.BtnMenu.Size = New System.Drawing.Size(82, 90)
+        Me.BtnMenu.TabIndex = 2
+        Me.BtnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnMenu.UseVisualStyleBackColor = False
+        Me.BtnMenu.Visible = False
+        '
+        'PictureBoxIconoPlan
+        '
+        Me.PictureBoxIconoPlan.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBoxIconoPlan.Image = CType(resources.GetObject("PictureBoxIconoPlan.Image"), System.Drawing.Image)
+        Me.PictureBoxIconoPlan.Location = New System.Drawing.Point(4, 571)
+        Me.PictureBoxIconoPlan.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBoxIconoPlan.Name = "PictureBoxIconoPlan"
+        Me.PictureBoxIconoPlan.Size = New System.Drawing.Size(82, 90)
+        Me.PictureBoxIconoPlan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxIconoPlan.TabIndex = 1
+        Me.PictureBoxIconoPlan.TabStop = False
+        Me.PictureBoxIconoPlan.Visible = False
+        '
+        'PictureIconoMantenimiento
+        '
+        Me.PictureIconoMantenimiento.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureIconoMantenimiento.Image = CType(resources.GetObject("PictureIconoMantenimiento.Image"), System.Drawing.Image)
+        Me.PictureIconoMantenimiento.Location = New System.Drawing.Point(6, 137)
+        Me.PictureIconoMantenimiento.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureIconoMantenimiento.Name = "PictureIconoMantenimiento"
+        Me.PictureIconoMantenimiento.Size = New System.Drawing.Size(82, 90)
+        Me.PictureIconoMantenimiento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureIconoMantenimiento.TabIndex = 1
+        Me.PictureIconoMantenimiento.TabStop = False
+        Me.PictureIconoMantenimiento.Visible = False
+        '
+        'PictureBoxIconoExploracion
+        '
+        Me.PictureBoxIconoExploracion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBoxIconoExploracion.Image = CType(resources.GetObject("PictureBoxIconoExploracion.Image"), System.Drawing.Image)
+        Me.PictureBoxIconoExploracion.Location = New System.Drawing.Point(3, 355)
+        Me.PictureBoxIconoExploracion.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBoxIconoExploracion.Name = "PictureBoxIconoExploracion"
+        Me.PictureBoxIconoExploracion.Size = New System.Drawing.Size(82, 90)
+        Me.PictureBoxIconoExploracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxIconoExploracion.TabIndex = 1
+        Me.PictureBoxIconoExploracion.TabStop = False
+        Me.PictureBoxIconoExploracion.Visible = False
+        '
+        'PictureBoxIconoPreDiagnostico
+        '
+        Me.PictureBoxIconoPreDiagnostico.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBoxIconoPreDiagnostico.Image = CType(resources.GetObject("PictureBoxIconoPreDiagnostico.Image"), System.Drawing.Image)
+        Me.PictureBoxIconoPreDiagnostico.Location = New System.Drawing.Point(8, 464)
+        Me.PictureBoxIconoPreDiagnostico.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBoxIconoPreDiagnostico.Name = "PictureBoxIconoPreDiagnostico"
+        Me.PictureBoxIconoPreDiagnostico.Size = New System.Drawing.Size(79, 88)
+        Me.PictureBoxIconoPreDiagnostico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxIconoPreDiagnostico.TabIndex = 1
+        Me.PictureBoxIconoPreDiagnostico.TabStop = False
+        Me.PictureBoxIconoPreDiagnostico.Visible = False
+        '
+        'PictureBoxIconoEntrevista
+        '
+        Me.PictureBoxIconoEntrevista.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBoxIconoEntrevista.Image = CType(resources.GetObject("PictureBoxIconoEntrevista.Image"), System.Drawing.Image)
+        Me.PictureBoxIconoEntrevista.Location = New System.Drawing.Point(0, 246)
+        Me.PictureBoxIconoEntrevista.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBoxIconoEntrevista.Name = "PictureBoxIconoEntrevista"
+        Me.PictureBoxIconoEntrevista.Size = New System.Drawing.Size(82, 90)
+        Me.PictureBoxIconoEntrevista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxIconoEntrevista.TabIndex = 1
+        Me.PictureBoxIconoEntrevista.TabStop = False
+        Me.PictureBoxIconoEntrevista.Visible = False
+        '
         'BtnPlan
         '
         Me.BtnPlan.BackColor = System.Drawing.Color.Transparent
@@ -139,11 +224,11 @@ Partial Class Form1
         Me.BtnPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPlan.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPlan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BtnPlan.Location = New System.Drawing.Point(93, 587)
+        Me.BtnPlan.Location = New System.Drawing.Point(93, 572)
         Me.BtnPlan.Margin = New System.Windows.Forms.Padding(10, 4, 3, 4)
         Me.BtnPlan.Name = "BtnPlan"
         Me.BtnPlan.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.BtnPlan.Size = New System.Drawing.Size(263, 90)
+        Me.BtnPlan.Size = New System.Drawing.Size(283, 90)
         Me.BtnPlan.TabIndex = 0
         Me.BtnPlan.Text = "Plan"
         Me.BtnPlan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -159,11 +244,11 @@ Partial Class Form1
         Me.BtnPreDiaDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnPreDiaDiagnostico.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPreDiaDiagnostico.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BtnPreDiaDiagnostico.Location = New System.Drawing.Point(92, 476)
+        Me.BtnPreDiaDiagnostico.Location = New System.Drawing.Point(92, 465)
         Me.BtnPreDiaDiagnostico.Margin = New System.Windows.Forms.Padding(10, 4, 3, 4)
         Me.BtnPreDiaDiagnostico.Name = "BtnPreDiaDiagnostico"
         Me.BtnPreDiaDiagnostico.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.BtnPreDiaDiagnostico.Size = New System.Drawing.Size(270, 90)
+        Me.BtnPreDiaDiagnostico.Size = New System.Drawing.Size(293, 90)
         Me.BtnPreDiaDiagnostico.TabIndex = 0
         Me.BtnPreDiaDiagnostico.Text = "Pre Diagnostico/Diagnostico"
         Me.BtnPreDiaDiagnostico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -179,11 +264,11 @@ Partial Class Form1
         Me.BtnExploracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnExploracion.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnExploracion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BtnExploracion.Location = New System.Drawing.Point(92, 365)
+        Me.BtnExploracion.Location = New System.Drawing.Point(92, 356)
         Me.BtnExploracion.Margin = New System.Windows.Forms.Padding(10, 4, 3, 4)
         Me.BtnExploracion.Name = "BtnExploracion"
         Me.BtnExploracion.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.BtnExploracion.Size = New System.Drawing.Size(263, 90)
+        Me.BtnExploracion.Size = New System.Drawing.Size(284, 90)
         Me.BtnExploracion.TabIndex = 0
         Me.BtnExploracion.Text = "Exploracion"
         Me.BtnExploracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -198,11 +283,11 @@ Partial Class Form1
         Me.BtnEntrevistaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEntrevistaInicial.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnEntrevistaInicial.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BtnEntrevistaInicial.Location = New System.Drawing.Point(92, 254)
+        Me.BtnEntrevistaInicial.Location = New System.Drawing.Point(92, 244)
         Me.BtnEntrevistaInicial.Margin = New System.Windows.Forms.Padding(10, 4, 3, 4)
         Me.BtnEntrevistaInicial.Name = "BtnEntrevistaInicial"
         Me.BtnEntrevistaInicial.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.BtnEntrevistaInicial.Size = New System.Drawing.Size(263, 90)
+        Me.BtnEntrevistaInicial.Size = New System.Drawing.Size(284, 90)
         Me.BtnEntrevistaInicial.TabIndex = 0
         Me.BtnEntrevistaInicial.Text = "Entrevista Inicial"
         Me.BtnEntrevistaInicial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -218,11 +303,11 @@ Partial Class Form1
         Me.BtnMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMantenimiento.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnMantenimiento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BtnMantenimiento.Location = New System.Drawing.Point(93, 143)
+        Me.BtnMantenimiento.Location = New System.Drawing.Point(93, 138)
         Me.BtnMantenimiento.Margin = New System.Windows.Forms.Padding(10, 4, 3, 4)
         Me.BtnMantenimiento.Name = "BtnMantenimiento"
         Me.BtnMantenimiento.Padding = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.BtnMantenimiento.Size = New System.Drawing.Size(263, 90)
+        Me.BtnMantenimiento.Size = New System.Drawing.Size(283, 90)
         Me.BtnMantenimiento.TabIndex = 0
         Me.BtnMantenimiento.Text = "Mantenimiento"
         Me.BtnMantenimiento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -255,108 +340,6 @@ Partial Class Form1
         Me.BarraSuperiorVerde.Size = New System.Drawing.Size(1184, 62)
         Me.BarraSuperiorVerde.TabIndex = 0
         '
-        'BtnIngresoUsuarios
-        '
-        Me.BtnIngresoUsuarios.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnIngresoUsuarios.AutoSize = True
-        Me.BtnIngresoUsuarios.FlatAppearance.BorderSize = 0
-        Me.BtnIngresoUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnIngresoUsuarios.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnIngresoUsuarios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BtnIngresoUsuarios.Location = New System.Drawing.Point(979, 15)
-        Me.BtnIngresoUsuarios.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.BtnIngresoUsuarios.Name = "BtnIngresoUsuarios"
-        Me.BtnIngresoUsuarios.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BtnIngresoUsuarios.Size = New System.Drawing.Size(127, 34)
-        Me.BtnIngresoUsuarios.TabIndex = 2
-        Me.BtnIngresoUsuarios.Text = "Ingreso Usuarios"
-        Me.BtnIngresoUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BtnIngresoUsuarios.UseVisualStyleBackColor = True
-        '
-        'BtnMenu
-        '
-        Me.BtnMenu.BackColor = System.Drawing.Color.Transparent
-        Me.BtnMenu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BtnMenu.FlatAppearance.BorderSize = 0
-        Me.BtnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnMenu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BtnMenu.Image = CType(resources.GetObject("BtnMenu.Image"), System.Drawing.Image)
-        Me.BtnMenu.Location = New System.Drawing.Point(3, 29)
-        Me.BtnMenu.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.BtnMenu.Name = "BtnMenu"
-        Me.BtnMenu.Size = New System.Drawing.Size(82, 90)
-        Me.BtnMenu.TabIndex = 2
-        Me.BtnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnMenu.UseVisualStyleBackColor = False
-        Me.BtnMenu.Visible = False
-        '
-        'PictureBoxIconoPlan
-        '
-        Me.PictureBoxIconoPlan.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxIconoPlan.Image = CType(resources.GetObject("PictureBoxIconoPlan.Image"), System.Drawing.Image)
-        Me.PictureBoxIconoPlan.Location = New System.Drawing.Point(4, 586)
-        Me.PictureBoxIconoPlan.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.PictureBoxIconoPlan.Name = "PictureBoxIconoPlan"
-        Me.PictureBoxIconoPlan.Size = New System.Drawing.Size(82, 90)
-        Me.PictureBoxIconoPlan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxIconoPlan.TabIndex = 1
-        Me.PictureBoxIconoPlan.TabStop = False
-        Me.PictureBoxIconoPlan.Visible = False
-        '
-        'PictureIconoMantenimiento
-        '
-        Me.PictureIconoMantenimiento.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureIconoMantenimiento.Image = CType(resources.GetObject("PictureIconoMantenimiento.Image"), System.Drawing.Image)
-        Me.PictureIconoMantenimiento.Location = New System.Drawing.Point(6, 142)
-        Me.PictureIconoMantenimiento.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.PictureIconoMantenimiento.Name = "PictureIconoMantenimiento"
-        Me.PictureIconoMantenimiento.Size = New System.Drawing.Size(82, 90)
-        Me.PictureIconoMantenimiento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureIconoMantenimiento.TabIndex = 1
-        Me.PictureIconoMantenimiento.TabStop = False
-        Me.PictureIconoMantenimiento.Visible = False
-        '
-        'PictureBoxIconoExploracion
-        '
-        Me.PictureBoxIconoExploracion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxIconoExploracion.Image = CType(resources.GetObject("PictureBoxIconoExploracion.Image"), System.Drawing.Image)
-        Me.PictureBoxIconoExploracion.Location = New System.Drawing.Point(3, 364)
-        Me.PictureBoxIconoExploracion.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.PictureBoxIconoExploracion.Name = "PictureBoxIconoExploracion"
-        Me.PictureBoxIconoExploracion.Size = New System.Drawing.Size(82, 90)
-        Me.PictureBoxIconoExploracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxIconoExploracion.TabIndex = 1
-        Me.PictureBoxIconoExploracion.TabStop = False
-        Me.PictureBoxIconoExploracion.Visible = False
-        '
-        'PictureBoxIconoPreDiagnostico
-        '
-        Me.PictureBoxIconoPreDiagnostico.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxIconoPreDiagnostico.Image = CType(resources.GetObject("PictureBoxIconoPreDiagnostico.Image"), System.Drawing.Image)
-        Me.PictureBoxIconoPreDiagnostico.Location = New System.Drawing.Point(8, 475)
-        Me.PictureBoxIconoPreDiagnostico.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.PictureBoxIconoPreDiagnostico.Name = "PictureBoxIconoPreDiagnostico"
-        Me.PictureBoxIconoPreDiagnostico.Size = New System.Drawing.Size(79, 88)
-        Me.PictureBoxIconoPreDiagnostico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBoxIconoPreDiagnostico.TabIndex = 1
-        Me.PictureBoxIconoPreDiagnostico.TabStop = False
-        Me.PictureBoxIconoPreDiagnostico.Visible = False
-        '
-        'PictureBoxIconoEntrevista
-        '
-        Me.PictureBoxIconoEntrevista.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxIconoEntrevista.Image = CType(resources.GetObject("PictureBoxIconoEntrevista.Image"), System.Drawing.Image)
-        Me.PictureBoxIconoEntrevista.Location = New System.Drawing.Point(0, 253)
-        Me.PictureBoxIconoEntrevista.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.PictureBoxIconoEntrevista.Name = "PictureBoxIconoEntrevista"
-        Me.PictureBoxIconoEntrevista.Size = New System.Drawing.Size(82, 90)
-        Me.PictureBoxIconoEntrevista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBoxIconoEntrevista.TabIndex = 1
-        Me.PictureBoxIconoEntrevista.TabStop = False
-        Me.PictureBoxIconoEntrevista.Visible = False
-        '
         'PictureLoguito
         '
         Me.PictureLoguito.Image = CType(resources.GetObject("PictureLoguito.Image"), System.Drawing.Image)
@@ -381,6 +364,24 @@ Partial Class Form1
         Me.PictureBoxIconoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxIconoUsuario.TabIndex = 1
         Me.PictureBoxIconoUsuario.TabStop = False
+        '
+        'BtnIngresoUsuarios
+        '
+        Me.BtnIngresoUsuarios.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnIngresoUsuarios.AutoSize = True
+        Me.BtnIngresoUsuarios.FlatAppearance.BorderSize = 0
+        Me.BtnIngresoUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnIngresoUsuarios.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnIngresoUsuarios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BtnIngresoUsuarios.Location = New System.Drawing.Point(979, 15)
+        Me.BtnIngresoUsuarios.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.BtnIngresoUsuarios.Name = "BtnIngresoUsuarios"
+        Me.BtnIngresoUsuarios.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.BtnIngresoUsuarios.Size = New System.Drawing.Size(127, 34)
+        Me.BtnIngresoUsuarios.TabIndex = 2
+        Me.BtnIngresoUsuarios.Text = "Ingreso Usuarios"
+        Me.BtnIngresoUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BtnIngresoUsuarios.UseVisualStyleBackColor = True
         '
         'PictureBoxPanelCentral
         '
@@ -414,13 +415,13 @@ Partial Class Form1
         Me.PanelIzquierdo.ResumeLayout(False)
         Me.PanelIzqIconos.ResumeLayout(False)
         Me.PanelIzqIconos.PerformLayout()
-        Me.BarraSuperiorVerde.ResumeLayout(False)
-        Me.BarraSuperiorVerde.PerformLayout()
         CType(Me.PictureBoxIconoPlan, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureIconoMantenimiento, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxIconoExploracion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxIconoPreDiagnostico, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxIconoEntrevista, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BarraSuperiorVerde.ResumeLayout(False)
+        Me.BarraSuperiorVerde.PerformLayout()
         CType(Me.PictureLoguito, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxIconoUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBoxPanelCentral, System.ComponentModel.ISupportInitialize).EndInit()
