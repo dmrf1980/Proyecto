@@ -232,7 +232,6 @@ Partial Class FrmExploracionYDolor
         '
         'RadioButton4
         '
-        Me.RadioButton4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadioButton4.AutoSize = True
         Me.RadioButton4.Checked = True
         Me.RadioButton4.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -332,7 +331,6 @@ Partial Class FrmExploracionYDolor
         '
         'RadioButton6
         '
-        Me.RadioButton6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadioButton6.AutoSize = True
         Me.RadioButton6.Checked = True
         Me.RadioButton6.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

@@ -5,11 +5,11 @@
         PictureBoxIconoUsuario.Image = FrmMantenimiento.PictureImagenPerfil.Image
     End Sub
 
-    ''METODO COLOCAR FORM EN PANEL CENTRAL--------------------------------------------
+    ''METODO COLOCAR FORMULARIOS EN EL PANEL CENTRAL DEL Form1--------------------------------------------
     Public Sub AbrirFormDentroDePanelPForm(Of Miform As {Form, New})()
         Dim Formulario As Form
 
-        'Busca el formulario en la coleccion'
+        'Busca el formulario en la coleccion
         Formulario = PanelPrincipal.Controls.OfType(Of Miform)().FirstOrDefault()
         'Si form no fue econtrado/ no existe'
         If Formulario Is Nothing Then
@@ -71,5 +71,9 @@
         AbrirFormDentroDePanelPForm(Of FrmPlanTratamiento)()
         PanelIzquierdo.Width = 90
     End Sub
+
+
+
+
 End Class
 
