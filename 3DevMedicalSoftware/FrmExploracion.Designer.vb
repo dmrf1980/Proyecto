@@ -704,10 +704,10 @@ Partial Class FrmExploracionYDolor
         '
         'GrxvariaConMovimiento
         '
-        Me.GrxvariaConMovimiento.Controls.Add(Me.GrxDolornocturno)
         Me.GrxvariaConMovimiento.Controls.Add(Me.RadioVariaMovSi)
         Me.GrxvariaConMovimiento.Controls.Add(Me.RadioVariaMovNo)
         Me.GrxvariaConMovimiento.Controls.Add(Me.GrxMejoraEnReposo)
+        Me.GrxvariaConMovimiento.Controls.Add(Me.GrxDolornocturno)
         Me.GrxvariaConMovimiento.Cursor = System.Windows.Forms.Cursors.Default
         Me.GrxvariaConMovimiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrxvariaConMovimiento.Location = New System.Drawing.Point(15, 48)
@@ -872,7 +872,7 @@ Partial Class FrmExploracionYDolor
         '
         Me.RadioVariaMovSi.AutoSize = True
         Me.RadioVariaMovSi.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioVariaMovSi.Location = New System.Drawing.Point(530, 16)
+        Me.RadioVariaMovSi.Location = New System.Drawing.Point(510, 16)
         Me.RadioVariaMovSi.Name = "RadioVariaMovSi"
         Me.RadioVariaMovSi.Size = New System.Drawing.Size(36, 21)
         Me.RadioVariaMovSi.TabIndex = 4
@@ -884,7 +884,7 @@ Partial Class FrmExploracionYDolor
         '
         Me.RadioVariaMovNo.AutoSize = True
         Me.RadioVariaMovNo.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioVariaMovNo.Location = New System.Drawing.Point(622, 16)
+        Me.RadioVariaMovNo.Location = New System.Drawing.Point(598, 16)
         Me.RadioVariaMovNo.Name = "RadioVariaMovNo"
         Me.RadioVariaMovNo.Size = New System.Drawing.Size(43, 21)
         Me.RadioVariaMovNo.TabIndex = 3
@@ -911,7 +911,7 @@ Partial Class FrmExploracionYDolor
         '
         Me.RadioMejoraReposoSi.AutoSize = True
         Me.RadioMejoraReposoSi.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioMejoraReposoSi.Location = New System.Drawing.Point(472, 30)
+        Me.RadioMejoraReposoSi.Location = New System.Drawing.Point(471, 31)
         Me.RadioMejoraReposoSi.Name = "RadioMejoraReposoSi"
         Me.RadioMejoraReposoSi.Size = New System.Drawing.Size(36, 21)
         Me.RadioMejoraReposoSi.TabIndex = 6
@@ -989,7 +989,7 @@ Partial Class FrmExploracionYDolor
         Me.RadioDolorMecanicoSi.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.RadioDolorMecanicoSi.AutoSize = True
         Me.RadioDolorMecanicoSi.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioDolorMecanicoSi.Location = New System.Drawing.Point(428, 24)
+        Me.RadioDolorMecanicoSi.Location = New System.Drawing.Point(433, 24)
         Me.RadioDolorMecanicoSi.Name = "RadioDolorMecanicoSi"
         Me.RadioDolorMecanicoSi.Size = New System.Drawing.Size(36, 21)
         Me.RadioDolorMecanicoSi.TabIndex = 8
@@ -999,10 +999,9 @@ Partial Class FrmExploracionYDolor
         '
         'RadioDolorMecanicoNo
         '
-        Me.RadioDolorMecanicoNo.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.RadioDolorMecanicoNo.AutoSize = True
         Me.RadioDolorMecanicoNo.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioDolorMecanicoNo.Location = New System.Drawing.Point(524, 24)
+        Me.RadioDolorMecanicoNo.Location = New System.Drawing.Point(518, 24)
         Me.RadioDolorMecanicoNo.Name = "RadioDolorMecanicoNo"
         Me.RadioDolorMecanicoNo.Size = New System.Drawing.Size(43, 21)
         Me.RadioDolorMecanicoNo.TabIndex = 7
@@ -1040,7 +1039,7 @@ Partial Class FrmExploracionYDolor
         '
         Me.RadioDolorIrradiadoNo.AutoSize = True
         Me.RadioDolorIrradiadoNo.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioDolorIrradiadoNo.Location = New System.Drawing.Point(518, 13)
+        Me.RadioDolorIrradiadoNo.Location = New System.Drawing.Point(513, 13)
         Me.RadioDolorIrradiadoNo.Name = "RadioDolorIrradiadoNo"
         Me.RadioDolorIrradiadoNo.Size = New System.Drawing.Size(43, 21)
         Me.RadioDolorIrradiadoNo.TabIndex = 7
