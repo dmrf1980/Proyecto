@@ -56,4 +56,11 @@
         LblDatosEnferMaternas.Text = TxtEnferMaternas.Text
     End Sub
 
+    Private Sub GbxIngresoPacientes_Enter(sender As Object, e As EventArgs) Handles GbxIngresoPacientes.Enter
+
+    End Sub
+
+    Private Sub TxtEdadcalculada_TextChanged(sender As Object, e As EventArgs) Handles TxtEdadcalculada.TextChanged
+
+    End Sub
 End Class

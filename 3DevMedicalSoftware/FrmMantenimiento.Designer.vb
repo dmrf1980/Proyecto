@@ -26,7 +26,6 @@ Partial Class FrmMantenimiento
         Me.GbxIngresoPacientes = New System.Windows.Forms.GroupBox()
         Me.ComEstadocivil = New System.Windows.Forms.ComboBox()
         Me.BtncargarImagen = New System.Windows.Forms.Button()
-        Me.NumEdadPaciente = New System.Windows.Forms.NumericUpDown()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.DateTimeFechaNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.DateTimeFechaAlta = New System.Windows.Forms.DateTimePicker()
@@ -125,8 +124,9 @@ Partial Class FrmMantenimiento
         Me.BtnBuscarPaciente = New System.Windows.Forms.Button()
         Me.BtnIngresoNuevoPaciente = New System.Windows.Forms.Button()
         Me.OFcargarImagen = New System.Windows.Forms.OpenFileDialog()
+        Me.TxtEdadcalculada = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GbxIngresoPacientes.SuspendLayout()
-        CType(Me.NumEdadPaciente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureImagenPerfil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -139,9 +139,9 @@ Partial Class FrmMantenimiento
         '
         'GbxIngresoPacientes
         '
+        Me.GbxIngresoPacientes.Controls.Add(Me.TxtEdadcalculada)
         Me.GbxIngresoPacientes.Controls.Add(Me.ComEstadocivil)
         Me.GbxIngresoPacientes.Controls.Add(Me.BtncargarImagen)
-        Me.GbxIngresoPacientes.Controls.Add(Me.NumEdadPaciente)
         Me.GbxIngresoPacientes.Controls.Add(Me.Label13)
         Me.GbxIngresoPacientes.Controls.Add(Me.DateTimeFechaNacimiento)
         Me.GbxIngresoPacientes.Controls.Add(Me.DateTimeFechaAlta)
@@ -190,7 +190,7 @@ Partial Class FrmMantenimiento
         Me.GbxIngresoPacientes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.GbxIngresoPacientes.Location = New System.Drawing.Point(25, 99)
         Me.GbxIngresoPacientes.Name = "GbxIngresoPacientes"
-        Me.GbxIngresoPacientes.Size = New System.Drawing.Size(970, 599)
+        Me.GbxIngresoPacientes.Size = New System.Drawing.Size(772, 599)
         Me.GbxIngresoPacientes.TabIndex = 0
         Me.GbxIngresoPacientes.TabStop = False
         Me.GbxIngresoPacientes.Text = "Anamnesis"
@@ -201,9 +201,10 @@ Partial Class FrmMantenimiento
         Me.ComEstadocivil.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComEstadocivil.FormattingEnabled = True
         Me.ComEstadocivil.Items.AddRange(New Object() {"Soltero/a", "Casado/a", "Divorciado/a", "Viudo/a "})
-        Me.ComEstadocivil.Location = New System.Drawing.Point(588, 171)
+        Me.ComEstadocivil.Location = New System.Drawing.Point(406, 171)
+        Me.ComEstadocivil.MinimumSize = New System.Drawing.Size(150, 0)
         Me.ComEstadocivil.Name = "ComEstadocivil"
-        Me.ComEstadocivil.Size = New System.Drawing.Size(215, 28)
+        Me.ComEstadocivil.Size = New System.Drawing.Size(150, 28)
         Me.ComEstadocivil.TabIndex = 12
         '
         'BtncargarImagen
@@ -214,7 +215,7 @@ Partial Class FrmMantenimiento
         Me.BtncargarImagen.FlatAppearance.BorderSize = 0
         Me.BtncargarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtncargarImagen.Font = New System.Drawing.Font("Ubuntu", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtncargarImagen.Location = New System.Drawing.Point(816, 189)
+        Me.BtncargarImagen.Location = New System.Drawing.Point(575, 189)
         Me.BtncargarImagen.MaximumSize = New System.Drawing.Size(140, 33)
         Me.BtncargarImagen.MinimumSize = New System.Drawing.Size(145, 33)
         Me.BtncargarImagen.Name = "BtncargarImagen"
@@ -223,27 +224,16 @@ Partial Class FrmMantenimiento
         Me.BtncargarImagen.Text = "Cargar imagen"
         Me.BtncargarImagen.UseVisualStyleBackColor = False
         '
-        'NumEdadPaciente
-        '
-        Me.NumEdadPaciente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.NumEdadPaciente.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumEdadPaciente.Location = New System.Drawing.Point(290, 138)
-        Me.NumEdadPaciente.Maximum = New Decimal(New Integer() {150, 0, 0, 0})
-        Me.NumEdadPaciente.MinimumSize = New System.Drawing.Size(120, 0)
-        Me.NumEdadPaciente.Name = "NumEdadPaciente"
-        Me.NumEdadPaciente.Size = New System.Drawing.Size(120, 26)
-        Me.NumEdadPaciente.TabIndex = 11
-        '
         'Label13
         '
         Me.Label13.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(455, 240)
+        Me.Label13.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(315, 240)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(131, 20)
+        Me.Label13.Size = New System.Drawing.Size(91, 16)
         Me.Label13.TabIndex = 10
         Me.Label13.Text = "Fecha de ingreso"
         '
@@ -254,14 +244,14 @@ Partial Class FrmMantenimiento
         Me.DateTimeFechaNacimiento.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.DateTimeFechaNacimiento.Checked = False
         Me.DateTimeFechaNacimiento.CustomFormat = "MMMM dd, yyyy - dddd"
-        Me.DateTimeFechaNacimiento.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimeFechaNacimiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimeFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimeFechaNacimiento.Location = New System.Drawing.Point(588, 43)
+        Me.DateTimeFechaNacimiento.Location = New System.Drawing.Point(406, 43)
         Me.DateTimeFechaNacimiento.MaximumSize = New System.Drawing.Size(214, 26)
         Me.DateTimeFechaNacimiento.MinDate = New Date(1930, 1, 1, 0, 0, 0, 0)
-        Me.DateTimeFechaNacimiento.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.DateTimeFechaNacimiento.MinimumSize = New System.Drawing.Size(150, 26)
         Me.DateTimeFechaNacimiento.Name = "DateTimeFechaNacimiento"
-        Me.DateTimeFechaNacimiento.Size = New System.Drawing.Size(214, 26)
+        Me.DateTimeFechaNacimiento.Size = New System.Drawing.Size(150, 26)
         Me.DateTimeFechaNacimiento.TabIndex = 9
         Me.DateTimeFechaNacimiento.Value = New Date(2020, 7, 18, 0, 0, 0, 0)
         '
@@ -271,14 +261,14 @@ Partial Class FrmMantenimiento
         Me.DateTimeFechaAlta.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.DateTimeFechaAlta.Checked = False
         Me.DateTimeFechaAlta.CustomFormat = "MMMM dd, yyyy - dddd"
-        Me.DateTimeFechaAlta.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimeFechaAlta.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimeFechaAlta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimeFechaAlta.Location = New System.Drawing.Point(588, 237)
+        Me.DateTimeFechaAlta.Location = New System.Drawing.Point(406, 237)
         Me.DateTimeFechaAlta.MaximumSize = New System.Drawing.Size(214, 26)
         Me.DateTimeFechaAlta.MinDate = New Date(1930, 1, 1, 0, 0, 0, 0)
-        Me.DateTimeFechaAlta.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.DateTimeFechaAlta.MinimumSize = New System.Drawing.Size(150, 26)
         Me.DateTimeFechaAlta.Name = "DateTimeFechaAlta"
-        Me.DateTimeFechaAlta.Size = New System.Drawing.Size(214, 26)
+        Me.DateTimeFechaAlta.Size = New System.Drawing.Size(150, 26)
         Me.DateTimeFechaAlta.TabIndex = 9
         Me.DateTimeFechaAlta.Value = New Date(2020, 7, 18, 16, 13, 7, 0)
         '
@@ -289,13 +279,13 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtIngresoAnalisis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtIngresoAnalisis.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtIngresoAnalisis.Location = New System.Drawing.Point(203, 547)
+        Me.TxtIngresoAnalisis.Location = New System.Drawing.Point(140, 547)
         Me.TxtIngresoAnalisis.MaximumSize = New System.Drawing.Size(705, 40)
         Me.TxtIngresoAnalisis.MaxLength = 250
-        Me.TxtIngresoAnalisis.MinimumSize = New System.Drawing.Size(705, 40)
+        Me.TxtIngresoAnalisis.MinimumSize = New System.Drawing.Size(600, 40)
         Me.TxtIngresoAnalisis.Multiline = True
         Me.TxtIngresoAnalisis.Name = "TxtIngresoAnalisis"
-        Me.TxtIngresoAnalisis.Size = New System.Drawing.Size(705, 40)
+        Me.TxtIngresoAnalisis.Size = New System.Drawing.Size(600, 40)
         Me.TxtIngresoAnalisis.TabIndex = 7
         '
         'TxtEnferMaternas
@@ -305,13 +295,13 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtEnferMaternas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtEnferMaternas.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtEnferMaternas.Location = New System.Drawing.Point(203, 499)
+        Me.TxtEnferMaternas.Location = New System.Drawing.Point(140, 499)
         Me.TxtEnferMaternas.MaximumSize = New System.Drawing.Size(705, 40)
         Me.TxtEnferMaternas.MaxLength = 250
-        Me.TxtEnferMaternas.MinimumSize = New System.Drawing.Size(705, 40)
+        Me.TxtEnferMaternas.MinimumSize = New System.Drawing.Size(600, 40)
         Me.TxtEnferMaternas.Multiline = True
         Me.TxtEnferMaternas.Name = "TxtEnferMaternas"
-        Me.TxtEnferMaternas.Size = New System.Drawing.Size(705, 40)
+        Me.TxtEnferMaternas.Size = New System.Drawing.Size(600, 40)
         Me.TxtEnferMaternas.TabIndex = 7
         '
         'TxtEnfermedPaternas
@@ -321,13 +311,13 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtEnfermedPaternas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtEnfermedPaternas.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtEnfermedPaternas.Location = New System.Drawing.Point(203, 451)
+        Me.TxtEnfermedPaternas.Location = New System.Drawing.Point(140, 451)
         Me.TxtEnfermedPaternas.MaximumSize = New System.Drawing.Size(705, 40)
         Me.TxtEnfermedPaternas.MaxLength = 250
-        Me.TxtEnfermedPaternas.MinimumSize = New System.Drawing.Size(705, 40)
+        Me.TxtEnfermedPaternas.MinimumSize = New System.Drawing.Size(600, 40)
         Me.TxtEnfermedPaternas.Multiline = True
         Me.TxtEnfermedPaternas.Name = "TxtEnfermedPaternas"
-        Me.TxtEnfermedPaternas.Size = New System.Drawing.Size(705, 40)
+        Me.TxtEnfermedPaternas.Size = New System.Drawing.Size(600, 40)
         Me.TxtEnfermedPaternas.TabIndex = 7
         '
         'TxtCirujias
@@ -337,13 +327,13 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtCirujias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtCirujias.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCirujias.Location = New System.Drawing.Point(203, 403)
+        Me.TxtCirujias.Location = New System.Drawing.Point(140, 403)
         Me.TxtCirujias.MaximumSize = New System.Drawing.Size(705, 40)
         Me.TxtCirujias.MaxLength = 250
-        Me.TxtCirujias.MinimumSize = New System.Drawing.Size(705, 40)
+        Me.TxtCirujias.MinimumSize = New System.Drawing.Size(600, 40)
         Me.TxtCirujias.Multiline = True
         Me.TxtCirujias.Name = "TxtCirujias"
-        Me.TxtCirujias.Size = New System.Drawing.Size(705, 40)
+        Me.TxtCirujias.Size = New System.Drawing.Size(600, 40)
         Me.TxtCirujias.TabIndex = 7
         '
         'TxtAlergiasMedicamentos
@@ -353,13 +343,13 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtAlergiasMedicamentos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtAlergiasMedicamentos.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtAlergiasMedicamentos.Location = New System.Drawing.Point(203, 355)
+        Me.TxtAlergiasMedicamentos.Location = New System.Drawing.Point(140, 355)
         Me.TxtAlergiasMedicamentos.MaximumSize = New System.Drawing.Size(705, 40)
         Me.TxtAlergiasMedicamentos.MaxLength = 250
-        Me.TxtAlergiasMedicamentos.MinimumSize = New System.Drawing.Size(705, 40)
+        Me.TxtAlergiasMedicamentos.MinimumSize = New System.Drawing.Size(600, 40)
         Me.TxtAlergiasMedicamentos.Multiline = True
         Me.TxtAlergiasMedicamentos.Name = "TxtAlergiasMedicamentos"
-        Me.TxtAlergiasMedicamentos.Size = New System.Drawing.Size(705, 40)
+        Me.TxtAlergiasMedicamentos.Size = New System.Drawing.Size(600, 40)
         Me.TxtAlergiasMedicamentos.TabIndex = 7
         '
         'TxtEnfermeAnteriores
@@ -369,13 +359,13 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtEnfermeAnteriores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtEnfermeAnteriores.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtEnfermeAnteriores.Location = New System.Drawing.Point(203, 307)
+        Me.TxtEnfermeAnteriores.Location = New System.Drawing.Point(140, 307)
         Me.TxtEnfermeAnteriores.MaximumSize = New System.Drawing.Size(705, 40)
         Me.TxtEnfermeAnteriores.MaxLength = 250
-        Me.TxtEnfermeAnteriores.MinimumSize = New System.Drawing.Size(705, 40)
+        Me.TxtEnfermeAnteriores.MinimumSize = New System.Drawing.Size(600, 40)
         Me.TxtEnfermeAnteriores.Multiline = True
         Me.TxtEnfermeAnteriores.Name = "TxtEnfermeAnteriores"
-        Me.TxtEnfermeAnteriores.Size = New System.Drawing.Size(705, 40)
+        Me.TxtEnfermeAnteriores.Size = New System.Drawing.Size(600, 40)
         Me.TxtEnfermeAnteriores.TabIndex = 7
         '
         'PictureImagenPerfil
@@ -383,7 +373,7 @@ Partial Class FrmMantenimiento
         Me.PictureImagenPerfil.BackgroundImage = CType(resources.GetObject("PictureImagenPerfil.BackgroundImage"), System.Drawing.Image)
         Me.PictureImagenPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureImagenPerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureImagenPerfil.Location = New System.Drawing.Point(816, 43)
+        Me.PictureImagenPerfil.Location = New System.Drawing.Point(575, 43)
         Me.PictureImagenPerfil.MaximumSize = New System.Drawing.Size(145, 140)
         Me.PictureImagenPerfil.MinimumSize = New System.Drawing.Size(140, 140)
         Me.PictureImagenPerfil.Name = "PictureImagenPerfil"
@@ -399,12 +389,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtApellidoPaterno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtApellidoPaterno.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtApellidoPaterno.Location = New System.Drawing.Point(203, 105)
+        Me.TxtApellidoPaterno.Location = New System.Drawing.Point(140, 105)
         Me.TxtApellidoPaterno.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtApellidoPaterno.MaxLength = 15
-        Me.TxtApellidoPaterno.MinimumSize = New System.Drawing.Size(210, 26)
+        Me.TxtApellidoPaterno.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtApellidoPaterno.Name = "TxtApellidoPaterno"
-        Me.TxtApellidoPaterno.Size = New System.Drawing.Size(210, 26)
+        Me.TxtApellidoPaterno.Size = New System.Drawing.Size(150, 26)
         Me.TxtApellidoPaterno.TabIndex = 3
         '
         'TxtTelefAcompañante
@@ -414,12 +404,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtTelefAcompañante.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTelefAcompañante.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTelefAcompañante.Location = New System.Drawing.Point(588, 269)
+        Me.TxtTelefAcompañante.Location = New System.Drawing.Point(406, 269)
         Me.TxtTelefAcompañante.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtTelefAcompañante.MaxLength = 15
-        Me.TxtTelefAcompañante.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.TxtTelefAcompañante.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtTelefAcompañante.Name = "TxtTelefAcompañante"
-        Me.TxtTelefAcompañante.Size = New System.Drawing.Size(214, 26)
+        Me.TxtTelefAcompañante.Size = New System.Drawing.Size(150, 26)
         Me.TxtTelefAcompañante.TabIndex = 2
         '
         'TxtNombreAcompañante
@@ -429,12 +419,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtNombreAcompañante.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtNombreAcompañante.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNombreAcompañante.Location = New System.Drawing.Point(203, 270)
+        Me.TxtNombreAcompañante.Location = New System.Drawing.Point(140, 270)
         Me.TxtNombreAcompañante.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtNombreAcompañante.MaxLength = 35
-        Me.TxtNombreAcompañante.MinimumSize = New System.Drawing.Size(210, 26)
+        Me.TxtNombreAcompañante.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtNombreAcompañante.Name = "TxtNombreAcompañante"
-        Me.TxtNombreAcompañante.Size = New System.Drawing.Size(210, 26)
+        Me.TxtNombreAcompañante.Size = New System.Drawing.Size(150, 26)
         Me.TxtNombreAcompañante.TabIndex = 2
         '
         'TxtEmail
@@ -444,12 +434,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtEmail.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtEmail.Location = New System.Drawing.Point(203, 237)
+        Me.TxtEmail.Location = New System.Drawing.Point(140, 237)
         Me.TxtEmail.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtEmail.MaxLength = 25
-        Me.TxtEmail.MinimumSize = New System.Drawing.Size(210, 26)
+        Me.TxtEmail.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtEmail.Name = "TxtEmail"
-        Me.TxtEmail.Size = New System.Drawing.Size(210, 26)
+        Me.TxtEmail.Size = New System.Drawing.Size(150, 26)
         Me.TxtEmail.TabIndex = 2
         '
         'TxtEscolaridad
@@ -459,12 +449,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtEscolaridad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtEscolaridad.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtEscolaridad.Location = New System.Drawing.Point(203, 204)
+        Me.TxtEscolaridad.Location = New System.Drawing.Point(140, 204)
         Me.TxtEscolaridad.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtEscolaridad.MaxLength = 25
-        Me.TxtEscolaridad.MinimumSize = New System.Drawing.Size(210, 26)
+        Me.TxtEscolaridad.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtEscolaridad.Name = "TxtEscolaridad"
-        Me.TxtEscolaridad.Size = New System.Drawing.Size(210, 26)
+        Me.TxtEscolaridad.Size = New System.Drawing.Size(150, 26)
         Me.TxtEscolaridad.TabIndex = 2
         '
         'TxtOcupacion
@@ -474,12 +464,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtOcupacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtOcupacion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtOcupacion.Location = New System.Drawing.Point(203, 171)
+        Me.TxtOcupacion.Location = New System.Drawing.Point(140, 171)
         Me.TxtOcupacion.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtOcupacion.MaxLength = 25
-        Me.TxtOcupacion.MinimumSize = New System.Drawing.Size(210, 26)
+        Me.TxtOcupacion.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtOcupacion.Name = "TxtOcupacion"
-        Me.TxtOcupacion.Size = New System.Drawing.Size(210, 26)
+        Me.TxtOcupacion.Size = New System.Drawing.Size(150, 26)
         Me.TxtOcupacion.TabIndex = 2
         '
         'TxtDireccion
@@ -489,12 +479,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtDireccion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDireccion.Location = New System.Drawing.Point(588, 205)
+        Me.TxtDireccion.Location = New System.Drawing.Point(406, 205)
         Me.TxtDireccion.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtDireccion.MaxLength = 25
-        Me.TxtDireccion.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.TxtDireccion.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtDireccion.Name = "TxtDireccion"
-        Me.TxtDireccion.Size = New System.Drawing.Size(214, 26)
+        Me.TxtDireccion.Size = New System.Drawing.Size(150, 26)
         Me.TxtDireccion.TabIndex = 2
         '
         'TxtApellidoMaterno
@@ -504,12 +494,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtApellidoMaterno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtApellidoMaterno.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtApellidoMaterno.Location = New System.Drawing.Point(588, 107)
+        Me.TxtApellidoMaterno.Location = New System.Drawing.Point(406, 107)
         Me.TxtApellidoMaterno.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtApellidoMaterno.MaxLength = 15
-        Me.TxtApellidoMaterno.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.TxtApellidoMaterno.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtApellidoMaterno.Name = "TxtApellidoMaterno"
-        Me.TxtApellidoMaterno.Size = New System.Drawing.Size(214, 26)
+        Me.TxtApellidoMaterno.Size = New System.Drawing.Size(150, 26)
         Me.TxtApellidoMaterno.TabIndex = 2
         '
         'TxtPrimerNombre
@@ -519,12 +509,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtPrimerNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtPrimerNombre.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPrimerNombre.Location = New System.Drawing.Point(203, 75)
+        Me.TxtPrimerNombre.Location = New System.Drawing.Point(140, 75)
         Me.TxtPrimerNombre.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtPrimerNombre.MaxLength = 15
-        Me.TxtPrimerNombre.MinimumSize = New System.Drawing.Size(210, 26)
+        Me.TxtPrimerNombre.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtPrimerNombre.Name = "TxtPrimerNombre"
-        Me.TxtPrimerNombre.Size = New System.Drawing.Size(210, 26)
+        Me.TxtPrimerNombre.Size = New System.Drawing.Size(150, 26)
         Me.TxtPrimerNombre.TabIndex = 4
         '
         'TxtGenero
@@ -534,12 +524,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtGenero.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtGenero.Location = New System.Drawing.Point(588, 139)
+        Me.TxtGenero.Location = New System.Drawing.Point(406, 139)
         Me.TxtGenero.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtGenero.MaxLength = 25
-        Me.TxtGenero.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.TxtGenero.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtGenero.Name = "TxtGenero"
-        Me.TxtGenero.Size = New System.Drawing.Size(214, 26)
+        Me.TxtGenero.Size = New System.Drawing.Size(150, 26)
         Me.TxtGenero.TabIndex = 2
         '
         'TxtSegundoNombre
@@ -549,12 +539,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtSegundoNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtSegundoNombre.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtSegundoNombre.Location = New System.Drawing.Point(588, 75)
+        Me.TxtSegundoNombre.Location = New System.Drawing.Point(406, 75)
         Me.TxtSegundoNombre.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtSegundoNombre.MaxLength = 15
-        Me.TxtSegundoNombre.MinimumSize = New System.Drawing.Size(214, 26)
+        Me.TxtSegundoNombre.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtSegundoNombre.Name = "TxtSegundoNombre"
-        Me.TxtSegundoNombre.Size = New System.Drawing.Size(214, 26)
+        Me.TxtSegundoNombre.Size = New System.Drawing.Size(150, 26)
         Me.TxtSegundoNombre.TabIndex = 2
         '
         'TxtCedula
@@ -565,12 +555,12 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtCedula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtCedula.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCedula.Location = New System.Drawing.Point(203, 45)
+        Me.TxtCedula.Location = New System.Drawing.Point(140, 45)
         Me.TxtCedula.MaximumSize = New System.Drawing.Size(214, 26)
         Me.TxtCedula.MaxLength = 8
-        Me.TxtCedula.MinimumSize = New System.Drawing.Size(210, 26)
+        Me.TxtCedula.MinimumSize = New System.Drawing.Size(150, 26)
         Me.TxtCedula.Name = "TxtCedula"
-        Me.TxtCedula.Size = New System.Drawing.Size(210, 26)
+        Me.TxtCedula.Size = New System.Drawing.Size(150, 26)
         Me.TxtCedula.TabIndex = 2
         '
         'Label18
@@ -579,10 +569,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(61, 550)
+        Me.Label18.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(40, 550)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(137, 20)
+        Me.Label18.Size = New System.Drawing.Size(99, 16)
         Me.Label18.TabIndex = 0
         Me.Label18.Text = "Ingreso de analisis"
         '
@@ -592,10 +582,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblApellidoMaterno.AutoSize = True
-        Me.LblApellidoMaterno.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblApellidoMaterno.Location = New System.Drawing.Point(455, 113)
+        Me.LblApellidoMaterno.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblApellidoMaterno.Location = New System.Drawing.Point(314, 113)
         Me.LblApellidoMaterno.Name = "LblApellidoMaterno"
-        Me.LblApellidoMaterno.Size = New System.Drawing.Size(133, 20)
+        Me.LblApellidoMaterno.Size = New System.Drawing.Size(92, 16)
         Me.LblApellidoMaterno.TabIndex = 0
         Me.LblApellidoMaterno.Text = "Segundo apellido"
         '
@@ -605,10 +595,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(16, 502)
+        Me.Label11.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(11, 502)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(182, 20)
+        Me.Label11.Size = New System.Drawing.Size(128, 16)
         Me.Label11.TabIndex = 0
         Me.Label11.Text = "Enfermedades maternas"
         '
@@ -618,10 +608,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(139, 404)
+        Me.Label17.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(94, 404)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(59, 20)
+        Me.Label17.Size = New System.Drawing.Size(45, 16)
         Me.Label17.TabIndex = 0
         Me.Label17.Text = "Cirujias"
         '
@@ -631,10 +621,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblFechadeNacimiento.AutoSize = True
-        Me.LblFechadeNacimiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblFechadeNacimiento.Location = New System.Drawing.Point(430, 47)
+        Me.LblFechadeNacimiento.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblFechadeNacimiento.Location = New System.Drawing.Point(296, 47)
         Me.LblFechadeNacimiento.Name = "LblFechadeNacimiento"
-        Me.LblFechadeNacimiento.Size = New System.Drawing.Size(156, 20)
+        Me.LblFechadeNacimiento.Size = New System.Drawing.Size(110, 16)
         Me.LblFechadeNacimiento.TabIndex = 0
         Me.LblFechadeNacimiento.Text = "Fecha de nacimiento"
         '
@@ -644,10 +634,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 356)
+        Me.Label6.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(7, 356)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(186, 20)
+        Me.Label6.Size = New System.Drawing.Size(132, 16)
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "Alergias a medicamentos"
         '
@@ -657,10 +647,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(447, 271)
+        Me.Label16.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(311, 271)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(138, 20)
+        Me.Label16.Size = New System.Drawing.Size(95, 16)
         Me.Label16.TabIndex = 0
         Me.Label16.Text = "Tel. Acompañante"
         '
@@ -670,10 +660,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(20, 453)
+        Me.Label7.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(14, 453)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(178, 20)
+        Me.Label7.Size = New System.Drawing.Size(125, 16)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Enfermedades paternas"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -684,10 +674,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(30, 274)
+        Me.Label15.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(22, 274)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(168, 20)
+        Me.Label15.Size = New System.Drawing.Size(117, 16)
         Me.Label15.TabIndex = 0
         Me.Label15.Text = "Nombre acompañante"
         '
@@ -697,10 +687,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(510, 208)
+        Me.Label10.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(352, 208)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(76, 20)
+        Me.Label10.Size = New System.Drawing.Size(54, 16)
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Direccion"
         '
@@ -710,10 +700,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(51, 241)
+        Me.Label12.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(40, 241)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(147, 20)
+        Me.Label12.Size = New System.Drawing.Size(99, 16)
         Me.Label12.TabIndex = 0
         Me.Label12.Text = "Correo electronico"
         '
@@ -723,10 +713,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(5, 309)
+        Me.Label5.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(4, 309)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(193, 20)
+        Me.Label5.Size = New System.Drawing.Size(135, 16)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Enfermedades  anteriores"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -737,10 +727,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(108, 208)
+        Me.Label4.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(75, 208)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(90, 20)
+        Me.Label4.Size = New System.Drawing.Size(64, 16)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Escolaridad"
         '
@@ -750,10 +740,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(499, 176)
+        Me.Label9.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(342, 176)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(87, 20)
+        Me.Label9.Size = New System.Drawing.Size(64, 16)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Estado civil"
         '
@@ -763,10 +753,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblApellidoPaterno.AutoSize = True
-        Me.LblApellidoPaterno.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblApellidoPaterno.Location = New System.Drawing.Point(81, 108)
+        Me.LblApellidoPaterno.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblApellidoPaterno.Location = New System.Drawing.Point(56, 108)
         Me.LblApellidoPaterno.Name = "LblApellidoPaterno"
-        Me.LblApellidoPaterno.Size = New System.Drawing.Size(116, 20)
+        Me.LblApellidoPaterno.Size = New System.Drawing.Size(83, 16)
         Me.LblApellidoPaterno.TabIndex = 0
         Me.LblApellidoPaterno.Text = "Primer apellido"
         '
@@ -776,10 +766,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(113, 177)
+        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(79, 177)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 20)
+        Me.Label3.Size = New System.Drawing.Size(60, 16)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Ocupacion"
         '
@@ -789,10 +779,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(523, 144)
+        Me.Label8.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(362, 144)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(63, 20)
+        Me.Label8.Size = New System.Drawing.Size(44, 16)
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Genero"
         '
@@ -802,10 +792,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblSegundoNombre.AutoSize = True
-        Me.LblSegundoNombre.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblSegundoNombre.Location = New System.Drawing.Point(453, 81)
+        Me.LblSegundoNombre.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblSegundoNombre.Location = New System.Drawing.Point(316, 81)
         Me.LblSegundoNombre.Name = "LblSegundoNombre"
-        Me.LblSegundoNombre.Size = New System.Drawing.Size(133, 20)
+        Me.LblSegundoNombre.Size = New System.Drawing.Size(90, 16)
         Me.LblSegundoNombre.TabIndex = 0
         Me.LblSegundoNombre.Text = "Segundo nombre"
         '
@@ -815,10 +805,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(154, 143)
+        Me.Label2.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(107, 143)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 20)
+        Me.Label2.Size = New System.Drawing.Size(32, 16)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Edad"
         '
@@ -828,10 +818,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblPrimerNombre.AutoSize = True
-        Me.LblPrimerNombre.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPrimerNombre.Location = New System.Drawing.Point(82, 76)
+        Me.LblPrimerNombre.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPrimerNombre.Location = New System.Drawing.Point(58, 76)
         Me.LblPrimerNombre.Name = "LblPrimerNombre"
-        Me.LblPrimerNombre.Size = New System.Drawing.Size(116, 20)
+        Me.LblPrimerNombre.Size = New System.Drawing.Size(81, 16)
         Me.LblPrimerNombre.TabIndex = 0
         Me.LblPrimerNombre.Text = "Primer nombre"
         '
@@ -841,10 +831,10 @@ Partial Class FrmMantenimiento
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblCedula.AutoSize = True
-        Me.LblCedula.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblCedula.Location = New System.Drawing.Point(139, 43)
+        Me.LblCedula.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCedula.Location = New System.Drawing.Point(97, 43)
         Me.LblCedula.Name = "LblCedula"
-        Me.LblCedula.Size = New System.Drawing.Size(59, 20)
+        Me.LblCedula.Size = New System.Drawing.Size(42, 16)
         Me.LblCedula.TabIndex = 0
         Me.LblCedula.Text = "Cedula"
         '
@@ -856,7 +846,7 @@ Partial Class FrmMantenimiento
         Me.BtnMantenimientoGuardarDatos.FlatAppearance.BorderSize = 0
         Me.BtnMantenimientoGuardarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMantenimientoGuardarDatos.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnMantenimientoGuardarDatos.Location = New System.Drawing.Point(791, 15)
+        Me.BtnMantenimientoGuardarDatos.Location = New System.Drawing.Point(593, 15)
         Me.BtnMantenimientoGuardarDatos.Name = "BtnMantenimientoGuardarDatos"
         Me.BtnMantenimientoGuardarDatos.Size = New System.Drawing.Size(117, 42)
         Me.BtnMantenimientoGuardarDatos.TabIndex = 5
@@ -871,7 +861,7 @@ Partial Class FrmMantenimiento
         Me.BtnMantenimientoCancelar.FlatAppearance.BorderSize = 0
         Me.BtnMantenimientoCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMantenimientoCancelar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnMantenimientoCancelar.Location = New System.Drawing.Point(648, 15)
+        Me.BtnMantenimientoCancelar.Location = New System.Drawing.Point(450, 15)
         Me.BtnMantenimientoCancelar.Name = "BtnMantenimientoCancelar"
         Me.BtnMantenimientoCancelar.Size = New System.Drawing.Size(117, 42)
         Me.BtnMantenimientoCancelar.TabIndex = 5
@@ -969,7 +959,7 @@ Partial Class FrmMantenimiento
         Me.GroupBox3.Controls.Add(Me.BtnMantenimientoCancelar)
         Me.GroupBox3.Location = New System.Drawing.Point(25, 700)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(970, 67)
+        Me.GroupBox3.Size = New System.Drawing.Size(772, 67)
         Me.GroupBox3.TabIndex = 16
         Me.GroupBox3.TabStop = False
         '
@@ -1018,7 +1008,7 @@ Partial Class FrmMantenimiento
         Me.GrxDatosDelPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GrxDatosDelPaciente.Font = New System.Drawing.Font("Ubuntu", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
         Me.GrxDatosDelPaciente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
-        Me.GrxDatosDelPaciente.Location = New System.Drawing.Point(1007, 5)
+        Me.GrxDatosDelPaciente.Location = New System.Drawing.Point(804, 5)
         Me.GrxDatosDelPaciente.Name = "GrxDatosDelPaciente"
         Me.GrxDatosDelPaciente.Size = New System.Drawing.Size(751, 695)
         Me.GrxDatosDelPaciente.TabIndex = 19
@@ -1602,7 +1592,7 @@ Partial Class FrmMantenimiento
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.BtnContinuarAEntrevista)
-        Me.GroupBox2.Location = New System.Drawing.Point(1007, 700)
+        Me.GroupBox2.Location = New System.Drawing.Point(804, 700)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(751, 67)
         Me.GroupBox2.TabIndex = 17
@@ -1610,6 +1600,7 @@ Partial Class FrmMantenimiento
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.Label1)
         Me.GroupBox4.Controls.Add(Me.TxtBuscarPaciente)
         Me.GroupBox4.Controls.Add(Me.BtnBuscarPaciente)
         Me.GroupBox4.Controls.Add(Me.BtnIngresoNuevoPaciente)
@@ -1617,7 +1608,7 @@ Partial Class FrmMantenimiento
         Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
         Me.GroupBox4.Location = New System.Drawing.Point(25, 5)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(970, 86)
+        Me.GroupBox4.Size = New System.Drawing.Size(772, 86)
         Me.GroupBox4.TabIndex = 17
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Pacientes"
@@ -1625,12 +1616,9 @@ Partial Class FrmMantenimiento
         'TxtBuscarPaciente
         '
         Me.TxtBuscarPaciente.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
-        Me.TxtBuscarPaciente.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtBuscarPaciente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtBuscarPaciente.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBuscarPaciente.Location = New System.Drawing.Point(848, 38)
+        Me.TxtBuscarPaciente.Location = New System.Drawing.Point(639, 32)
         Me.TxtBuscarPaciente.MaximumSize = New System.Drawing.Size(214, 30)
         Me.TxtBuscarPaciente.MaxLength = 8
         Me.TxtBuscarPaciente.Name = "TxtBuscarPaciente"
@@ -1639,13 +1627,12 @@ Partial Class FrmMantenimiento
         '
         'BtnBuscarPaciente
         '
-        Me.BtnBuscarPaciente.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnBuscarPaciente.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BtnBuscarPaciente.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnBuscarPaciente.FlatAppearance.BorderSize = 0
         Me.BtnBuscarPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBuscarPaciente.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnBuscarPaciente.Location = New System.Drawing.Point(588, 29)
+        Me.BtnBuscarPaciente.Location = New System.Drawing.Point(405, 29)
         Me.BtnBuscarPaciente.Name = "BtnBuscarPaciente"
         Me.BtnBuscarPaciente.Size = New System.Drawing.Size(204, 42)
         Me.BtnBuscarPaciente.TabIndex = 5
@@ -1654,13 +1641,12 @@ Partial Class FrmMantenimiento
         '
         'BtnIngresoNuevoPaciente
         '
-        Me.BtnIngresoNuevoPaciente.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnIngresoNuevoPaciente.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BtnIngresoNuevoPaciente.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnIngresoNuevoPaciente.FlatAppearance.BorderSize = 0
         Me.BtnIngresoNuevoPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnIngresoNuevoPaciente.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnIngresoNuevoPaciente.Location = New System.Drawing.Point(219, 29)
+        Me.BtnIngresoNuevoPaciente.Location = New System.Drawing.Point(150, 29)
         Me.BtnIngresoNuevoPaciente.Name = "BtnIngresoNuevoPaciente"
         Me.BtnIngresoNuevoPaciente.Size = New System.Drawing.Size(205, 42)
         Me.BtnIngresoNuevoPaciente.TabIndex = 5
@@ -1671,13 +1657,38 @@ Partial Class FrmMantenimiento
         '
         Me.OFcargarImagen.Title = "Seleccionar imagen"
         '
+        'TxtEdadcalculada
+        '
+        Me.TxtEdadcalculada.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtEdadcalculada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtEdadcalculada.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtEdadcalculada.Location = New System.Drawing.Point(140, 138)
+        Me.TxtEdadcalculada.MaximumSize = New System.Drawing.Size(214, 26)
+        Me.TxtEdadcalculada.MaxLength = 15
+        Me.TxtEdadcalculada.MinimumSize = New System.Drawing.Size(150, 26)
+        Me.TxtEdadcalculada.Name = "TxtEdadcalculada"
+        Me.TxtEdadcalculada.Size = New System.Drawing.Size(150, 26)
+        Me.TxtEdadcalculada.TabIndex = 13
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 6.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(702, 61)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(50, 14)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "(Por Cedula)"
+        '
         'FrmMantenimiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1770, 800)
+        Me.ClientSize = New System.Drawing.Size(1572, 800)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GrxDatosDelPaciente)
@@ -1689,7 +1700,6 @@ Partial Class FrmMantenimiento
         Me.Text = "FrmMantenimiento"
         Me.GbxIngresoPacientes.ResumeLayout(False)
         Me.GbxIngresoPacientes.PerformLayout()
-        CType(Me.NumEdadPaciente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureImagenPerfil, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -1803,8 +1813,9 @@ Partial Class FrmMantenimiento
     Friend WithEvents TxtBuscarPaciente As TextBox
     Friend WithEvents BtnBuscarPaciente As Button
     Friend WithEvents BtnIngresoNuevoPaciente As Button
-    Friend WithEvents NumEdadPaciente As NumericUpDown
     Friend WithEvents BtncargarImagen As Button
     Friend WithEvents OFcargarImagen As OpenFileDialog
     Friend WithEvents ComEstadocivil As ComboBox
+    Friend WithEvents TxtEdadcalculada As TextBox
+    Friend WithEvents Label1 As Label
 End Class

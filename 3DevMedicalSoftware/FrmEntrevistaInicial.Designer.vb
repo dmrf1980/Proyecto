@@ -388,7 +388,6 @@ Partial Class FrmEntrevistaInicial
         Me.NudPresionArterialdiast.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudPresionArterialdiast.Location = New System.Drawing.Point(292, 107)
         Me.NudPresionArterialdiast.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
-        Me.NudPresionArterialdiast.Minimum = New Decimal(New Integer() {60, 0, 0, 0})
         Me.NudPresionArterialdiast.Name = "NudPresionArterialdiast"
         Me.NudPresionArterialdiast.Size = New System.Drawing.Size(70, 32)
         Me.NudPresionArterialdiast.TabIndex = 1
@@ -400,7 +399,6 @@ Partial Class FrmEntrevistaInicial
         Me.NudPresionArterialSist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudPresionArterialSist.Location = New System.Drawing.Point(162, 107)
         Me.NudPresionArterialSist.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
-        Me.NudPresionArterialSist.Minimum = New Decimal(New Integer() {60, 0, 0, 0})
         Me.NudPresionArterialSist.Name = "NudPresionArterialSist"
         Me.NudPresionArterialSist.Size = New System.Drawing.Size(70, 32)
         Me.NudPresionArterialSist.TabIndex = 1
@@ -412,7 +410,6 @@ Partial Class FrmEntrevistaInicial
         Me.NudFrecuenciacardiaca.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.NudFrecuenciacardiaca.Location = New System.Drawing.Point(164, 70)
         Me.NudFrecuenciacardiaca.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
-        Me.NudFrecuenciacardiaca.Minimum = New Decimal(New Integer() {40, 0, 0, 0})
         Me.NudFrecuenciacardiaca.Name = "NudFrecuenciacardiaca"
         Me.NudFrecuenciacardiaca.Size = New System.Drawing.Size(70, 32)
         Me.NudFrecuenciacardiaca.TabIndex = 1
