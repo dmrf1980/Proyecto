@@ -1,9 +1,9 @@
 ﻿Public Class Form1
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        PanelIzquierdo.Width = 90
-        PictureBoxIconoUsuario.Image = FrmMantenimiento.PictureImagenPerfil.Image
-    End Sub
+    'Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '    PanelIzquierdo.Width = 90
+    '    PictureBoxIconoUsuario.Image = FrmMantenimiento.PictureImagenPerfil.Image
+    'End Sub
 
     ''METODO COLOCAR FORMULARIOS EN EL PANEL CENTRAL DEL Form1--------------------------------------------
     Public Sub AbrirFormDentroDePanelPForm(Of Miform As {Form, New})()
@@ -71,8 +71,6 @@
         AbrirFormDentroDePanelPForm(Of FrmPlanTratamiento)()
         PanelIzquierdo.Width = 90
     End Sub
-
-
 
 
 End Class

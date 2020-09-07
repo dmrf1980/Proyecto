@@ -1,5 +1,9 @@
-﻿Public Class FrmMantenimiento
+﻿Imports MySql.Data.MySqlClient
 
+Public Class FrmMantenimiento
+    Private Sub FrmMantenimiento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
     Private Sub BtnMantenimientoCancelar_Click(sender As Object, e As EventArgs) Handles BtnMantenimientoCancelar.Click
         Me.Close()
     End Sub
@@ -12,16 +16,16 @@
         GbxIngresoPacientes.Visible = True
     End Sub
 
-    Private Sub BtncargarImagen_Click(sender As Object, e As EventArgs) Handles BtncargarImagen.Click
+    'Private Sub BtncargarImagen_Click(sender As Object, e As EventArgs)
 
-        If OFcargarImagen.ShowDialog = Windows.Forms.DialogResult.OK Then
+    '    If OFcargarImagen.ShowDialog = Windows.Forms.DialogResult.OK Then
 
-            PictureImagenPerfil.Image = Image.FromFile(OFcargarImagen.FileName)
-            PictureImagenPerfil.SizeMode = PictureBoxSizeMode.StretchImage
+    '        PictureImagenPerfil.Image = Image.FromFile(OFcargarImagen.FileName)
+    '        PictureImagenPerfil.SizeMode = PictureBoxSizeMode.StretchImage
 
-        End If
+    '    End If
 
-    End Sub
+    'End Sub
 
     Private Shadows Sub KeyPress(ByVal sender As Object, ByVal e As KeyPressEventArgs) Handles TxtCedula.KeyPress, TxtTelefAcompañante.KeyPress, TxtBuscarPaciente.KeyPress
 
@@ -56,11 +60,20 @@
         LblDatosEnferMaternas.Text = TxtEnferMaternas.Text
     End Sub
 
-    Private Sub GbxIngresoPacientes_Enter(sender As Object, e As EventArgs) Handles GbxIngresoPacientes.Enter
+    Private Sub TxtEdadcalculada_TextChanged(sender As Object, e As EventArgs) Handles TxtEdadCalculada.TextChanged
 
     End Sub
 
-    Private Sub TxtEdadcalculada_TextChanged(sender As Object, e As EventArgs) Handles TxtEdadcalculada.TextChanged
+    Private Sub DateTimeFechaNacimiento_ValueChanged(sender As Object, e As EventArgs) Handles DateTimeFechaNacimiento.ValueChanged
 
+    End Sub
+
+
+
+
+    Private Sub DateTimeFechaNacimiento_TextChanged(sender As Object, e As EventArgs) Handles DateTimeFechaNacimiento.TextChanged
+
+        Dim edad As Integer = DateTime.Today.AddTicks(-DateTimeFechaNacimiento.Value.Ticks).Year - 1
+        TxtEdadCalculada.Text = edad.ToString
     End Sub
 End Class

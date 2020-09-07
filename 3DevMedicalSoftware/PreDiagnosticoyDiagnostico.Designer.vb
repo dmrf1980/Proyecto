@@ -32,10 +32,10 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GrxBotonesGuardarCancelarContinuar = New System.Windows.Forms.GroupBox()
+        Me.BtnContinuarAPlan = New System.Windows.Forms.Button()
         Me.BtnVolverAExploracion = New System.Windows.Forms.Button()
         Me.BtnPreDigCancelar = New System.Windows.Forms.Button()
         Me.BtnPreDiagGuardar = New System.Windows.Forms.Button()
-        Me.BtnContinuarAPlan = New System.Windows.Forms.Button()
         Me.GbxEntrevistaInicial.SuspendLayout()
         Me.GrxBotonesGuardarCancelarContinuar.SuspendLayout()
         Me.SuspendLayout()
@@ -127,10 +127,10 @@ Partial Class FrmPreDiagnosticoyDiagnostico
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(26, 430)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(193, 20)
+        Me.Label4.Size = New System.Drawing.Size(166, 17)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Ingreso de analisis clinicos"
         '
@@ -140,10 +140,10 @@ Partial Class FrmPreDiagnosticoyDiagnostico
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(18, 296)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(201, 20)
+        Me.Label3.Size = New System.Drawing.Size(174, 17)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Solicitud de analisis clinicos"
         '
@@ -153,10 +153,10 @@ Partial Class FrmPreDiagnosticoyDiagnostico
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(42, 162)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(177, 20)
+        Me.Label1.Size = New System.Drawing.Size(153, 17)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Registro de diagnostico"
         '
@@ -166,10 +166,10 @@ Partial Class FrmPreDiagnosticoyDiagnostico
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(71, 91)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(148, 20)
+        Me.Label2.Size = New System.Drawing.Size(127, 17)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Tipo de diagnostico"
         '
@@ -186,6 +186,20 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.GrxBotonesGuardarCancelarContinuar.Size = New System.Drawing.Size(850, 79)
         Me.GrxBotonesGuardarCancelarContinuar.TabIndex = 7
         Me.GrxBotonesGuardarCancelarContinuar.TabStop = False
+        '
+        'BtnContinuarAPlan
+        '
+        Me.BtnContinuarAPlan.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnContinuarAPlan.FlatAppearance.BorderSize = 0
+        Me.BtnContinuarAPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnContinuarAPlan.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnContinuarAPlan.Location = New System.Drawing.Point(578, 24)
+        Me.BtnContinuarAPlan.MaximumSize = New System.Drawing.Size(260, 42)
+        Me.BtnContinuarAPlan.Name = "BtnContinuarAPlan"
+        Me.BtnContinuarAPlan.Size = New System.Drawing.Size(260, 42)
+        Me.BtnContinuarAPlan.TabIndex = 5
+        Me.BtnContinuarAPlan.Text = "Continuar a Plan >>>"
+        Me.BtnContinuarAPlan.UseVisualStyleBackColor = False
         '
         'BtnVolverAExploracion
         '
@@ -227,26 +241,12 @@ Partial Class FrmPreDiagnosticoyDiagnostico
         Me.BtnPreDiagGuardar.Text = "Guardar"
         Me.BtnPreDiagGuardar.UseVisualStyleBackColor = False
         '
-        'BtnContinuarAPlan
-        '
-        Me.BtnContinuarAPlan.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BtnContinuarAPlan.FlatAppearance.BorderSize = 0
-        Me.BtnContinuarAPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnContinuarAPlan.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnContinuarAPlan.Location = New System.Drawing.Point(578, 24)
-        Me.BtnContinuarAPlan.MaximumSize = New System.Drawing.Size(260, 42)
-        Me.BtnContinuarAPlan.Name = "BtnContinuarAPlan"
-        Me.BtnContinuarAPlan.Size = New System.Drawing.Size(260, 42)
-        Me.BtnContinuarAPlan.TabIndex = 5
-        Me.BtnContinuarAPlan.Text = "Continuar a Plan >>>"
-        Me.BtnContinuarAPlan.UseVisualStyleBackColor = False
-        '
         'FrmPreDiagnosticoyDiagnostico
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(905, 800)
         Me.Controls.Add(Me.GbxEntrevistaInicial)
         Me.Controls.Add(Me.GrxBotonesGuardarCancelarContinuar)

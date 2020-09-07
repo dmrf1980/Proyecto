@@ -130,7 +130,7 @@ Partial Class FrmEntrevistaInicial
         Me.GbxEntrevistaInicial.Margin = New System.Windows.Forms.Padding(0)
         Me.GbxEntrevistaInicial.MaximumSize = New System.Drawing.Size(1000, 1063)
         Me.GbxEntrevistaInicial.Name = "GbxEntrevistaInicial"
-        Me.GbxEntrevistaInicial.Size = New System.Drawing.Size(850, 682)
+        Me.GbxEntrevistaInicial.Size = New System.Drawing.Size(709, 682)
         Me.GbxEntrevistaInicial.TabIndex = 1
         Me.GbxEntrevistaInicial.TabStop = False
         Me.GbxEntrevistaInicial.Text = "Entrevista Inicial"
@@ -139,7 +139,7 @@ Partial Class FrmEntrevistaInicial
         '
         Me.LblNumEntrevista.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.LblNumEntrevista.Font = New System.Drawing.Font("Ubuntu Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblNumEntrevista.Location = New System.Drawing.Point(710, 26)
+        Me.LblNumEntrevista.Location = New System.Drawing.Point(591, 29)
         Me.LblNumEntrevista.MaximumSize = New System.Drawing.Size(94, 30)
         Me.LblNumEntrevista.MinimumSize = New System.Drawing.Size(94, 30)
         Me.LblNumEntrevista.Name = "LblNumEntrevista"
@@ -150,7 +150,6 @@ Partial Class FrmEntrevistaInicial
         '
         'BtnCrearEntrevista
         '
-        Me.BtnCrearEntrevista.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BtnCrearEntrevista.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BtnCrearEntrevista.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnCrearEntrevista.FlatAppearance.BorderSize = 0
@@ -167,7 +166,7 @@ Partial Class FrmEntrevistaInicial
         '
         Me.LblIdEntrevista.AutoSize = True
         Me.LblIdEntrevista.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblIdEntrevista.Location = New System.Drawing.Point(597, 31)
+        Me.LblIdEntrevista.Location = New System.Drawing.Point(478, 34)
         Me.LblIdEntrevista.Name = "LblIdEntrevista"
         Me.LblIdEntrevista.Size = New System.Drawing.Size(99, 20)
         Me.LblIdEntrevista.TabIndex = 8
@@ -185,9 +184,9 @@ Partial Class FrmEntrevistaInicial
         Me.GbxMotivosdeConsulta.Controls.Add(Me.TxtMotivoprincipal)
         Me.GbxMotivosdeConsulta.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbxMotivosdeConsulta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GbxMotivosdeConsulta.Location = New System.Drawing.Point(26, 380)
+        Me.GbxMotivosdeConsulta.Location = New System.Drawing.Point(26, 371)
         Me.GbxMotivosdeConsulta.Name = "GbxMotivosdeConsulta"
-        Me.GbxMotivosdeConsulta.Size = New System.Drawing.Size(798, 295)
+        Me.GbxMotivosdeConsulta.Size = New System.Drawing.Size(659, 295)
         Me.GbxMotivosdeConsulta.TabIndex = 6
         Me.GbxMotivosdeConsulta.TabStop = False
         Me.GbxMotivosdeConsulta.Text = "Motivo de la consulta"
@@ -199,27 +198,23 @@ Partial Class FrmEntrevistaInicial
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblTratamientoActual.AutoSize = True
-        Me.LblTratamientoActual.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTratamientoActual.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTratamientoActual.Location = New System.Drawing.Point(38, 254)
         Me.LblTratamientoActual.Name = "LblTratamientoActual"
-        Me.LblTratamientoActual.Size = New System.Drawing.Size(142, 20)
+        Me.LblTratamientoActual.Size = New System.Drawing.Size(103, 16)
         Me.LblTratamientoActual.TabIndex = 23
         Me.LblTratamientoActual.Text = "Tratamiento actual"
         '
         'TxtTratamientoActual
         '
-        Me.TxtTratamientoActual.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtTratamientoActual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtTratamientoActual.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTratamientoActual.Location = New System.Drawing.Point(194, 248)
+        Me.TxtTratamientoActual.Location = New System.Drawing.Point(147, 248)
         Me.TxtTratamientoActual.MaximumSize = New System.Drawing.Size(581, 30)
         Me.TxtTratamientoActual.MaxLength = 200
-        Me.TxtTratamientoActual.MinimumSize = New System.Drawing.Size(581, 30)
         Me.TxtTratamientoActual.Multiline = True
         Me.TxtTratamientoActual.Name = "TxtTratamientoActual"
-        Me.TxtTratamientoActual.Size = New System.Drawing.Size(581, 30)
+        Me.TxtTratamientoActual.Size = New System.Drawing.Size(425, 30)
         Me.TxtTratamientoActual.TabIndex = 22
         '
         'LvlEvolucion
@@ -228,79 +223,67 @@ Partial Class FrmEntrevistaInicial
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LvlEvolucion.AutoSize = True
-        Me.LvlEvolucion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LvlEvolucion.Location = New System.Drawing.Point(102, 198)
+        Me.LvlEvolucion.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LvlEvolucion.Location = New System.Drawing.Point(87, 198)
         Me.LvlEvolucion.Name = "LvlEvolucion"
-        Me.LvlEvolucion.Size = New System.Drawing.Size(78, 20)
+        Me.LvlEvolucion.Size = New System.Drawing.Size(54, 16)
         Me.LvlEvolucion.TabIndex = 21
         Me.LvlEvolucion.Text = "Evolucion"
         '
         'LblAmpliarMotivo
         '
         Me.LblAmpliarMotivo.AutoSize = True
-        Me.LblAmpliarMotivo.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblAmpliarMotivo.Location = New System.Drawing.Point(64, 104)
+        Me.LblAmpliarMotivo.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAmpliarMotivo.Location = New System.Drawing.Point(58, 104)
         Me.LblAmpliarMotivo.Name = "LblAmpliarMotivo"
-        Me.LblAmpliarMotivo.Size = New System.Drawing.Size(116, 20)
+        Me.LblAmpliarMotivo.Size = New System.Drawing.Size(83, 16)
         Me.LblAmpliarMotivo.TabIndex = 20
         Me.LblAmpliarMotivo.Text = "Ampliar motivo"
         '
         'TxtAmpliarMotivo
         '
-        Me.TxtAmpliarMotivo.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtAmpliarMotivo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtAmpliarMotivo.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtAmpliarMotivo.Location = New System.Drawing.Point(194, 104)
+        Me.TxtAmpliarMotivo.Location = New System.Drawing.Point(147, 104)
         Me.TxtAmpliarMotivo.MaximumSize = New System.Drawing.Size(581, 64)
         Me.TxtAmpliarMotivo.MaxLength = 250
-        Me.TxtAmpliarMotivo.MinimumSize = New System.Drawing.Size(581, 64)
         Me.TxtAmpliarMotivo.Multiline = True
         Me.TxtAmpliarMotivo.Name = "TxtAmpliarMotivo"
-        Me.TxtAmpliarMotivo.Size = New System.Drawing.Size(581, 64)
+        Me.TxtAmpliarMotivo.Size = New System.Drawing.Size(425, 64)
         Me.TxtAmpliarMotivo.TabIndex = 19
         '
         'LblMotivoPrincipal
         '
         Me.LblMotivoPrincipal.AutoSize = True
-        Me.LblMotivoPrincipal.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMotivoPrincipal.Location = New System.Drawing.Point(59, 48)
+        Me.LblMotivoPrincipal.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMotivoPrincipal.Location = New System.Drawing.Point(54, 48)
         Me.LblMotivoPrincipal.Name = "LblMotivoPrincipal"
-        Me.LblMotivoPrincipal.Size = New System.Drawing.Size(121, 20)
+        Me.LblMotivoPrincipal.Size = New System.Drawing.Size(87, 16)
         Me.LblMotivoPrincipal.TabIndex = 9
         Me.LblMotivoPrincipal.Text = "Motivo principal"
         '
         'TxtEvolucion
         '
-        Me.TxtEvolucion.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtEvolucion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtEvolucion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtEvolucion.Location = New System.Drawing.Point(194, 193)
+        Me.TxtEvolucion.Location = New System.Drawing.Point(147, 193)
         Me.TxtEvolucion.MaximumSize = New System.Drawing.Size(581, 30)
         Me.TxtEvolucion.MaxLength = 250
-        Me.TxtEvolucion.MinimumSize = New System.Drawing.Size(581, 30)
         Me.TxtEvolucion.Multiline = True
         Me.TxtEvolucion.Name = "TxtEvolucion"
-        Me.TxtEvolucion.Size = New System.Drawing.Size(581, 30)
+        Me.TxtEvolucion.Size = New System.Drawing.Size(425, 30)
         Me.TxtEvolucion.TabIndex = 8
         '
         'TxtMotivoprincipal
         '
-        Me.TxtMotivoprincipal.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtMotivoprincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtMotivoprincipal.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtMotivoprincipal.Location = New System.Drawing.Point(195, 48)
+        Me.TxtMotivoprincipal.Location = New System.Drawing.Point(147, 48)
         Me.TxtMotivoprincipal.MaximumSize = New System.Drawing.Size(581, 30)
         Me.TxtMotivoprincipal.MaxLength = 250
-        Me.TxtMotivoprincipal.MinimumSize = New System.Drawing.Size(581, 30)
         Me.TxtMotivoprincipal.Multiline = True
         Me.TxtMotivoprincipal.Name = "TxtMotivoprincipal"
-        Me.TxtMotivoprincipal.Size = New System.Drawing.Size(581, 30)
+        Me.TxtMotivoprincipal.Size = New System.Drawing.Size(426, 30)
         Me.TxtMotivoprincipal.TabIndex = 8
         '
         'GbxConstantesVitales
@@ -323,9 +306,9 @@ Partial Class FrmEntrevistaInicial
         Me.GbxConstantesVitales.Controls.Add(Me.LblTemperatura)
         Me.GbxConstantesVitales.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbxConstantesVitales.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GbxConstantesVitales.Location = New System.Drawing.Point(26, 227)
+        Me.GbxConstantesVitales.Location = New System.Drawing.Point(26, 223)
         Me.GbxConstantesVitales.Name = "GbxConstantesVitales"
-        Me.GbxConstantesVitales.Size = New System.Drawing.Size(798, 148)
+        Me.GbxConstantesVitales.Size = New System.Drawing.Size(659, 148)
         Me.GbxConstantesVitales.TabIndex = 6
         Me.GbxConstantesVitales.TabStop = False
         Me.GbxConstantesVitales.Text = "Constantes Vitales"
@@ -334,20 +317,20 @@ Partial Class FrmEntrevistaInicial
         'LblRespxMin
         '
         Me.LblRespxMin.AutoSize = True
-        Me.LblRespxMin.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblRespxMin.Location = New System.Drawing.Point(609, 74)
+        Me.LblRespxMin.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblRespxMin.Location = New System.Drawing.Point(485, 74)
         Me.LblRespxMin.Name = "LblRespxMin"
-        Me.LblRespxMin.Size = New System.Drawing.Size(79, 20)
+        Me.LblRespxMin.Size = New System.Drawing.Size(57, 16)
         Me.LblRespxMin.TabIndex = 4
         Me.LblRespxMin.Text = "Resp /min"
         '
         'LblLatxMin
         '
         Me.LblLatxMin.AutoSize = True
-        Me.LblLatxMin.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblLatxMin.Location = New System.Drawing.Point(234, 74)
+        Me.LblLatxMin.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblLatxMin.Location = New System.Drawing.Point(212, 74)
         Me.LblLatxMin.Name = "LblLatxMin"
-        Me.LblLatxMin.Size = New System.Drawing.Size(66, 20)
+        Me.LblLatxMin.Size = New System.Drawing.Size(50, 16)
         Me.LblLatxMin.TabIndex = 3
         Me.LblLatxMin.Text = "Lat /min"
         '
@@ -355,7 +338,7 @@ Partial Class FrmEntrevistaInicial
         '
         Me.LblGrados.AutoSize = True
         Me.LblGrados.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblGrados.Location = New System.Drawing.Point(218, 43)
+        Me.LblGrados.Location = New System.Drawing.Point(188, 38)
         Me.LblGrados.Name = "LblGrados"
         Me.LblGrados.Size = New System.Drawing.Size(14, 20)
         Me.LblGrados.TabIndex = 2
@@ -366,7 +349,7 @@ Partial Class FrmEntrevistaInicial
         Me.ComPulso.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComPulso.FormattingEnabled = True
         Me.ComPulso.Items.AddRange(New Object() {"Fuerte", "Debil", "Filiforme"})
-        Me.ComPulso.Location = New System.Drawing.Point(535, 37)
+        Me.ComPulso.Location = New System.Drawing.Point(324, 37)
         Me.ComPulso.Name = "ComPulso"
         Me.ComPulso.Size = New System.Drawing.Size(242, 28)
         Me.ComPulso.TabIndex = 2
@@ -374,126 +357,131 @@ Partial Class FrmEntrevistaInicial
         'NudfrecuenciaRespiratoria
         '
         Me.NudfrecuenciaRespiratoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NudfrecuenciaRespiratoria.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NudfrecuenciaRespiratoria.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NudfrecuenciaRespiratoria.Location = New System.Drawing.Point(537, 70)
+        Me.NudfrecuenciaRespiratoria.Location = New System.Drawing.Point(412, 70)
         Me.NudfrecuenciaRespiratoria.Maximum = New Decimal(New Integer() {70, 0, 0, 0})
         Me.NudfrecuenciaRespiratoria.Name = "NudfrecuenciaRespiratoria"
-        Me.NudfrecuenciaRespiratoria.Size = New System.Drawing.Size(70, 32)
+        Me.NudfrecuenciaRespiratoria.Size = New System.Drawing.Size(70, 26)
         Me.NudfrecuenciaRespiratoria.TabIndex = 1
         Me.NudfrecuenciaRespiratoria.Value = New Decimal(New Integer() {60, 0, 0, 0})
         '
         'NudPresionArterialdiast
         '
         Me.NudPresionArterialdiast.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NudPresionArterialdiast.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NudPresionArterialdiast.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NudPresionArterialdiast.Location = New System.Drawing.Point(292, 107)
+        Me.NudPresionArterialdiast.Location = New System.Drawing.Point(264, 107)
         Me.NudPresionArterialdiast.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
         Me.NudPresionArterialdiast.Name = "NudPresionArterialdiast"
-        Me.NudPresionArterialdiast.Size = New System.Drawing.Size(70, 32)
+        Me.NudPresionArterialdiast.Size = New System.Drawing.Size(70, 26)
         Me.NudPresionArterialdiast.TabIndex = 1
         Me.NudPresionArterialdiast.Value = New Decimal(New Integer() {60, 0, 0, 0})
         '
         'NudPresionArterialSist
         '
         Me.NudPresionArterialSist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NudPresionArterialSist.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NudPresionArterialSist.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NudPresionArterialSist.Location = New System.Drawing.Point(162, 107)
+        Me.NudPresionArterialSist.Location = New System.Drawing.Point(134, 107)
         Me.NudPresionArterialSist.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
         Me.NudPresionArterialSist.Name = "NudPresionArterialSist"
-        Me.NudPresionArterialSist.Size = New System.Drawing.Size(70, 32)
+        Me.NudPresionArterialSist.Size = New System.Drawing.Size(70, 26)
         Me.NudPresionArterialSist.TabIndex = 1
         Me.NudPresionArterialSist.Value = New Decimal(New Integer() {60, 0, 0, 0})
         '
         'NudFrecuenciacardiaca
         '
         Me.NudFrecuenciacardiaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NudFrecuenciacardiaca.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NudFrecuenciacardiaca.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NudFrecuenciacardiaca.Location = New System.Drawing.Point(164, 70)
+        Me.NudFrecuenciacardiaca.Location = New System.Drawing.Point(136, 70)
         Me.NudFrecuenciacardiaca.Maximum = New Decimal(New Integer() {190, 0, 0, 0})
         Me.NudFrecuenciacardiaca.Name = "NudFrecuenciacardiaca"
-        Me.NudFrecuenciacardiaca.Size = New System.Drawing.Size(70, 32)
+        Me.NudFrecuenciacardiaca.Size = New System.Drawing.Size(70, 26)
         Me.NudFrecuenciacardiaca.TabIndex = 1
         Me.NudFrecuenciacardiaca.Value = New Decimal(New Integer() {60, 0, 0, 0})
         '
         'NudTemperatura
         '
         Me.NudTemperatura.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NudTemperatura.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NudTemperatura.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.NudTemperatura.Location = New System.Drawing.Point(164, 36)
+        Me.NudTemperatura.Location = New System.Drawing.Point(136, 36)
         Me.NudTemperatura.Maximum = New Decimal(New Integer() {43, 0, 0, 0})
         Me.NudTemperatura.Minimum = New Decimal(New Integer() {30, 0, 0, 0})
         Me.NudTemperatura.Name = "NudTemperatura"
-        Me.NudTemperatura.Size = New System.Drawing.Size(48, 32)
+        Me.NudTemperatura.Size = New System.Drawing.Size(48, 26)
         Me.NudTemperatura.TabIndex = 1
         Me.NudTemperatura.Value = New Decimal(New Integer() {30, 0, 0, 0})
         '
         'LblFrecuenciaRespiratoria
         '
         Me.LblFrecuenciaRespiratoria.AutoSize = True
-        Me.LblFrecuenciaRespiratoria.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblFrecuenciaRespiratoria.Location = New System.Drawing.Point(360, 74)
+        Me.LblFrecuenciaRespiratoria.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblFrecuenciaRespiratoria.Location = New System.Drawing.Point(280, 74)
         Me.LblFrecuenciaRespiratoria.Name = "LblFrecuenciaRespiratoria"
-        Me.LblFrecuenciaRespiratoria.Size = New System.Drawing.Size(172, 20)
+        Me.LblFrecuenciaRespiratoria.Size = New System.Drawing.Size(122, 16)
         Me.LblFrecuenciaRespiratoria.TabIndex = 0
         Me.LblFrecuenciaRespiratoria.Text = "Frecuencia respiratoria"
         '
         'LblPulso
         '
         Me.LblPulso.AutoSize = True
-        Me.LblPulso.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPulso.Location = New System.Drawing.Point(483, 40)
+        Me.LblPulso.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPulso.Location = New System.Drawing.Point(250, 40)
         Me.LblPulso.Name = "LblPulso"
-        Me.LblPulso.Size = New System.Drawing.Size(49, 20)
+        Me.LblPulso.Size = New System.Drawing.Size(35, 16)
         Me.LblPulso.TabIndex = 0
         Me.LblPulso.Text = "Pulso"
         '
         'LblDiast
         '
         Me.LblDiast.AutoSize = True
-        Me.LblDiast.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblDiast.Location = New System.Drawing.Point(364, 111)
+        Me.LblDiast.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblDiast.Location = New System.Drawing.Point(342, 111)
         Me.LblDiast.Name = "LblDiast"
-        Me.LblDiast.Size = New System.Drawing.Size(48, 20)
+        Me.LblDiast.Size = New System.Drawing.Size(38, 16)
         Me.LblDiast.TabIndex = 0
         Me.LblDiast.Text = "Diast."
         '
         'LblSist
         '
         Me.LblSist.AutoSize = True
-        Me.LblSist.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblSist.Location = New System.Drawing.Point(234, 111)
+        Me.LblSist.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblSist.Location = New System.Drawing.Point(212, 111)
         Me.LblSist.Name = "LblSist"
-        Me.LblSist.Size = New System.Drawing.Size(38, 20)
+        Me.LblSist.Size = New System.Drawing.Size(30, 16)
         Me.LblSist.TabIndex = 0
         Me.LblSist.Text = "Sist."
         '
         'lblPresionArterial
         '
         Me.lblPresionArterial.AutoSize = True
-        Me.lblPresionArterial.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPresionArterial.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPresionArterial.Location = New System.Drawing.Point(39, 110)
         Me.lblPresionArterial.Name = "lblPresionArterial"
-        Me.lblPresionArterial.Size = New System.Drawing.Size(117, 20)
+        Me.lblPresionArterial.Size = New System.Drawing.Size(85, 16)
         Me.lblPresionArterial.TabIndex = 0
         Me.lblPresionArterial.Text = "Presion arterial"
         '
         'LblFrecuenciacardiaca
         '
         Me.LblFrecuenciacardiaca.AutoSize = True
-        Me.LblFrecuenciacardiaca.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblFrecuenciacardiaca.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblFrecuenciacardiaca.Location = New System.Drawing.Point(9, 74)
         Me.LblFrecuenciacardiaca.Name = "LblFrecuenciacardiaca"
-        Me.LblFrecuenciacardiaca.Size = New System.Drawing.Size(149, 20)
+        Me.LblFrecuenciacardiaca.Size = New System.Drawing.Size(105, 16)
         Me.LblFrecuenciacardiaca.TabIndex = 0
         Me.LblFrecuenciacardiaca.Text = "Frecuencia cardiaca"
         '
         'LblTemperatura
         '
         Me.LblTemperatura.AutoSize = True
-        Me.LblTemperatura.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTemperatura.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTemperatura.Location = New System.Drawing.Point(58, 39)
         Me.LblTemperatura.Name = "LblTemperatura"
-        Me.LblTemperatura.Size = New System.Drawing.Size(100, 20)
+        Me.LblTemperatura.Size = New System.Drawing.Size(70, 16)
         Me.LblTemperatura.TabIndex = 0
         Me.LblTemperatura.Text = "Temperatura"
         '
@@ -513,9 +501,9 @@ Partial Class FrmEntrevistaInicial
         Me.GbxInspecciongeneral.Controls.Add(Me.lblEstadoConsciencia)
         Me.GbxInspecciongeneral.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GbxInspecciongeneral.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GbxInspecciongeneral.Location = New System.Drawing.Point(26, 78)
+        Me.GbxInspecciongeneral.Location = New System.Drawing.Point(26, 72)
         Me.GbxInspecciongeneral.Name = "GbxInspecciongeneral"
-        Me.GbxInspecciongeneral.Size = New System.Drawing.Size(798, 152)
+        Me.GbxInspecciongeneral.Size = New System.Drawing.Size(659, 152)
         Me.GbxInspecciongeneral.TabIndex = 6
         Me.GbxInspecciongeneral.TabStop = False
         Me.GbxInspecciongeneral.Text = "Inspeccion general"
@@ -523,121 +511,121 @@ Partial Class FrmEntrevistaInicial
         '
         'ComGradoDeColaboracion
         '
-        Me.ComGradoDeColaboracion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComGradoDeColaboracion.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComGradoDeColaboracion.FormattingEnabled = True
         Me.ComGradoDeColaboracion.Items.AddRange(New Object() {"Buena", "Normal", "Mala"})
-        Me.ComGradoDeColaboracion.Location = New System.Drawing.Point(568, 38)
+        Me.ComGradoDeColaboracion.Location = New System.Drawing.Point(428, 38)
         Me.ComGradoDeColaboracion.Name = "ComGradoDeColaboracion"
-        Me.ComGradoDeColaboracion.Size = New System.Drawing.Size(209, 28)
+        Me.ComGradoDeColaboracion.Size = New System.Drawing.Size(140, 25)
         Me.ComGradoDeColaboracion.TabIndex = 2
         '
         'ComActitud
         '
-        Me.ComActitud.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComActitud.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComActitud.FormattingEnabled = True
         Me.ComActitud.Items.AddRange(New Object() {"Apatia", "Coma", "Exitacion"})
-        Me.ComActitud.Location = New System.Drawing.Point(568, 72)
+        Me.ComActitud.Location = New System.Drawing.Point(428, 72)
         Me.ComActitud.Name = "ComActitud"
-        Me.ComActitud.Size = New System.Drawing.Size(209, 28)
+        Me.ComActitud.Size = New System.Drawing.Size(140, 25)
         Me.ComActitud.TabIndex = 2
         '
         'ComMovilidad
         '
-        Me.ComMovilidad.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComMovilidad.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComMovilidad.FormattingEnabled = True
         Me.ComMovilidad.Items.AddRange(New Object() {"Normal", "Limitada", "Inestable", "Enlentecimiento", "Mayor dependencia", "Deteriorada"})
-        Me.ComMovilidad.Location = New System.Drawing.Point(179, 72)
+        Me.ComMovilidad.Location = New System.Drawing.Point(140, 72)
         Me.ComMovilidad.Name = "ComMovilidad"
-        Me.ComMovilidad.Size = New System.Drawing.Size(205, 28)
+        Me.ComMovilidad.Size = New System.Drawing.Size(140, 25)
         Me.ComMovilidad.TabIndex = 1
         '
         'ComGradoDeHidratacion
         '
-        Me.ComGradoDeHidratacion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComGradoDeHidratacion.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComGradoDeHidratacion.FormattingEnabled = True
         Me.ComGradoDeHidratacion.Items.AddRange(New Object() {"Sin deshidratación", "Deshidratación moderada", "Deshidratación severa"})
-        Me.ComGradoDeHidratacion.Location = New System.Drawing.Point(568, 107)
+        Me.ComGradoDeHidratacion.Location = New System.Drawing.Point(428, 107)
         Me.ComGradoDeHidratacion.Name = "ComGradoDeHidratacion"
-        Me.ComGradoDeHidratacion.Size = New System.Drawing.Size(209, 28)
+        Me.ComGradoDeHidratacion.Size = New System.Drawing.Size(140, 25)
         Me.ComGradoDeHidratacion.TabIndex = 1
         '
         'ComEstadoDeNutricion
         '
-        Me.ComEstadoDeNutricion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComEstadoDeNutricion.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComEstadoDeNutricion.FormattingEnabled = True
         Me.ComEstadoDeNutricion.Items.AddRange(New Object() {"Obesidad", "Anorexia", "Caquexia"})
-        Me.ComEstadoDeNutricion.Location = New System.Drawing.Point(179, 107)
+        Me.ComEstadoDeNutricion.Location = New System.Drawing.Point(140, 107)
         Me.ComEstadoDeNutricion.Name = "ComEstadoDeNutricion"
-        Me.ComEstadoDeNutricion.Size = New System.Drawing.Size(205, 28)
+        Me.ComEstadoDeNutricion.Size = New System.Drawing.Size(140, 25)
         Me.ComEstadoDeNutricion.TabIndex = 1
         '
         'ComestadoConsciencia
         '
-        Me.ComestadoConsciencia.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComestadoConsciencia.Font = New System.Drawing.Font("Ubuntu", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComestadoConsciencia.FormattingEnabled = True
         Me.ComestadoConsciencia.Items.AddRange(New Object() {"Coma", "Estado vegetativo", "Estado de consciencia minimo", "Mutismo acinetico", "Delirio"})
-        Me.ComestadoConsciencia.Location = New System.Drawing.Point(179, 34)
+        Me.ComestadoConsciencia.Location = New System.Drawing.Point(140, 34)
         Me.ComestadoConsciencia.Name = "ComestadoConsciencia"
-        Me.ComestadoConsciencia.Size = New System.Drawing.Size(205, 28)
+        Me.ComestadoConsciencia.Size = New System.Drawing.Size(140, 25)
         Me.ComestadoConsciencia.TabIndex = 1
         '
         'LblGradoHidratacion
         '
         Me.LblGradoHidratacion.AutoSize = True
-        Me.LblGradoHidratacion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblGradoHidratacion.Location = New System.Drawing.Point(408, 115)
+        Me.LblGradoHidratacion.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblGradoHidratacion.Location = New System.Drawing.Point(299, 115)
         Me.LblGradoHidratacion.Name = "LblGradoHidratacion"
-        Me.LblGradoHidratacion.Size = New System.Drawing.Size(158, 20)
+        Me.LblGradoHidratacion.Size = New System.Drawing.Size(112, 16)
         Me.LblGradoHidratacion.TabIndex = 0
         Me.LblGradoHidratacion.Text = "Grado de hidratacion"
         '
         'LblActitud
         '
         Me.LblActitud.AutoSize = True
-        Me.LblActitud.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblActitud.Location = New System.Drawing.Point(505, 79)
+        Me.LblActitud.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblActitud.Location = New System.Drawing.Point(366, 79)
         Me.LblActitud.Name = "LblActitud"
-        Me.LblActitud.Size = New System.Drawing.Size(61, 20)
+        Me.LblActitud.Size = New System.Drawing.Size(45, 16)
         Me.LblActitud.TabIndex = 0
         Me.LblActitud.Text = "Actitud"
         '
         'LblEstadoNutricion
         '
         Me.LblEstadoNutricion.AutoSize = True
-        Me.LblEstadoNutricion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblEstadoNutricion.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblEstadoNutricion.Location = New System.Drawing.Point(27, 115)
         Me.LblEstadoNutricion.Name = "LblEstadoNutricion"
-        Me.LblEstadoNutricion.Size = New System.Drawing.Size(147, 20)
+        Me.LblEstadoNutricion.Size = New System.Drawing.Size(104, 16)
         Me.LblEstadoNutricion.TabIndex = 0
         Me.LblEstadoNutricion.Text = "Estado de nutricion"
         '
         'LblGradoColaboracion
         '
         Me.LblGradoColaboracion.AutoSize = True
-        Me.LblGradoColaboracion.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblGradoColaboracion.Location = New System.Drawing.Point(390, 41)
+        Me.LblGradoColaboracion.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblGradoColaboracion.Location = New System.Drawing.Point(290, 41)
         Me.LblGradoColaboracion.Name = "LblGradoColaboracion"
-        Me.LblGradoColaboracion.Size = New System.Drawing.Size(176, 20)
+        Me.LblGradoColaboracion.Size = New System.Drawing.Size(121, 16)
         Me.LblGradoColaboracion.TabIndex = 0
         Me.LblGradoColaboracion.Text = " Grado de colaboracion"
         '
         'LblMovilidad
         '
         Me.LblMovilidad.AutoSize = True
-        Me.LblMovilidad.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMovilidad.Location = New System.Drawing.Point(99, 79)
+        Me.LblMovilidad.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMovilidad.Location = New System.Drawing.Point(76, 79)
         Me.LblMovilidad.Name = "LblMovilidad"
-        Me.LblMovilidad.Size = New System.Drawing.Size(75, 20)
+        Me.LblMovilidad.Size = New System.Drawing.Size(55, 16)
         Me.LblMovilidad.TabIndex = 0
         Me.LblMovilidad.Text = "Movilidad"
         '
         'lblEstadoConsciencia
         '
         Me.lblEstadoConsciencia.AutoSize = True
-        Me.lblEstadoConsciencia.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEstadoConsciencia.Location = New System.Drawing.Point(7, 41)
+        Me.lblEstadoConsciencia.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstadoConsciencia.Location = New System.Drawing.Point(15, 41)
         Me.lblEstadoConsciencia.Name = "lblEstadoConsciencia"
-        Me.lblEstadoConsciencia.Size = New System.Drawing.Size(166, 20)
+        Me.lblEstadoConsciencia.Size = New System.Drawing.Size(116, 16)
         Me.lblEstadoConsciencia.TabIndex = 0
         Me.lblEstadoConsciencia.Text = "Estado de consciencia"
         '
@@ -650,18 +638,17 @@ Partial Class FrmEntrevistaInicial
         Me.GrxBotonesGuardarCancelarContinuar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.GrxBotonesGuardarCancelarContinuar.Location = New System.Drawing.Point(25, 690)
         Me.GrxBotonesGuardarCancelarContinuar.Name = "GrxBotonesGuardarCancelarContinuar"
-        Me.GrxBotonesGuardarCancelarContinuar.Size = New System.Drawing.Size(850, 79)
+        Me.GrxBotonesGuardarCancelarContinuar.Size = New System.Drawing.Size(709, 79)
         Me.GrxBotonesGuardarCancelarContinuar.TabIndex = 7
         Me.GrxBotonesGuardarCancelarContinuar.TabStop = False
         '
         'BtnVolverAMantenimiento
         '
-        Me.BtnVolverAMantenimiento.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnVolverAMantenimiento.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnVolverAMantenimiento.FlatAppearance.BorderSize = 0
         Me.BtnVolverAMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnVolverAMantenimiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnVolverAMantenimiento.Location = New System.Drawing.Point(18, 23)
+        Me.BtnVolverAMantenimiento.Location = New System.Drawing.Point(12, 23)
         Me.BtnVolverAMantenimiento.MaximumSize = New System.Drawing.Size(260, 42)
         Me.BtnVolverAMantenimiento.Name = "BtnVolverAMantenimiento"
         Me.BtnVolverAMantenimiento.Size = New System.Drawing.Size(260, 42)
@@ -675,7 +662,7 @@ Partial Class FrmEntrevistaInicial
         Me.BtnEntrevistaInicialCancelar.FlatAppearance.BorderSize = 0
         Me.BtnEntrevistaInicialCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEntrevistaInicialCancelar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEntrevistaInicialCancelar.Location = New System.Drawing.Point(550, 26)
+        Me.BtnEntrevistaInicialCancelar.Location = New System.Drawing.Point(444, 26)
         Me.BtnEntrevistaInicialCancelar.Name = "BtnEntrevistaInicialCancelar"
         Me.BtnEntrevistaInicialCancelar.Size = New System.Drawing.Size(117, 42)
         Me.BtnEntrevistaInicialCancelar.TabIndex = 5
@@ -688,7 +675,7 @@ Partial Class FrmEntrevistaInicial
         Me.BtnEntrevistaInicialGuardar.FlatAppearance.BorderSize = 0
         Me.BtnEntrevistaInicialGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEntrevistaInicialGuardar.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEntrevistaInicialGuardar.Location = New System.Drawing.Point(680, 26)
+        Me.BtnEntrevistaInicialGuardar.Location = New System.Drawing.Point(574, 26)
         Me.BtnEntrevistaInicialGuardar.Name = "BtnEntrevistaInicialGuardar"
         Me.BtnEntrevistaInicialGuardar.Size = New System.Drawing.Size(117, 42)
         Me.BtnEntrevistaInicialGuardar.TabIndex = 5
@@ -700,20 +687,19 @@ Partial Class FrmEntrevistaInicial
         Me.GrxCambiarContinurDiagnostico.Controls.Add(Me.BtnContinuarADiagnostico)
         Me.GrxCambiarContinurDiagnostico.Font = New System.Drawing.Font("Ubuntu", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrxCambiarContinurDiagnostico.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GrxCambiarContinurDiagnostico.Location = New System.Drawing.Point(888, 690)
+        Me.GrxCambiarContinurDiagnostico.Location = New System.Drawing.Point(748, 690)
         Me.GrxCambiarContinurDiagnostico.Name = "GrxCambiarContinurDiagnostico"
-        Me.GrxCambiarContinurDiagnostico.Size = New System.Drawing.Size(850, 79)
+        Me.GrxCambiarContinurDiagnostico.Size = New System.Drawing.Size(666, 79)
         Me.GrxCambiarContinurDiagnostico.TabIndex = 9
         Me.GrxCambiarContinurDiagnostico.TabStop = False
         '
         'BtnContinuarADiagnostico
         '
-        Me.BtnContinuarADiagnostico.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnContinuarADiagnostico.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnContinuarADiagnostico.FlatAppearance.BorderSize = 0
         Me.BtnContinuarADiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnContinuarADiagnostico.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnContinuarADiagnostico.Location = New System.Drawing.Point(575, 23)
+        Me.BtnContinuarADiagnostico.Location = New System.Drawing.Point(386, 23)
         Me.BtnContinuarADiagnostico.Name = "BtnContinuarADiagnostico"
         Me.BtnContinuarADiagnostico.Size = New System.Drawing.Size(260, 42)
         Me.BtnContinuarADiagnostico.TabIndex = 5
@@ -755,11 +741,11 @@ Partial Class FrmEntrevistaInicial
         Me.GrxdatosEntrevistaParaHistoria.Controls.Add(Me.Label11)
         Me.GrxdatosEntrevistaParaHistoria.Font = New System.Drawing.Font("Ubuntu", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrxdatosEntrevistaParaHistoria.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
-        Me.GrxdatosEntrevistaParaHistoria.Location = New System.Drawing.Point(895, 5)
+        Me.GrxdatosEntrevistaParaHistoria.Location = New System.Drawing.Point(748, 5)
         Me.GrxdatosEntrevistaParaHistoria.Margin = New System.Windows.Forms.Padding(0)
         Me.GrxdatosEntrevistaParaHistoria.MaximumSize = New System.Drawing.Size(1000, 1063)
         Me.GrxdatosEntrevistaParaHistoria.Name = "GrxdatosEntrevistaParaHistoria"
-        Me.GrxdatosEntrevistaParaHistoria.Size = New System.Drawing.Size(850, 682)
+        Me.GrxdatosEntrevistaParaHistoria.Size = New System.Drawing.Size(666, 682)
         Me.GrxdatosEntrevistaParaHistoria.TabIndex = 15
         Me.GrxdatosEntrevistaParaHistoria.TabStop = False
         Me.GrxdatosEntrevistaParaHistoria.Text = "Datos para historia clinica"
@@ -824,7 +810,7 @@ Partial Class FrmEntrevistaInicial
         Me.LblDatosMotivo.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDatosMotivo.Location = New System.Drawing.Point(212, 483)
         Me.LblDatosMotivo.Name = "LblDatosMotivo"
-        Me.LblDatosMotivo.Size = New System.Drawing.Size(600, 40)
+        Me.LblDatosMotivo.Size = New System.Drawing.Size(434, 40)
         Me.LblDatosMotivo.TabIndex = 49
         '
         'LbldatosAmpliarMotivos
@@ -833,7 +819,7 @@ Partial Class FrmEntrevistaInicial
         Me.LbldatosAmpliarMotivos.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LbldatosAmpliarMotivos.Location = New System.Drawing.Point(212, 537)
         Me.LbldatosAmpliarMotivos.Name = "LbldatosAmpliarMotivos"
-        Me.LbldatosAmpliarMotivos.Size = New System.Drawing.Size(600, 51)
+        Me.LbldatosAmpliarMotivos.Size = New System.Drawing.Size(434, 51)
         Me.LbldatosAmpliarMotivos.TabIndex = 50
         '
         'LbldatostratamientoActual
@@ -845,7 +831,7 @@ Partial Class FrmEntrevistaInicial
         Me.LbldatostratamientoActual.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LbldatostratamientoActual.Location = New System.Drawing.Point(212, 597)
         Me.LbldatostratamientoActual.Name = "LbldatostratamientoActual"
-        Me.LbldatostratamientoActual.Size = New System.Drawing.Size(600, 53)
+        Me.LbldatostratamientoActual.Size = New System.Drawing.Size(250, 53)
         Me.LbldatostratamientoActual.TabIndex = 51
         '
         'LblDatosFrecuenciaRespiratoria
@@ -907,7 +893,7 @@ Partial Class FrmEntrevistaInicial
         '
         Me.LblDatosIdEntrevista.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.LblDatosIdEntrevista.Font = New System.Drawing.Font("Ubuntu Medium", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblDatosIdEntrevista.Location = New System.Drawing.Point(710, 26)
+        Me.LblDatosIdEntrevista.Location = New System.Drawing.Point(538, 26)
         Me.LblDatosIdEntrevista.MaximumSize = New System.Drawing.Size(94, 30)
         Me.LblDatosIdEntrevista.MinimumSize = New System.Drawing.Size(94, 30)
         Me.LblDatosIdEntrevista.Name = "LblDatosIdEntrevista"
@@ -930,7 +916,7 @@ Partial Class FrmEntrevistaInicial
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(597, 31)
+        Me.Label2.Location = New System.Drawing.Point(425, 31)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(99, 20)
         Me.Label2.TabIndex = 8
@@ -1064,8 +1050,8 @@ Partial Class FrmEntrevistaInicial
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1770, 800)
+        Me.BackColor = System.Drawing.Color.Gainsboro
+        Me.ClientSize = New System.Drawing.Size(1500, 800)
         Me.Controls.Add(Me.GrxdatosEntrevistaParaHistoria)
         Me.Controls.Add(Me.GrxCambiarContinurDiagnostico)
         Me.Controls.Add(Me.GbxEntrevistaInicial)
