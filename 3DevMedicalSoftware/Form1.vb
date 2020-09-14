@@ -1,14 +1,15 @@
 ﻿Public Class Form1
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        PanelIzquierdo.Width = 90
-    End Sub
+    'Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '    PanelIzquierdo.Width = 90
+    '    PictureBoxIconoUsuario.Image = FrmMantenimiento.PictureImagenPerfil.Image
+    'End Sub
 
-    ''METODO COLOCAR FORM EN PANEL CENTRAL--------------------------------------------
+    ''METODO COLOCAR FORMULARIOS EN EL PANEL CENTRAL DEL Form1--------------------------------------------
     Public Sub AbrirFormDentroDePanelPForm(Of Miform As {Form, New})()
         Dim Formulario As Form
 
-        'Busca el formulario en la coleccion'
+        'Busca el formulario en la coleccion
         Formulario = PanelPrincipal.Controls.OfType(Of Miform)().FirstOrDefault()
         'Si form no fue econtrado/ no existe'
         If Formulario Is Nothing Then
@@ -38,7 +39,7 @@
 
         If PanelIzquierdo.Width = 90 Then
 
-            PanelIzquierdo.Width = 362
+            PanelIzquierdo.Width = 370
 
         Else
 
@@ -57,7 +58,10 @@
         AbrirFormDentroDePanelPForm(Of FrmEntrevistaInicial)()
         PanelIzquierdo.Width = 90
     End Sub
-
+    Private Sub BtnExploracion_Click(sender As Object, e As EventArgs) Handles BtnExploracion.Click
+        AbrirFormDentroDePanelPForm(Of FrmExploracionYDolor)()
+        PanelIzquierdo.Width = 90
+    End Sub
     Private Sub BtnPreDiaDiagnostico_Click(sender As Object, e As EventArgs) Handles BtnPreDiaDiagnostico.Click
         AbrirFormDentroDePanelPForm(Of FrmPreDiagnosticoyDiagnostico)()
         PanelIzquierdo.Width = 90
@@ -67,5 +71,7 @@
         AbrirFormDentroDePanelPForm(Of FrmPlanTratamiento)()
         PanelIzquierdo.Width = 90
     End Sub
+
+
 End Class
 
