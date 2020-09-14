@@ -3,6 +3,12 @@
 Public Class FrmMantenimiento
     Private Sub FrmMantenimiento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        DateTimeFechaNacimiento.MaxDate = Date.Today
+
+
+
+
+
     End Sub
     Private Sub BtnMantenimientoCancelar_Click(sender As Object, e As EventArgs) Handles BtnMantenimientoCancelar.Click
         Me.Close()
@@ -16,16 +22,7 @@ Public Class FrmMantenimiento
         GbxIngresoPacientes.Visible = True
     End Sub
 
-    'Private Sub BtncargarImagen_Click(sender As Object, e As EventArgs)
 
-    '    If OFcargarImagen.ShowDialog = Windows.Forms.DialogResult.OK Then
-
-    '        PictureImagenPerfil.Image = Image.FromFile(OFcargarImagen.FileName)
-    '        PictureImagenPerfil.SizeMode = PictureBoxSizeMode.StretchImage
-
-    '    End If
-
-    'End Sub
 
     Private Shadows Sub KeyPress(ByVal sender As Object, ByVal e As KeyPressEventArgs) Handles TxtCedula.KeyPress, TxtTelefAcompañante.KeyPress, TxtBuscarPaciente.KeyPress
 
@@ -58,13 +55,6 @@ Public Class FrmMantenimiento
         LblDatosCirujias.Text = TxtCirujias.Text
         LblDatosEnfermPaternas.Text = TxtEnfermedPaternas.Text
         LblDatosEnferMaternas.Text = TxtEnferMaternas.Text
-    End Sub
-
-    Private Sub TxtEdadcalculada_TextChanged(sender As Object, e As EventArgs) Handles TxtEdadCalculada.TextChanged
-
-    End Sub
-
-    Private Sub DateTimeFechaNacimiento_ValueChanged(sender As Object, e As EventArgs) Handles DateTimeFechaNacimiento.ValueChanged
 
     End Sub
 
