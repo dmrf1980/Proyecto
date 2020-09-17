@@ -147,7 +147,7 @@ Partial Class FrmPlanTratamiento
         Me.DateproximaConsulta.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.DateproximaConsulta.Checked = False
         Me.DateproximaConsulta.CustomFormat = "MMMM dd, yyyy - dddd"
-        Me.DateproximaConsulta.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateproximaConsulta.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateproximaConsulta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateproximaConsulta.Location = New System.Drawing.Point(479, 460)
         Me.DateproximaConsulta.MaximumSize = New System.Drawing.Size(214, 26)
@@ -165,7 +165,7 @@ Partial Class FrmPlanTratamiento
         Me.DateFinTratamiento.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.DateFinTratamiento.Checked = False
         Me.DateFinTratamiento.CustomFormat = "MMMM dd, yyyy - dddd"
-        Me.DateFinTratamiento.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateFinTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateFinTratamiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateFinTratamiento.Location = New System.Drawing.Point(479, 318)
         Me.DateFinTratamiento.MaximumSize = New System.Drawing.Size(214, 26)
@@ -196,7 +196,7 @@ Partial Class FrmPlanTratamiento
         Me.DateInicioTratamiento.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.DateInicioTratamiento.Checked = False
         Me.DateInicioTratamiento.CustomFormat = "MMMM dd, yyyy - dddd"
-        Me.DateInicioTratamiento.Font = New System.Drawing.Font("Ubuntu", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateInicioTratamiento.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateInicioTratamiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateInicioTratamiento.Location = New System.Drawing.Point(479, 178)
         Me.DateInicioTratamiento.MaximumSize = New System.Drawing.Size(214, 26)
@@ -245,7 +245,7 @@ Partial Class FrmPlanTratamiento
         Me.TxtNombreTratamiento.Location = New System.Drawing.Point(245, 129)
         Me.TxtNombreTratamiento.MinimumSize = New System.Drawing.Size(214, 30)
         Me.TxtNombreTratamiento.Name = "TxtNombreTratamiento"
-        Me.TxtNombreTratamiento.Size = New System.Drawing.Size(448, 30)
+        Me.TxtNombreTratamiento.Size = New System.Drawing.Size(448, 22)
         Me.TxtNombreTratamiento.TabIndex = 11
         '
         'LblRegistrodeControles
