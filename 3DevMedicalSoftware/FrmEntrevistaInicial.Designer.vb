@@ -256,7 +256,7 @@ Partial Class FrmEntrevistaInicial
         '
         Me.LblMotivoPrincipal.AutoSize = True
         Me.LblMotivoPrincipal.Font = New System.Drawing.Font("Ubuntu", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMotivoPrincipal.Location = New System.Drawing.Point(54, 48)
+        Me.LblMotivoPrincipal.Location = New System.Drawing.Point(54, 49)
         Me.LblMotivoPrincipal.Name = "LblMotivoPrincipal"
         Me.LblMotivoPrincipal.Size = New System.Drawing.Size(87, 16)
         Me.LblMotivoPrincipal.TabIndex = 9
@@ -278,7 +278,7 @@ Partial Class FrmEntrevistaInicial
         '
         Me.TxtMotivoprincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtMotivoprincipal.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtMotivoprincipal.Location = New System.Drawing.Point(147, 48)
+        Me.TxtMotivoprincipal.Location = New System.Drawing.Point(147, 49)
         Me.TxtMotivoprincipal.MaximumSize = New System.Drawing.Size(581, 30)
         Me.TxtMotivoprincipal.MaxLength = 250
         Me.TxtMotivoprincipal.Multiline = True
